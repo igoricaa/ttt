@@ -21,9 +21,8 @@ const Home = async () => {
 
   return (
     <main>
-      {/* <h1>{t('title')}</h1> */}
-      {/* <Hero />
-      <AnimatedText />
+      <Hero />
+      {/* <AnimatedText />
       <Calendar />
       <Benefits />
       <JoinNow />

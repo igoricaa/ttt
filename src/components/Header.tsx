@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const Header = () => {
   return (
-    <header className='relative lg:mt-5'>
+    <header className='absolute top-0 left-0 w-full lg:top-5'>
       <div className='lg:hidden ml-10 w-16 h-16 md:w-20 md:h-20'>
         {/* <Image src='/images/header-bg.png' alt='header-bg' fill /> */}
         Logo Mobile

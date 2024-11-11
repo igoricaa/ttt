@@ -33,6 +33,12 @@ export default {
         //   foreground: 'hsl(var(--destructive-foreground))',
         // },
       },
+      padding: {
+        side: 'var(--padding-side)',
+      },
+      fontFamily: {
+        inter: ['var(--font-inter)'],
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],

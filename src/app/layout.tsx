@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
+import { Inter } from 'next/font/google';
 import './globals.css';
 import Lenis from '@/components/Lenis';
 import { ViewTransitions } from 'next-view-transitions';
@@ -12,15 +13,22 @@ import { ThemeProvider } from '@/components/theme-provider';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-// const geistSans = localFont({
-//   src: './fonts/GeistVF.woff',
-//   variable: '--font-geist-sans',
-//   weight: '100 900',
-// });
-// const geistMono = localFont({
-//   src: './fonts/GeistMonoVF.woff',
-//   variable: '--font-geist-mono',
-//   weight: '100 900',
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+  weight: ['400', '500', '600', '700'],
+  style: ['normal', 'italic'],
+});
+
+// const pphatton = localFont({
+//   src: [
+//     {
+//       path: '../fonts/pphatton-medium.woff2',
+//       weight: '500',
+//     },
+//   ],
+//   variable: '--font-pphatton',
 // });
 
 // export const metadata: Metadata = {
@@ -59,10 +67,7 @@ export default function RootLayout({
   return (
     <ViewTransitions>
       <html lang='en' suppressHydrationWarning>
-        <body
-          // `${geistSans.variable} ${geistMono.variable}
-          className={` antialiased`}
-        >
+        <body className={`${inter.variable} antialiased`}>
           <ThemeProvider
             defaultTheme='light'
             attribute='data-theme'
