@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
-import '../globals.css';
+import './globals.css';
 import Lenis from '@/components/Lenis';
 import { ViewTransitions } from 'next-view-transitions';
 // import { routing } from '@/i18n/routing';
