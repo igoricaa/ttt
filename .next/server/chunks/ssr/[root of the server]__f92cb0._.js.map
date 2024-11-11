@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///Users/igorica/work/ttt/ttt/src/components/Lenis.tsx"],"sourcesContent":["'use client';\nimport { PropsWithChildren } from 'react';\nimport { ReactLenis } from 'lenis/react';\n\nconst Lenis = ({ children }: PropsWithChildren) => {\n  return (\n    <ReactLenis\n      root\n      options={{\n        duration: 2,\n        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),\n        orientation: 'vertical',\n        gestureOrientation: 'vertical',\n        smoothWheel: true,\n        wheelMultiplier: 1.2,\n        touchMultiplier: 0.75,\n        infinite: false,\n      }}\n    >\n      {children}\n    </ReactLenis>\n  );\n};\n\nexport default Lenis;\n"],"names":[],"mappings":";;;;AAEA;AAFA;;;AAIA,MAAM,QAAQ,CAAC,EAAE,QAAQ,EAAqB;IAC5C,qBACE,ucAAC,uPAAA,CAAA,aAAU;QACT,IAAI;QACJ,SAAS;YACP,UAAU;YACV,QAAQ,CAAC,IAAM,KAAK,GAAG,CAAC,GAAG,QAAQ,KAAK,GAAG,CAAC,GAAG,CAAC,KAAK;YACrD,aAAa;YACb,oBAAoB;YACpB,aAAa;YACb,iBAAiB;YACjB,iBAAiB;YACjB,UAAU;QACZ;kBAEC;;;;;;AAGP;uCAEe"}},
-    {"offset": {"line": 44, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

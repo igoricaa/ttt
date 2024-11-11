@@ -6,7 +6,7 @@ import { Route, routes } from '@/data/data';
 const Header = () => {
   return (
     <header>
-      <div>
+      <div className=''>
         <Logo />
 
         <nav>
