@@ -8,6 +8,9 @@ import { ViewTransitions } from 'next-view-transitions';
 // import { getMessages, setRequestLocale } from 'next-intl/server';
 // import { NextIntlClientProvider } from 'next-intl';
 import { ReactNode } from 'react';
+import { ThemeProvider } from '@/components/theme-provider';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 // const geistSans = localFont({
 //   src: './fonts/GeistVF.woff',
@@ -55,14 +58,24 @@ export default function RootLayout({
 
   return (
     <ViewTransitions>
-      <html lang='en'>
+      <html lang='en' suppressHydrationWarning>
         <body
           // `${geistSans.variable} ${geistMono.variable}
-          className={`antialiased`}
+          className={` antialiased`}
         >
-          {/* <NextIntlClientProvider messages={messages}> */}
-          <Lenis>{children}</Lenis>
-          {/* </NextIntlClientProvider> */}
+          <ThemeProvider
+            defaultTheme='light'
+            attribute='data-theme'
+            disableTransitionOnChange
+          >
+            {/* <NextIntlClientProvider messages={messages}> */}
+            <Lenis>
+              <Header />
+              {children}
+              {/* <Footer /> */}
+            </Lenis>
+            {/* </NextIntlClientProvider> */}
+          </ThemeProvider>
         </body>
       </html>
     </ViewTransitions>

@@ -22,12 +22,12 @@ const Home = async () => {
   return (
     <main>
       {/* <h1>{t('title')}</h1> */}
-      <Hero />
+      {/* <Hero />
       <AnimatedText />
       <Calendar />
       <Benefits />
       <JoinNow />
-      <OurStory />
+      <OurStory /> */}
     </main>
   );
 };
