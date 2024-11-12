@@ -11,7 +11,7 @@ const Footer = () => {
         <span className='italic'>Closed</span>
       </p>
       <div className='grid grid-cols-12 gap-x-4 mt-7'>
-        <LogoTypography className='col-span-9' />
+        <LogoTypography className='col-span-9 pr-8' />
         <div className='col-span-3'>
           <Link
             href='/'
