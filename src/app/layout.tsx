@@ -77,7 +77,7 @@ export default function RootLayout({
             <Lenis>
               <Header />
               {children}
-              {/* <Footer /> */}
+              <Footer />
             </Lenis>
             {/* </NextIntlClientProvider> */}
           </ThemeProvider>
