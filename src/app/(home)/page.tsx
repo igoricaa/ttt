@@ -1,7 +1,6 @@
-import AnimatedText from '@/components/home/AnimatedText';
-import Calendar from '@/components/home/Calendar';
+import Events from '@/components/home/Events';
 import Hero from '@/components/home/Hero';
-import Benefits from '@/components/home/Highlights';
+import Highlights from '@/components/home/Highlights';
 import JoinNow from '@/components/home/JoinNow';
 import OurStory from '@/components/home/OurStory';
 // import { useTranslations } from 'next-intl';
@@ -23,9 +22,9 @@ const Home = async () => {
     <main>
       <Hero />
       <OurStory />
-      {/* <Benefits />
-      <BreakSection />
-      <Calendar /> */}
+      <Highlights />
+      {/* <BreakSection />*/}
+      <Events />
     </main>
   );
 };
