@@ -22,11 +22,10 @@ const Home = async () => {
   return (
     <main>
       <Hero />
-      {/* <AnimatedText />
-      <Calendar />
-      <Benefits />
-      <JoinNow />
-      <OurStory /> */}
+      <OurStory />
+      {/* <Benefits />
+      <BreakSection />
+      <Calendar /> */}
     </main>
   );
 };

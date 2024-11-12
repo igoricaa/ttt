@@ -9,6 +9,12 @@ export default {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        '8xl': '1440px',
+      },
+      fontSize: {
+        '6xl': '3.5rem',
+      },
       colors: {
         background: 'var(--background)',
         text: 'var(--text-color)',
