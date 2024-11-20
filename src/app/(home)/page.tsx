@@ -22,9 +22,9 @@ const Home = async () => {
     <main>
       <Hero />
       <OurStory />
-      <Highlights />
+      {/* <Highlights /> */}
       {/* <BreakSection />*/}
-      <Events />
+      {/* <Events /> */}
     </main>
   );
 };

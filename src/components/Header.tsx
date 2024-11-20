@@ -31,7 +31,7 @@ const Header = () => {
         </nav>
       </div>
 
-      <Burger />
+      {/* <Burger /> */}
     </header>
   );
 };

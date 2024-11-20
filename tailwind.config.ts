@@ -9,11 +9,22 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        '2xl': '1440px',
+      },
       maxWidth: {
         '8xl': '1440px',
       },
       fontSize: {
-        '6xl': '3.5rem',
+        '3xl': ['2rem', { lineHeight: '2.35rem' }],
+        '6xl': [
+          '3.5rem',
+          {
+            lineHeight: '1.1',
+          },
+        ],
+        '7xl': ['4rem', { lineHeight: '4.5rem' }],
+        '8xl': ['4.5rem', { lineHeight: '5rem' }],
       },
       colors: {
         background: 'var(--background)',
@@ -22,6 +33,7 @@ export default {
           default: 'var(--primary-color)',
           dark: 'var(--primary-dark-color)',
         },
+        yellow: 'var(--yellow-color)',
         // secondary: {
         //   DEFAULT: 'hsl(var(--secondary))',
         //   foreground: 'hsl(var(--secondary-foreground))',
