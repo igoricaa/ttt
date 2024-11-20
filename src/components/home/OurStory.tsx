@@ -11,7 +11,7 @@ const OurStory = () => {
           <Image src='/ttt.svg' alt='TTT' fill />
         </div>
       </div>
-      <div className='pt-12 sm:pt-11 col-span-4 sm:col-span-6 lg:col-span-8 lg:col-start-4'>
+      <div className='pt-12 sm:pt-11 col-span-full lg:col-span-8 lg:col-start-4'>
         <p className='text-xl sm:text-2xl text-center uppercase'>
           At TTT, fighters of all levels come together to push their limits,
           refine their skills, and build the mental strength needed to dominate
@@ -19,16 +19,16 @@ const OurStory = () => {
           some of the best in the fight world.
         </p>
         <div className='mt-12 sm:mt-16 lg:mt-11 2xl:mt-[88px] grid grid-cols-8 gap-x-4'>
-          <h2 className='text-3xl sm:text-6xl 2xl:text-7xl font-semibold uppercase col-span-6 col-start-2'>
+          <h2 className='text-3xl sm:text-6xl 2xl:text-7xl font-semibold uppercase col-span-full lg:col-span-6 lg:col-start-2'>
             Our Story
           </h2>
-          <p className='text-base sm:text-xl mt-8 col-span-6 col-start-2'>
+          <p className='text-base sm:text-xl mt-8 col-span-full lg:col-span-6 lg:col-start-2'>
             Founded by UFC fighter Dusko Todorovic and a group of elite
             Brazilian Jiu-Jitsu experts, TTT is dedicated to training the next
             generation of fighters with a passion for excellence and a
             commitment to discipline.
           </p>
-          <p className='text-base sm:text-xl col-span-6 col-start-2 mt-5 '>
+          <p className='text-base sm:text-xl col-span-full lg:col-span-6 lg:col-start-2 mt-5 '>
             At TTT, fighters of all levels come together to push their limits,
             refine their skills, and build the mental strength needed to
             dominate in and out of the cage. Join us and experience top-tier
