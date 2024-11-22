@@ -1,4 +1,5 @@
-import { Highlight, highlights } from '@/data/data';
+import { highlights } from '@/data/data';
+import { Highlight } from '@/lib/types';
 
 const Highlights = () => {
   return (

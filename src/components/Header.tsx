@@ -1,8 +1,9 @@
 import { Link } from 'next-view-transitions';
 import Logo from './ui/logo';
 import Burger from './Burger';
-import { Route, routes } from '@/data/data';
+import { routes } from '@/data/data';
 import Image from 'next/image';
+import { Route } from '@/lib/types';
 
 const Header = () => {
   return (

@@ -1,9 +1,10 @@
 'use client';
 
-import { Event, events } from '@/data/data';
+import { events } from '@/data/data';
 import LocationIcon from '../icons/LocationIcon';
 import { Calendar } from '../ui/calendar';
 import { useState, useEffect } from 'react';
+import { Event } from '@/lib/types';
 
 const Events = () => {
   const [date, setDate] = useState<Date>();

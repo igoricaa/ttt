@@ -20,6 +20,9 @@ importers:
       date-fns:
         specifier: ^4.1.0
         version: 4.1.0
+      keen-slider:
+        specifier: ^6.8.6
+        version: 6.8.6
       lenis:
         specifier: ^1.1.16
         version: 1.1.16(react@19.0.0-rc-66855b96-20241106)
@@ -526,6 +529,9 @@ packages:
   jiti@1.21.6:
     resolution: {integrity: sha512-2yTgeWTWzMWkHu6Jp9NKgePDaYHbntiwvYuuJLbbN9vl7DC9DvXKOB2BC3ZZ92D3cvV/aflH0osDfwpHepQ53w==}
     hasBin: true
+
+  keen-slider@6.8.6:
+    resolution: {integrity: sha512-dcEQ7GDBpCjUQA8XZeWh3oBBLLmyn8aoeIQFGL/NTVkoEOsmlnXqA4QykUm/SncolAZYGsEk/PfUhLZ7mwMM2w==}
 
   lenis@1.1.16:
     resolution: {integrity: sha512-bGS8IxJW3x310gTwFylgYU6bGzeVnTALmgyLP8RZ9DFSYC/hN3fi+urCWspr5otljbDAGF4ND2GKCFtemAd45Q==}
@@ -1284,6 +1290,8 @@ snapshots:
       '@pkgjs/parseargs': 0.11.0
 
   jiti@1.21.6: {}
+
+  keen-slider@6.8.6: {}
 
   lenis@1.1.16(react@19.0.0-rc-66855b96-20241106):
     optionalDependencies:

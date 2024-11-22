@@ -1,7 +1,4 @@
-export type Route = {
-  label: string;
-  path: string;
-};
+import { Achievement, Event, Highlight, Route } from '@/lib/types';
 
 export const routes: Route[] = [
   {
@@ -30,14 +27,6 @@ export const routes: Route[] = [
   },
 ];
 
-export type Highlight = {
-  title: {
-    ptOne: string;
-    ptTwo: string;
-  };
-  description: string;
-};
-
 export const highlights: Highlight[] = [
   {
     title: {
@@ -64,16 +53,6 @@ export const highlights: Highlight[] = [
       'Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit.',
   },
 ];
-
-export type Event = {
-  title: string;
-  date: {
-    day: string;
-    month: string;
-  };
-  location: string;
-  time: string;
-};
 
 export const events: Event[] = [
   {
@@ -111,5 +90,38 @@ export const events: Event[] = [
     },
     location: 'T Mobile Arena',
     time: 'Ceo dan',
+  },
+];
+
+export const achievements: Achievement[] = [
+  {
+    title: 'UFC 303',
+    description:
+      'Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit.',
+    image: '/achievements/achievements.png',
+  },
+  {
+    title: 'Jiu Jitsu World Championship',
+    description:
+      'Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit.',
+    image: '/achievements/achievements.png',
+  },
+  {
+    title: 'ONE Championship',
+    description:
+      'Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit.',
+    image: '/achievements/achievements.png',
+  },
+  {
+    title: 'Dusko Todorovic vs Neki kontented',
+    description:
+      'Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit.',
+    image: '/achievements/achievements.png',
+  },
+  {
+    title: 'Prikupljanje Dzakova za NK-a da ne lomi kicmu',
+    description:
+      'Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit.',
+    image: '/achievements/achievements.png',
   },
 ];

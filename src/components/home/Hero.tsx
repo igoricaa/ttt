@@ -2,7 +2,7 @@ import Image from 'next/image';
 import heroBg from '@/../public/hero-bg.png';
 
 import { buttonVariants } from '../ui/button';
-import Link from 'next/link';
+import { Link } from 'next-view-transitions';
 
 const Hero = () => {
   return (
@@ -14,6 +14,7 @@ const Hero = () => {
           fill
           priority
           sizes='95vw'
+          style={{ objectFit: 'cover' }}
         />
         <div className='z-20 absolute bottom-3 sm:hidden'>
           <h1 className='text-3xl sm:text-8xl lg:text-9xl font-bold uppercase'>
