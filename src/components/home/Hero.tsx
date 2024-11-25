@@ -1,9 +1,6 @@
 import Image from 'next/image';
 import heroBg from '@/../public/hero-bg.png';
-
-import { buttonVariants } from '../ui/button';
-import { Link } from 'next-view-transitions';
-import ArrowIcon from '../ui/icons/arrow';
+import Link from '../ui/link-button';
 
 const Hero = () => {
   return (
@@ -41,23 +38,13 @@ const Hero = () => {
             </p>
           </div>
 
-          <Link
-            href='/contact'
-            className={`sm:hidden self-end ${buttonVariants({
-              variant: 'dark',
-            })}`}
-          >
+          <Link href='/contact' className='sm:hidden self-end' variant='dark'>
             SCHEDULE A FREE TOUR
           </Link>
           <Link
             href='/contact'
-            className={`hidden sm:inline-flex self-end lg:mr-4 2xl:mr-8 ${buttonVariants(
-              {
-                variant: 'default',
-              }
-            )}`}
+            className='hidden sm:inline-flex self-end lg:mr-4 2xl:mr-8'
           >
-            <ArrowIcon className='w-5 h-5' />
             SCHEDULE A FREE TOUR
           </Link>
         </div>

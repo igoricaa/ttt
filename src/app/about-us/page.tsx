@@ -1,7 +1,6 @@
 import Achievements from '@/components/achievements';
 import MembersSlider from '@/components/members-slider';
-import { buttonVariants } from '@/components/ui/button';
-import { Link } from 'next-view-transitions';
+import Link from '@/components/ui/link-button';
 import Image from 'next/image';
 
 const Page = () => {
@@ -24,10 +23,7 @@ const Page = () => {
             dominate in and out of the cage. Join us and experience top-tier
             training from some of the best in the fight world.
           </p>
-          <Link
-            href='/contact-us'
-            className={`${buttonVariants({ variant: 'dark' })} mt-12 z-10`}
-          >
+          <Link href='/contact-us' className='mt-12 z-10' variant='dark'>
             Contact Us
           </Link>
         </div>
