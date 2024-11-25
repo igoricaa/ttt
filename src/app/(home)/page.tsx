@@ -9,7 +9,7 @@ import OurStory from '@/components/home/OurStory';
 // type Params = Promise<{ params: { locale: string } }>;
 
 // { params }: { params: Params }
-const Home = async () => {
+const Page = async () => {
   // const {
   //   params: { locale },
   // } = await params;
@@ -29,4 +29,4 @@ const Home = async () => {
   );
 };
 
-export default Home;
+export default Page;

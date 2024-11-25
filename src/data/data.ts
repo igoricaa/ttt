@@ -1,4 +1,4 @@
-import { Achievement, Event, Highlight, Route } from '@/lib/types';
+import { Achievement, Event, Highlight, Member, Route } from '@/lib/types';
 
 export const routes: Route[] = [
   {
@@ -123,5 +123,104 @@ export const achievements: Achievement[] = [
     description:
       'Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit.',
     image: '/achievements/achievements.png',
+  },
+];
+
+export const members: Member[] = [
+  {
+    name: 'Dusko Todorovic',
+    title: 'UFC Fighter & BJJ Black Belt',
+    image: '/members/dusko-todorovic.png',
+    bio: 'At TTT, fighters of all levels come together to push their limits, refine their skills, and build the mental strength needed to dominate in and out of the cage. Join us and experience top-tier training from some of the best in the fight world.',
+    socials: [
+      {
+        name: 'Instagram',
+        url: 'https://www.instagram.com/thunder_top_team/',
+      },
+      {
+        name: 'Facebook',
+        url: 'https://www.instagram.com/thunder_top_team/',
+      },
+    ],
+  },
+  {
+    name: 'Ivan Popović',
+    title: 'BJJ Head Coach',
+    image: '/members/ivan-popovic.png',
+    bio: 'At TTT, fighters of all levels come together to push their limits, refine their skills, and build the mental strength needed to dominate in and out of the cage. Join us and experience top-tier training from some of the best in the fight world.',
+    socials: [
+      {
+        name: 'Instagram',
+        url: 'https://www.instagram.com/thunder_top_team/',
+      },
+      {
+        name: 'Facebook',
+        url: 'https://www.instagram.com/thunder_top_team/',
+      },
+    ],
+  },
+  {
+    name: 'Dusko Todorovic',
+    title: 'UFC Fighter & BJJ Black Belt',
+    image: '/members/dusko-todorovic.png',
+    bio: 'At TTT, fighters of all levels come together to push their limits, refine their skills, and build the mental strength needed to dominate in and out of the cage. Join us and experience top-tier training from some of the best in the fight world.',
+    socials: [
+      {
+        name: 'Instagram',
+        url: 'https://www.instagram.com/thunder_top_team/',
+      },
+      {
+        name: 'Facebook',
+        url: 'https://www.instagram.com/thunder_top_team/',
+      },
+    ],
+  },
+  {
+    name: 'Ivan Popović',
+    title: 'BJJ Head Coach',
+    image: '/members/ivan-popovic.png',
+    bio: 'At TTT, fighters of all levels come together to push their limits, refine their skills, and build the mental strength needed to dominate in and out of the cage. Join us and experience top-tier training from some of the best in the fight world.',
+    socials: [
+      {
+        name: 'Instagram',
+        url: 'https://www.instagram.com/thunder_top_team/',
+      },
+      {
+        name: 'Facebook',
+        url: 'https://www.instagram.com/thunder_top_team/',
+      },
+    ],
+  },
+  {
+    name: 'Dusko Todorovic',
+    title: 'UFC Fighter & BJJ Black Belt',
+    image: '/members/dusko-todorovic.png',
+    bio: 'At TTT, fighters of all levels come together to push their limits, refine their skills, and build the mental strength needed to dominate in and out of the cage. Join us and experience top-tier training from some of the best in the fight world.',
+    socials: [
+      {
+        name: 'Instagram',
+        url: 'https://www.instagram.com/thunder_top_team/',
+      },
+      {
+        name: 'Facebook',
+        url: 'https://www.instagram.com/thunder_top_team/',
+      },
+    ],
+  },
+  {
+    name: 'Ivan Popović',
+    title: 'BJJ Head Coach',
+    image: '/members/ivan-popovic.png',
+    bio: 'At TTT, fighters of all levels come together to push their limits, refine their skills, and build the mental strength needed to dominate in and out of the cage. Join us and experience top-tier training from some of the best in the fight world.',
+    socials: [
+      {
+        name: 'Instagram',
+        url: 'https://www.instagram.com/thunder_top_team/',
+      },
+      {
+        name: 'Facebook',
+        url: 'https://www.instagram.com/thunder_top_team/',
+      },
+    ],
   },
 ];

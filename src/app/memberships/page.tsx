@@ -1,5 +1,5 @@
-const Memberships = () => {
+const Page = () => {
   return <main>Memberships</main>;
 };
 
-export default Memberships;
+export default Page;

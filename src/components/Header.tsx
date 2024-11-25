@@ -4,6 +4,8 @@ import Burger from './Burger';
 import { routes } from '@/data/data';
 import Image from 'next/image';
 import { Route } from '@/lib/types';
+import ArrowIcon from './ui/icons/arrow';
+import NavLink from './ui/nav-link';
 
 const Header = () => {
   return (
@@ -14,20 +16,20 @@ const Header = () => {
       </div>
       <div className='hidden lg:flex items-center justify-center gap-16'>
         <nav className='flex items-center gap-16'>
-          {routes.slice(0, 3).map((route: Route) => (
-            <Link key={route.path} href={route.path}>
+          {routes.slice(0, 3).map((route: Route, index: number) => (
+            <NavLink key={route.path} href={route.path} index={index}>
               {route.label}
-            </Link>
+            </NavLink>
           ))}
         </nav>
 
         <Logo />
 
         <nav className='flex items-center gap-16'>
-          {routes.slice(-3).map((route: Route) => (
-            <Link key={route.path} href={route.path}>
+          {routes.slice(-3).map((route: Route, index: number) => (
+            <NavLink key={route.path} href={route.path} index={index}>
               {route.label}
-            </Link>
+            </NavLink>
           ))}
         </nav>
       </div>
@@ -38,3 +40,6 @@ const Header = () => {
 };
 
 export default Header;
+
+
+

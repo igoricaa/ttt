@@ -1,5 +1,5 @@
-const Schedule = () => {
+const Page = () => {
   return <main>Schedule</main>;
 };
 
-export default Schedule;
+export default Page;

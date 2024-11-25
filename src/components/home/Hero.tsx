@@ -3,6 +3,7 @@ import heroBg from '@/../public/hero-bg.png';
 
 import { buttonVariants } from '../ui/button';
 import { Link } from 'next-view-transitions';
+import ArrowIcon from '../ui/icons/arrow';
 
 const Hero = () => {
   return (
@@ -56,6 +57,7 @@ const Hero = () => {
               }
             )}`}
           >
+            <ArrowIcon className='w-5 h-5' />
             SCHEDULE A FREE TOUR
           </Link>
         </div>

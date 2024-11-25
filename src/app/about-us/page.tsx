@@ -4,7 +4,7 @@ import { buttonVariants } from '@/components/ui/button';
 import { Link } from 'next-view-transitions';
 import Image from 'next/image';
 
-const AboutUs = () => {
+const Page = () => {
   return (
     <main>
       <section className='flex justify-between px-side pt-48'>
@@ -53,12 +53,12 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <section className='px-side'>
+      <section className='lg:mt-48 px-side'>
         <h2 className='text-6xl font-semibold uppercase'>Our Achievements</h2>
         <Achievements className='-translate-y-9' />
       </section>
 
-      <section className='px-side'>
+      <section className='px-side py-32'>
         <h2 className='text-6xl font-semibold uppercase'>Notable members</h2>
         <MembersSlider />
       </section>
@@ -66,4 +66,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default Page;

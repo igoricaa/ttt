@@ -26,3 +26,16 @@ export type Highlight = {
   };
   description: string;
 };
+
+export type Member = {
+  name: string;
+  title: string;
+  image: string;
+  bio: string;
+  socials: Social[];
+};
+
+export type Social = {
+  name: string;
+  url: string;
+};
