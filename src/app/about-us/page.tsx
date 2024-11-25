@@ -58,7 +58,7 @@ const Page = () => {
         <Achievements className='-translate-y-9' />
       </section>
 
-      <section className='px-side py-32'>
+      <section className='pl-side py-32'>
         <h2 className='text-6xl font-semibold uppercase'>Notable members</h2>
         <MembersSlider />
       </section>
