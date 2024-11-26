@@ -1,6 +1,5 @@
 import { Member as MemberType } from '@/lib/types';
 import PersonIcon from './ui/icons/person';
-import { useState } from 'react';
 import Image from 'next/image';
 
 const Member = ({
@@ -19,8 +18,8 @@ const Member = ({
       key={memberIndex}
       className={`keen-slider__slide number-slide-${
         memberIndex + 1
-      } relative aspect-[592/824] !overflow-visible transition-[margin] duration-300 ${
-        isActive ? 'z-10 mr-[128px]' : 'z-0 mr-0 delay-300'
+      } relative aspect-[592/824] !overflow-visible transition-[margin,transform] duration-300 ${
+        isActive ? '!-translate-x-[180px] sm:!translate-x-0 z-10 sm:mr-[108px] lg:mr-[128px]' : 'z-0 mr-0 delay-300'
       }`}
     >
       <Image
@@ -29,7 +28,7 @@ const Member = ({
         fill
         style={{ objectFit: 'cover' }}
       />
-      <div className='absolute top-0 right-[-128px] z-10 w-[325px] h-2/3 flex justify-center'>
+      <div className='absolute top-0 right-[-174px] sm:right-[-108px] lg:right-[-128px] z-10 w-[240px] sm:w-[282px] lg:w-[325px] h-full sm:h-3/4 lg:h-2/3 flex justify-start sm:justify-center'>
         <div
           onClick={() => setActiveMemberIndex(memberIndex)}
           style={{
@@ -39,7 +38,7 @@ const Member = ({
           }}
           className={`${
             isActive ? 'w-full h-full' : 'w-[66px] h-[75px]'
-          } relative bg-primary-dark rounded-br-3xl cursor-pointer max-h-[549px]`}
+          } relative bg-primary-dark rounded-br-3xl cursor-pointer max-h-full sm:max-h-[470px] lg:max-h-[549px]`}
         >
           <PersonIcon
             style={{
@@ -60,16 +59,18 @@ const Member = ({
                 : 'opacity-0 invisible delay-0'
             } `}
           >
-            <h4 className={`text-3xl font-semibold`}>{member.name}</h4>
-            <span className={`mt-1 `}>{member.title}</span>
-            <p className={`mt-12 `}>{member.bio}</p>
+            <h4 className='text-2xl sm:text-3xl font-semibold'>
+              {member.name}
+            </h4>
+            <span className='mt-1'>{member.title}</span>
+            <p className='text-sm lg:text-base mt-6 lg:mt-12'>{member.bio}</p>
             <div className={`flex gap-4 mt-8`}>
               {member.socials.map((social, index) => (
                 <a
                   href={social.url}
                   key={index}
                   target='_blank'
-                  className='uppercase font-medium'
+                  className='text-sm sm:text-base uppercase font-medium'
                 >
                   {social.name}
                 </a>

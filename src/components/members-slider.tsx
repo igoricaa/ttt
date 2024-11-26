@@ -3,8 +3,8 @@
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 import { members } from '@/data/data';
-import { Member } from '@/lib/types';
-import MemberBio from './member';
+import { Member as MemberType } from '@/lib/types';
+import Member from './member';
 import { useState } from 'react';
 
 const MembersSlider = () => {
@@ -14,8 +14,8 @@ const MembersSlider = () => {
 
   const [ref, instanceRef] = useKeenSlider<HTMLDivElement>({
     breakpoints: {
-      '(min-width: 400px)': {
-        slides: { perView: 2, spacing: 24 },
+      '(min-width: 680px)': {
+        slides: { perView: 1.5, spacing: 24 },
       },
       '(min-width: 1000px)': {
         slides: { perView: 3, spacing: 24 },
@@ -34,9 +34,9 @@ const MembersSlider = () => {
   };
 
   return (
-    <div ref={ref} className='keen-slider mt-14 lg:pl-[calc(100%/12+1rem)]'>
-      {members.map((member: Member, index: number) => (
-        <MemberBio
+    <div ref={ref} className='keen-slider mt-8 sm:mt-16 lg:mt-14 lg:pl-[calc(100%/12+1rem)]'>
+      {members.map((member: MemberType, index: number) => (
+        <Member
           key={index}
           member={member}
           memberIndex={index}
