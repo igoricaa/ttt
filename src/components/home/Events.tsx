@@ -34,7 +34,7 @@ const Events = () => {
               className='p-4 border-b border-[#EBE9E9] flex items-center gap-x-4'
             >
               <div className='w-[60px] h-[60px]'>
-                <span className='text-2xl font-medium text-[#30321C] bg-white w-full h-[38px] flex items-center justify-center rounded-t-[4px]'>
+                <span className='text-2xl font-medium text-primary-dark bg-white w-full h-[38px] flex items-center justify-center rounded-t-[4px]'>
                   {event.date.day}
                 </span>
                 <span className='text-sm w-full h-[22px] bg-[#4A4B2F] flex items-center justify-center rounded-b-[4px]'>

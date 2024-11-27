@@ -34,6 +34,7 @@ export default {
           default: 'var(--primary-color)',
           dark: 'var(--primary-dark-color)',
         },
+        green: 'var(--green-color)',
         yellow: 'var(--yellow-color)',
         // secondary: {
         //   DEFAULT: 'hsl(var(--secondary))',

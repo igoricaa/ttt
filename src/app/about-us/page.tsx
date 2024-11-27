@@ -74,9 +74,6 @@ const Page = () => {
       </section>
 
       <section className='px-side lg:pr-0 pt-16 pb-[72px] sm:pt-[72px] sm:pb-24 lg:py-32'>
-        <h2 className='text-3xl sm:text-7xl lg:text-6xl font-semibold uppercase'>
-          Notable members
-        </h2>
         <MembersSlider />
       </section>
     </main>

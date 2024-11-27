@@ -3,6 +3,7 @@ import * as React from 'react';
 const ArrowIcon: React.FC<React.SVGProps<SVGElement>> = ({
   className,
   color = '#fff',
+  onClick,
 }) => (
   <svg
     className={className}
@@ -11,6 +12,7 @@ const ArrowIcon: React.FC<React.SVGProps<SVGElement>> = ({
     height='13'
     fill='none'
     viewBox='0 0 13 13'
+    onClick={onClick}
   >
     <path
       fill={color}

@@ -6,6 +6,7 @@
   :root {
     --primary-color: #9c9c8d;
     --primary-dark-color: #30321c;
+    --green-color: #4a4b2f;
     --yellow-color: #fcfc62;
     --background: var(--primary-color);
     --text-color: #fff;
