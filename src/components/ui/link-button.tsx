@@ -8,19 +8,26 @@ const Link = ({
   children,
   className,
   variant = 'default',
+  size = 'default',
   ...props
 }: LinkProps & {
   children: React.ReactNode;
   className?: string;
-  variant?: 'default' | 'dark';
+  variant?: 'default' | 'dark' | 'yellow' | 'transparent';
+  size?: 'default' | 'lg';
 }) => {
   return (
     <LinkTransitions
       {...props}
-      className={cn(buttonVariants({ variant }), className)}
+      className={cn(buttonVariants({ variant, size }), className)}
     >
       <>
-        <ArrowIcon className='w-5 h-5' />
+        <ArrowIcon
+          className='w-5 h-5'
+          color={
+            variant === 'transparent' ? '#6B654B' : variant === 'yellow' ? '#000' : '#fff'
+          }
+        />
         {children}
       </>
     </LinkTransitions>

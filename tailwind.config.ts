@@ -11,6 +11,7 @@ export default {
     extend: {
       screens: {
         '2xl': '1440px',
+        '3xl': '1750px',
       },
       maxWidth: {
         '8xl': '1440px',

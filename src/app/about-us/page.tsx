@@ -8,7 +8,7 @@ const Page = () => {
     <main>
       <section className='flex lg:flex-row justify-between px-side pt-16 sm:pt-28 lg:pt-48'>
         <div>
-          <h1 className='text-3xl sm:text-8xl lg:text-[128px] leading-[1.2] font-bold uppercase whitespace-nowrap'>
+          <h1 className='text-3xl sm:text-8xl lg:text-[128px] lg:leading-[1.2] font-bold uppercase whitespace-nowrap'>
             About Us
           </h1>
           <h4 className='sm:text-2xl'>Our Mission and Commitment</h4>

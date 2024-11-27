@@ -19,7 +19,7 @@ const Achievements = ({ className }: { className?: string }) => {
           />
         </div>
       </div>
-      <div className='col-span-full lg:col-span-7'>
+      <div className='col-span-full lg:col-span-7 lg:pl-16'>
         {achievements.map((achievement: Achievement, index: number) => (
           <div key={achievement.title} className='border-b border-white py-6 sm:py-8'>
             <h3 className='text-3xl sm:text-[53px] leading-none font-medium uppercase'>
