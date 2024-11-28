@@ -22,7 +22,7 @@ const Achievements = ({ className }: { className?: string }) => {
       <div className='col-span-full lg:col-span-7 lg:pl-16'>
         {achievements.map((achievement: Achievement, index: number) => (
           <div key={achievement.title} className='border-b border-white py-6 sm:py-8'>
-            <h3 className='text-3xl sm:text-[53px] leading-none font-medium uppercase'>
+            <h3 className='text-3xl sm:text-6xl leading-none font-medium uppercase'>
               {achievement.title} <span className='italic'>No{index + 1}</span>
             </h3>
             <p className='sm:text-xl mt-8'>{achievement.description}</p>

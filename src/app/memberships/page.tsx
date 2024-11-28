@@ -13,7 +13,7 @@ const Page = () => {
         <div className='relative aspect-[286/159] sm:aspect-[674/375] lg:aspect-[1824/421] flex flex-col justify-end pb-4'>
           <Image
             src='/memberships-bg.png'
-            alt='Thunder TopTeam memberships'
+            alt='Thunder Top Team Members'
             fill
             priority
             className='object-cover rounded-[224px] -z-10'

@@ -11,9 +11,11 @@
   "dependencies": {
     "@gsap/react": "^2.1.1",
     "@radix-ui/react-slot": "^1.1.0",
+    "@vis.gl/react-google-maps": "^1.4.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
+    "dotenv": "^16.4.5",
     "gsap": "^3.12.5",
     "keen-slider": "^6.8.6",
     "lenis": "^1.1.16",
@@ -25,6 +27,7 @@
     "react": "19.0.0-rc-66855b96-20241106",
     "react-day-picker": "8.10.1",
     "react-dom": "19.0.0-rc-66855b96-20241106",
+    "react-hook-form": "^7.53.2",
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7"
   },
