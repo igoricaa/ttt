@@ -1,3 +1,5 @@
+import Benefits from '@/components/benefits';
+import { InfiniteSlider } from '@/components/ui/infinite-slider';
 import Link from '@/components/ui/link-button';
 import { memberships } from '@/data/data';
 import { Membership } from '@/lib/types';
@@ -42,10 +44,9 @@ const Page = () => {
         ))}
       </section>
 
-      <section className='mt-14 sm:mt-16 lg:mt-32'>
-        <div></div>
-        <div></div>
-      </section>
+      <Benefits />
+
+      <InfiniteSlider />
     </main>
   );
 };
@@ -91,7 +92,7 @@ const MembershipCard = ({
         href='/contact-us'
         variant='white'
         size='lg'
-        className='h-14 px-6 py-4'
+        className='h-14 px-6 py-4 mt-auto'
       >
         Priključi se
       </Link>

@@ -45,3 +45,10 @@ export type Membership = {
   description: string[];
   image: string;
 };
+
+export type Benefit = {
+  subtitle: string;
+  title: string;
+  description: string;
+  image: string;
+};

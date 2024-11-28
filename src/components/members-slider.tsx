@@ -6,7 +6,7 @@ import { members } from '@/data/data';
 import { Member as MemberType } from '@/lib/types';
 import Member from './member';
 import { useState } from 'react';
-import ArrowIcon from './ui/icons/arrow';
+import Arrow from './ui/arrow-button';
 
 const MembersSlider = () => {
   const [activeMemberIndex, setActiveMemberIndex] = useState<number | null>(
@@ -48,7 +48,7 @@ const MembersSlider = () => {
         <h2 className='text-3xl sm:text-7xl lg:text-6xl font-semibold uppercase'>
           Notable <br className='lg:hidden' /> members
         </h2>
-        <div className='relative flex gap-x-4 sm:gap-x-6 items-center px-4 sm:px-6 h-[40px] sm:h-[72px] bg-green rounded-3xl border border-primary-dark'>
+        <div className='relative flex gap-x-4 sm:gap-x-6 items-center px-4 sm:px-6 h-[40px] sm:h-[72px] bg-green rounded-full border border-primary-dark'>
           {loaded && instanceRef.current && (
             <>
               <Arrow
@@ -91,19 +91,3 @@ const MembersSlider = () => {
 };
 
 export default MembersSlider;
-
-function Arrow(props: {
-  disabled: boolean;
-  left?: boolean;
-  onClick: (e: any) => void;
-}) {
-  const disabled = props.disabled ? 'opacity-20 pointer-events-none' : '';
-  return (
-    <ArrowIcon
-      className={`w-6 h-6 sm:w-9 sm:h-9 cursor-pointer ${
-        props.left ? 'rotate-180' : ''
-      } ${disabled}`}
-      onClick={props.onClick}
-    />
-  );
-}
