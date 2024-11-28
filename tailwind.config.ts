@@ -10,6 +10,7 @@ export default {
   theme: {
     extend: {
       screens: {
+        lg: '1025px',
         '2xl': '1440px',
         '3xl': '1750px',
       },

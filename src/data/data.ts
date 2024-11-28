@@ -6,6 +6,7 @@ import {
   Member,
   Membership,
   Route,
+  Social,
 } from '@/lib/types';
 
 export const routes: Route[] = [
@@ -30,8 +31,8 @@ export const routes: Route[] = [
     path: '/schedule',
   },
   {
-    label: 'Contact',
-    path: '/contact',
+    label: 'Contact Us',
+    path: '/contact-us',
   },
 ];
 
@@ -300,5 +301,24 @@ export const benefits: Benefit[] = [
     description:
       "Our cozy chill area is designed for ultimate relaxation and comfort, providing a peaceful retreat after a workout. With soft seating, ambient lighting, and a soothing atmosphere, it's the perfect place to decompress, connect with others, or enjoy some quiet time. The space encourages socializing and unwinding, making it an ideal spot for athletes to bond, share experiences, or simply relax in a stress-free environment. Whether you're taking a break between training sessions or unwinding after a long day, our chill area offers a cozy space for everyone to enjoy.",
     image: '/benefits/caffe.jpeg',
+  },
+];
+
+export const socials: Social[] = [
+  {
+    name: 'Instagram',
+    url: 'https://www.instagram.com/thunder_top_team/',
+  },
+  {
+    name: 'Facebook',
+    url: 'https://www.facebook.com/thundertopteam/',
+  },
+  {
+    name: 'Youtube',
+    url: 'https://www.youtube.com/channel/UC8888888888888888888',
+  },
+  {
+    name: 'Tiktok',
+    url: 'https://www.tiktok.com/@thundertopteam',
   },
 ];

@@ -38,11 +38,15 @@ const Hero = () => {
             </p>
           </div>
 
-          <Link href='/contact' className='sm:hidden self-end' variant='dark'>
+          <Link
+            href='/contact-us'
+            className='sm:hidden self-end'
+            variant='dark'
+          >
             SCHEDULE A FREE TOUR
           </Link>
           <Link
-            href='/contact'
+            href='/contact-us'
             className='hidden sm:inline-flex self-end lg:mr-4 2xl:mr-8'
           >
             SCHEDULE A FREE TOUR

@@ -17,8 +17,8 @@ const Benefits = () => {
   const descriptionRef = useRef<HTMLParagraphElement>(null);
   const subtitleRef = useRef<HTMLSpanElement>(null);
   const isMobile = useMediaQuery('(max-width: 640px)');
-  const isTablet = useMediaQuery('(min-width: 641px) and (max-width: 1023px)');
-  const isDesktop = useMediaQuery('(min-width: 1024px)');
+  const isTablet = useMediaQuery('(min-width: 641px) and (max-width: 1024px)');
+  const isDesktop = useMediaQuery('(min-width: 1025px)');
 
   useGSAP(() => {
     const subtitleElement = subtitleRef.current;

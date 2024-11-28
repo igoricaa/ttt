@@ -1,5 +1,5 @@
 import Benefits from '@/components/benefits';
-import { InfiniteSlider } from '@/components/ui/infinite-slider';
+import { JoinUsSlider } from '@/components/ui/join-us-slider';
 import Link from '@/components/ui/link-button';
 import { memberships } from '@/data/data';
 import { Membership } from '@/lib/types';
@@ -46,7 +46,7 @@ const Page = () => {
 
       <Benefits />
 
-      <InfiniteSlider />
+      <JoinUsSlider />
     </main>
   );
 };

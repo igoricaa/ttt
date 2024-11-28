@@ -1,11 +1,11 @@
-'use client';
-import useMediaQuery from '@/hooks/useMediaQuery';
-import SideArea from './side-area';
-import MobileMenu from './mobile-menu';
-const Burger = () => {
-  const isMobile = useMediaQuery('(max-width: 991px)');
+// 'use client';
+// import useMediaQuery from '@/hooks/useMediaQuery';
+// import MobileMenu from './mobile-menu';
 
-  return <>{isMobile ? <MobileMenu /> : <SideArea />}</>;
-};
+// const Burger = () => {
+//   const isMobile = useMediaQuery('(max-width: 991px)');
 
-export default Burger;
+//   return <MobileMenu />;
+// };
+
+// export default Burger;

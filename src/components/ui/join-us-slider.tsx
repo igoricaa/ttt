@@ -1,4 +1,4 @@
-export const InfiniteSlider = () => {
+export const JoinUsSlider = () => {
   return (
     <section className='bg-[#D8D8D8] w-full overflow-hidden'>
       <div className='flex justify-center items-center gap-x-4 sm:gap-x-6 h-12 sm:h-16 w-fit animate-slide'>

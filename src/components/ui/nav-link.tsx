@@ -9,10 +9,12 @@ const NavLink = ({
   children,
   href,
   index,
+  variant = 'header',
 }: {
   children: React.ReactNode;
   href: string;
   index: number;
+  variant?: 'header' | 'mobilemenu';
 }) => {
   const pathname = usePathname();
   const isActive = pathname === href;
@@ -21,18 +23,23 @@ const NavLink = ({
     <Link
       href={href}
       className={cn(
-        `group flex items-center gap-2 uppercase font-medium transition-all duration-300 hover:opacity-100 hover:blur-0`,
-        !isActive && 'opacity-60 blur-[1px]'
+        `group uppercase transition-all duration-300 hover:opacity-100 `,
+        variant === 'header' &&
+          'flex items-center gap-x-2 font-medium hover:blur-0',
+        variant === 'mobilemenu' && `text-xl sm:text-5xl font-bold`,
+        variant === 'header' && !isActive && 'opacity-60 blur-[1px]'
       )}
     >
       {children}
-      <ArrowIcon
-        className={cn(
-          'transition-transform duration-300',
-          `group-hover:rotate-0`,
-          !isActive && 'rotate-90'
-        )}
-      />
+      {variant === 'header' && (
+        <ArrowIcon
+          className={cn(
+            'transition-transform duration-300',
+            `group-hover:rotate-0`,
+            !isActive && 'rotate-90'
+          )}
+        />
+      )}
     </Link>
   );
 };
