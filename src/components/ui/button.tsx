@@ -13,15 +13,18 @@ const buttonVariants = cva(
         dark: 'bg-primary-dark text-white hover:bg-primary-dark/80',
         yellow:
           'bg-yellow text-black hover:bg-yellow/80 border border-white/40',
-          // w-full h-16 bg-yellow border border-white/40 rounded-[50px] text-2xl text-black uppercase flex items-center justify-center py-2
+        // w-full h-16 bg-yellow border border-white/40 rounded-[50px] text-2xl text-black uppercase flex items-center justify-center py-2
         transparent:
           'bg-transparent text-[#6B654B] hover:bg-white/20 border border-white/40',
-          //  h-16 border border-white/40 rounded-[50px] text-2xl  
+        //  h-16 border border-white/40 rounded-[50px] text-2xl
+        white:
+          'bg-buttonWhite text-primary-dark hover:bg-buttonWhite/80 border border-[#AEAEB2]',
       },
       size: {
-        default: 'h-10 sm:h-14 px-4 sm:px-6 gap-2 [&_svg]:size-[14px] sm:[&_svg]:size-[18px]',
+        default:
+          'h-10 sm:h-14 px-4 sm:px-6 gap-2 [&_svg]:size-[14px] sm:[&_svg]:size-[18px]',
         // sm: 'h-9 rounded-md px-3',
-        lg: 'h-10 sm:h-16 text-base sm:!text-2xl sm:px-8 gap-4 [&_svg]:size-[16px] sm:[&_svg]:size-[22px]',
+        lg: 'h-10 sm:h-16 text-base sm:!text-2xl sm:px-8 gap-2 sm:gap-4 [&_svg]:size-[16px] sm:[&_svg]:size-[22px]',
         // icon: 'h-10 w-10',
       },
     },

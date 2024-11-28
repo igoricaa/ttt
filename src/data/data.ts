@@ -1,4 +1,11 @@
-import { Achievement, Event, Highlight, Member, Route } from '@/lib/types';
+import {
+  Achievement,
+  Event,
+  Highlight,
+  Member,
+  Membership,
+  Route,
+} from '@/lib/types';
 
 export const routes: Route[] = [
   {
@@ -222,5 +229,44 @@ export const members: Member[] = [
         url: 'https://www.instagram.com/thunder_top_team/',
       },
     ],
+  },
+];
+
+export const memberships: Membership[] = [
+  {
+    title: 'Basic',
+    description: [
+      'Access to all classes',
+      'Access to all equipment',
+      'Access to all facilities',
+      'Benefit from our 10% discount on all products',
+      'Free entry to all events',
+      'Free use of towels and shower facilities',
+    ],
+    image: '/memberships/membership.png',
+  },
+  {
+    title: 'VIP',
+    description: [
+      'Access to all classes',
+      'Access to all equipment',
+      'Access to all facilities',
+      'Benefit from our 10% discount on all products',
+      'Free entry to all events',
+      'Free use of towels and shower facilities',
+    ],
+    image: '/memberships/membership.png',
+  },
+  {
+    title: 'Premium',
+    description: [
+      'Access to all classes',
+      'Access to all equipment',
+      'Access to all facilities',
+      'Benefit from our 10% discount on all products',
+      'Free entry to all events',
+      'Free use of towels and shower facilities',
+    ],
+    image: '/memberships/membership.png',
   },
 ];

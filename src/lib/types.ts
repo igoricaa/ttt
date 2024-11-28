@@ -39,3 +39,9 @@ export type Social = {
   name: string;
   url: string;
 };
+
+export type Membership = {
+  title: string;
+  description: string[];
+  image: string;
+};

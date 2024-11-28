@@ -22,7 +22,7 @@ const Member = ({
       className={`keen-slider__slide number-slide-${
         memberIndex + 1
       } !overflow-visible ${
-        isActive ? 'z-10 sm:mr-[108px] lg:mr-[128px]' : 'z-0 mr-0'
+        isActive ? 'z-10 sm:mr-[108px] lg:mr-32' : 'z-0 mr-0'
       }}`}
     >
       <div
@@ -41,7 +41,7 @@ const Member = ({
           fill
           style={{ objectFit: 'cover' }}
         />
-        <div className='absolute top-0 right-[-174px] sm:right-[-108px] lg:right-[-128px] z-10 w-[240px] sm:w-[282px] lg:w-[325px] h-full sm:h-3/4 lg:h-2/3 flex justify-start sm:justify-center'>
+        <div className='absolute top-0 right-[-174px] sm:right-[-108px] lg:-right-32 z-10 w-[240px] sm:w-[282px] lg:w-[325px] h-full sm:h-3/4 lg:h-2/3 flex justify-start sm:justify-center'>
           <div
             onClick={() => setActiveMemberIndex(memberIndex)}
             style={{

@@ -3,13 +3,22 @@
 @tailwind utilities;
 
 @layer base {
+
+  /* --primary-color: #9c9c8d;
+  --primary-dark-color: #30321c;
+  --green-color: #4a4b2f;
+  --yellow-color: #fcfc62;
+  --background: var(--primary-color);
+  --text-color: #fff; */
+
   :root {
-    --primary-color: #9c9c8d;
-    --primary-dark-color: #30321c;
-    --green-color: #4a4b2f;
-    --yellow-color: #fcfc62;
-    --background: var(--primary-color);
-    --text-color: #fff;
+    --primary-color-rgb: 156, 156, 141;
+    --primary-dark-color-rgb: 48, 50, 28;
+    --green-color-rgb: 74, 75, 47;
+    --yellow-color-rgb: 252, 252, 98;
+    --background-rgb: var(--primary-color-rgb);
+    --text-color-rgb: 255, 255, 255;
+    --button-white-rgb: 254, 255, 234;
 
     --padding-side: 3rem;
   }

@@ -13,7 +13,7 @@ const Link = ({
 }: LinkProps & {
   children: React.ReactNode;
   className?: string;
-  variant?: 'default' | 'dark' | 'yellow' | 'transparent';
+  variant?: 'default' | 'dark' | 'yellow' | 'transparent' | 'white';
   size?: 'default' | 'lg';
 }) => {
   return (
@@ -23,9 +23,14 @@ const Link = ({
     >
       <>
         <ArrowIcon
-          className='w-5 h-5'
           color={
-            variant === 'transparent' ? '#6B654B' : variant === 'yellow' ? '#000' : '#fff'
+            variant === 'transparent'
+              ? '#6B654B'
+              : variant === 'yellow'
+              ? '#000'
+              : variant === 'white'
+              ? '#30321C'
+              : '#fff'
           }
         />
         {children}
