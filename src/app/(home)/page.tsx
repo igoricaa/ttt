@@ -1,5 +1,5 @@
 import Events from '@/components/home/Events';
-import Gallery from '@/components/home/gallery';
+import Gallery from '@/components/home/Gallery';
 import Hero from '@/components/home/Hero';
 import Highlights from '@/components/home/Highlights';
 import OurStory from '@/components/home/OurStory';

@@ -45,7 +45,7 @@ const Events = () => {
                 <div className='flex flex-col justify-between h-full gap-y-1 sm:gap-y-2'>
                   <div className='flex flex-col sm:flex-row justify-between gap-y-1'>
                     <h3 className='text-lg font-medium'>{event.title}</h3>
-                    <span className='text-lg font-medium text-[#777777]'>
+                    <span className='text-lg font-medium text-[#777777] whitespace-nowrap'>
                       {event.time}
                     </span>
                   </div>

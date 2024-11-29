@@ -1,100 +1,69 @@
 'use client';
 
-import { useRef, useEffect } from 'react';
+import Image from 'next/image';
 import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useRef } from 'react';
+import { useGSAP } from '@gsap/react';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Gallery = () => {
-  const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const imageRef1 = useRef<HTMLDivElement>(null);
+  const imageRef2 = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    imageRefs.current.forEach((el) => {
-      if (el) {
-        const bgImage = el.style.backgroundImage.match(
-          /(?:\(['"]?)(.*?)(?:['"]?\))/
-        )?.[1];
-        if (bgImage) {
-          gsap.set(el, { backgroundImage: 'none' });
+  useGSAP(() => {
+    const image1 = imageRef1.current;
+    const image2 = imageRef2.current;
 
-          const totalInnerElems = parseInt(
-            el.dataset.repetitionElems || '4',
-            10
-          );
-          let innerHTML = '';
-          for (let i = 0; i < totalInnerElems; i++) {
-            innerHTML += `<div class="image__element" style="background-image:url(${bgImage})"></div>`;
-          }
-          el.innerHTML = innerHTML;
-
-          const innerElems = el.querySelectorAll('.image__element');
-          gsap.set([el, innerElems[0]], {
-            transformOrigin: el.dataset.repetitionOrigin || '50% 50%',
+    if (image1 && image2) {
+      const trigger = ScrollTrigger.create({
+        trigger: image1,
+        start: 'top 70%',
+        end: 'bottom top',
+        onEnter: () => {
+          gsap.to(image1, {
+            opacity: 1,
+            x: 0,
+            duration: 0.6,
           });
+          gsap.to(image2, {
+            opacity: 1,
+            x: 0,
+            duration: 0.6,
+          });
+        },
+      });
 
-          const property = el.dataset.repetitionAnimate || 'scale';
-          const animationProperties = {
-            duration: parseFloat(el.dataset.repetitionDuration || '0.8'),
-            ease: el.dataset.repetitionEase || 'power2.inOut',
-            stagger: parseFloat(el.dataset.repetitionStagger || '-0.1'),
-            [property]: (i: number) => (i === 0 ? 1 : 0),
-          };
-          const firstInnerElementProperties = {
-            [property]: parseFloat(el.dataset.repetitionInitialScale || '2'),
-          };
-
-          const hoverTimeline = gsap
-            .timeline({ paused: true })
-            .set(innerElems[0], firstInnerElementProperties)
-            .to(innerElems, animationProperties, 0);
-
-          el.addEventListener('mouseenter', () => hoverTimeline.play());
-          el.addEventListener('mouseleave', () => hoverTimeline.reverse());
-        }
-      }
-    });
+      return () => trigger.kill();
+    }
   }, []);
 
   return (
-    <section>
-      <div className='flex justify-center space-x-4 pt-20 sm:pt-36 lg:pt-56'>
-        <div
-          ref={(el) => {
-            if (el) {
-              imageRefs.current[0] = el;
-            }
-          }}
-          className='image image--style-1 cursor-pointer'
-          data-repetition
-          data-repetition-elems='3'
-          data-repetition-stagger='-0.12'
-          data-repetition-initial-scale='1.5'
-          style={{ backgroundImage: 'url(gallery/gallery-1.png)' }}
-        ></div>
-        <div
-          ref={(el) => {
-            if (el) {
-              imageRefs.current[1] = el;
-            }
-          }}
-          className='image image--style-1 cursor-pointer'
-          data-repetition
-          data-repetition-elems='4'
-          style={{ backgroundImage: 'url(gallery/gallery-1.png)' }}
-        ></div>
-        <div
-          ref={(el) => {
-            if (el) {
-              imageRefs.current[2] = el;
-            }
-          }}
-          className='image image--style-1 cursor-pointer'
-          data-repetition
-          data-repetition-elems='5'
-          data-repetition-stagger='-0.15'
-          data-repetition-initial-scale='1.05'
-          data-repetition-duration='0.5'
-          data-repetition-ease='power1.inOut'
-          style={{ backgroundImage: 'url(gallery/gallery-1.png)' }}
-        ></div>
+    <section className='grid lg:grid-cols-2 mt-12 sm:mt-16 lg:mt-20 2xl:mt-24'>
+      <div
+        ref={imageRef1}
+        className='relative aspect-[1300/1154] lg:col-span-1 w-full h-full opacity-0 -translate-x-1/3'
+      >
+        <Image
+          src='/gallery/gallery-1.png'
+          alt='Thunder Top Team'
+          fill
+          className='object-cover'
+          sizes='(max-width: 1024px) 50vw, 100vw'
+        />
+      </div>
+      <div
+        ref={imageRef2}
+        className='relative aspect-[1300/1154] lg:col-span-1 w-full h-full opacity-0 translate-x-1/3'
+      >
+        <Image
+          src='/gallery/gallery-2.png'
+          alt='Thunder Top Team'
+          fill
+          className='object-cover'
+          sizes='(max-width: 1024px) 50vw, 100vw'
+        />
       </div>
     </section>
   );
