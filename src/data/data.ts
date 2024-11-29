@@ -362,3 +362,31 @@ export const programs: Program[] = [
     image: '/programs/kids.jpeg',
   },
 ];
+
+export const gallery = [
+  {
+    image: '/gallery/gallery-1.jpg',
+  },
+  {
+    image: '/gallery/gallery-2.jpg',
+  },
+  {
+    image: '/gallery/gallery-3.jpg',
+  },
+  {
+    image: '/gallery/gallery-4.jpg',
+  },
+  {
+    image: '/gallery/gallery-5.jpg',
+  },
+  {
+    image: '/gallery/gallery-6.jpg',
+  },
+  {
+    image: '/gallery/gallery-7.jpg',
+  },
+  {
+    image: '/gallery/gallery-8.jpg',
+  },
+  
+];

@@ -1,7 +1,7 @@
 import Events from '@/components/home/Events';
+import Gallery from '@/components/home/gallery';
 import Hero from '@/components/home/Hero';
 import Highlights from '@/components/home/Highlights';
-import JoinNow from '@/components/home/JoinNow';
 import OurStory from '@/components/home/OurStory';
 // import { useTranslations } from 'next-intl';
 // import { setRequestLocale } from 'next-intl/server';
@@ -23,7 +23,7 @@ const Page = async () => {
       <Hero />
       <OurStory />
       <Highlights />
-      {/* <BreakSection />*/}
+      <Gallery />
       <Events />
     </main>
   );

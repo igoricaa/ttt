@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-
   /* --primary-color: #9c9c8d;
   --primary-dark-color: #30321c;
   --green-color: #4a4b2f;
@@ -56,4 +55,26 @@
   :root {
     --padding-side: 1rem;
   }
+}
+
+.image {
+  @apply max-w-[30vw] mx-[1vw] grid cursor-pointer relative overflow-hidden;
+}
+
+.image--style-1 {
+  @apply w-[285px] h-[450px] rounded-[145px];
+}
+
+.image > .image__element,
+.image__wrap {
+  @apply relative w-full h-full will-change-transform;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.image__wrap {
+  @apply overflow-hidden;
+}
+
+.image__element {
+  @apply w-full h-full bg-cover bg-center;
 }
