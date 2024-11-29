@@ -15,6 +15,8 @@ const buttonVariants = cva(
         yellow: 'bg-yellow text-black hover:bg-yellow/80 border-white/40',
         transparent:
           'bg-transparent text-[#6B654B] hover:bg-white/20 border-white/40',
+        transparentWhite:
+          'bg-transparent text-white hover:bg-white/20 border-white/40',
         white:
           'bg-buttonWhite text-primary-dark hover:bg-buttonWhite/80 border-[#AEAEB2]',
       },

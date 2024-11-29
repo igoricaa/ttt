@@ -13,7 +13,13 @@ const Link = ({
 }: LinkProps & {
   children: React.ReactNode;
   className?: string;
-  variant?: 'default' | 'dark' | 'yellow' | 'transparent' | 'white';
+  variant?:
+    | 'default'
+    | 'dark'
+    | 'yellow'
+    | 'transparent'
+    | 'transparentWhite'
+    | 'white';
   size?: 'default' | 'lg';
 }) => {
   return (
@@ -26,6 +32,8 @@ const Link = ({
           color={
             variant === 'transparent'
               ? '#6B654B'
+              : variant === 'transparentWhite'
+              ? '#fff'
               : variant === 'yellow'
               ? '#000'
               : variant === 'white'

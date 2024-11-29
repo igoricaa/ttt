@@ -5,6 +5,7 @@ import {
   Highlight,
   Member,
   Membership,
+  Program,
   Route,
   Social,
 } from '@/lib/types';
@@ -320,5 +321,44 @@ export const socials: Social[] = [
   {
     name: 'Tiktok',
     url: 'https://www.tiktok.com/@thundertopteam',
+  },
+];
+
+export const programs: Program[] = [
+  {
+    title: 'Strength TRAINING',
+    description:
+      'Highest level of coaching in the baklans. From the UFC & KSW veterans',
+    image: '/programs/strength.webp',
+  },
+  {
+    title: 'Jiu-Jitsu',
+    description:
+      'Sessions held Every Day. Highest level of coaching in the baklans. From the UFC & KSW veterans',
+    image: '/programs/jiu-jitsu.jpg',
+  },
+  {
+    title: 'MMA',
+    description:
+      'Highest level of coaching in the baklans. From the UFC & KSW veterans',
+    image: '/programs/mma.jpg',
+  },
+  {
+    title: 'BOXING',
+    description:
+      'Sessions held Every Day. Highest level of coaching in the baklans. From the UFC & KSW veterans',
+    image: '/programs/boxing.jpg',
+  },
+  {
+    title: 'Self-Defense for women',
+    description:
+      'Highest level of coaching in the baklans. From the UFC & KSW veterans',
+    image: '/programs/self-defense.jpg',
+  },
+  {
+    title: 'Kids Classes',
+    description:
+      'Sessions held Every Day. Highest level of coaching in the baklans. From the UFC & KSW veterans',
+    image: '/programs/kids.jpeg',
   },
 ];
