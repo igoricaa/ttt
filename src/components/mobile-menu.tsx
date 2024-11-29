@@ -25,8 +25,8 @@ const MobileNav = () => {
         <div
           className={`flex flex-col justify-between lg:hidden absolute top-0 left-0 w-[100vw] h-[100vh] sm:h-auto pt-24 sm:pt-36 pb-8 sm:pb-10 bg-black transition-all duration-500 ${
             isOpen
-              ? 'translate-x-0 opacity-100 visible'
-              : 'translate-x-full opacity-0 invisible'
+              ? 'translate-y-0 opacity-100 visible'
+              : '-translate-y-full opacity-0 invisible'
           }`}
         >
           <div className='absolute top-6 left-4 sm:left-8 flex items-center gap-x-2 sm:gap-x-4'>
@@ -133,20 +133,20 @@ const Burger = ({
 }) => {
   return (
     <button onClick={handleClick} className='lg:hidden z-50 '>
-      <div className='w-10 h-6 flex flex-col justify-center items-end gap-[6px]'>
+      <div className='w-8 h-6 flex flex-col justify-center items-end gap-[6px]'>
         <span
-          className={`block w-full h-1 bg-white transition-all duration-300 origin-center ${
-            isOpen ? 'rotate-45 translate-y-[10px] ' : ''
+          className={`block w-full h-[3px] bg-white transition-all duration-300 origin-center ${
+            isOpen ? 'rotate-45 translate-y-[9px] ' : ''
           }`}
         />
         <span
-          className={`block w-8 h-1 bg-white transition-all duration-300 ${
+          className={`block w-6 h-[3px] bg-white transition-all duration-300 ${
             isOpen ? 'scale-0' : 'scale-100'
           }`}
         />
         <span
-          className={`block w-full h-1 bg-white transition-all duration-300 origin-center ${
-            isOpen ? '-rotate-45 -translate-y-[10px]' : ''
+          className={`block w-full h-[3px] bg-white transition-all duration-300 origin-center ${
+            isOpen ? '-rotate-45 -translate-y-[9px]' : ''
           }`}
         />
       </div>

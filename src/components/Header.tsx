@@ -6,7 +6,7 @@ import Logo from './ui/logos/logo';
 
 const Header = () => {
   return (
-    <header className='absolute top-0 left-0 w-full lg:top-5 z-50 flex items-center justify-between sm:justify-end lg:block px-side pt-2 sm:pt-6 lg:pt-0'>
+    <header className='absolute top-0 left-0 w-full lg:top-5 z-50 flex items-center justify-between sm:justify-end lg:block px-side pt-6 sm:pt-10 lg:pt-0'>
       <div className='lg:hidden sm:absolute sm:left-1/2 sm:-translate-x-1/2'>
         <Logo
           color='#4A4B2F'
