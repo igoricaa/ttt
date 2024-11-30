@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
         <div className='order-1 sm:order-2 col-span-full sm:col-start-3 lg:col-start-9 2xl:col-span-4 2xl:col-start-9 3xl:col-span-3 3xl:col-start-10 sm:pl-4 lg:pl-0 flex flex-col items-end '>
           <LinkButton
-            href='/'
+            href='/contact-us'
             variant='yellow'
             size='lg'
             className='w-full max-w-[444px]'
@@ -42,7 +42,7 @@ const Footer = () => {
             Schedula a Free Tour
           </LinkButton>
           <LinkButton
-            href='/'
+            href='/contact-us'
             variant='transparent'
             size='lg'
             className='w-full max-w-[444px] mt-4'
@@ -54,34 +54,66 @@ const Footer = () => {
 
       <div className='grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12 gap-x-4 gap-y-9 sm:gap-y-4'>
         <div className='flex flex-col sm:hidden mt-20 gap-y-4'>
-          <Link href='/' className='font-medium uppercase'>
+          <a
+            href='https://www.instagram.com/thunder_top_team/'
+            target='_blank'
+            className='font-medium uppercase'
+          >
             Instagram
-          </Link>
-          <Link href='/' className='font-medium uppercase'>
+          </a>
+          <a
+            href='https://www.facebook.com/thundertopteam/'
+            target='_blank'
+            className='font-medium uppercase'
+          >
             Facebook
-          </Link>
-          <Link href='/' className='font-medium uppercase'>
+          </a>
+          <a
+            href='https://x.com/thundertopteam'
+            target='_blank'
+            className='font-medium uppercase'
+          >
             X
-          </Link>
-          <Link href='/' className='font-medium uppercase'>
+          </a>
+          <a
+            href='https://www.tiktok.com/@thundertopteam'
+            target='_blank'
+            className='font-medium uppercase'
+          >
             TikTok
-          </Link>
+          </a>
         </div>
         <LogoTypography className='col-span-full lg:col-span-8 2xl:col-span-6 self-end' />
         <div className='col-span-full lg:col-span-4 2xl:col-span-4 2xl:col-start-9 3xl:col-span-3 3xl:col-start-10 flex lg:flex-col gap-x-3 gap-y-4 justify-between lg:justify-end items-end'>
           <div className='hidden sm:flex gap-x-4'>
-            <Link href='/' className='font-medium uppercase'>
+            <a
+              href='https://www.instagram.com/thunder_top_team/'
+              target='_blank'
+              className='font-medium uppercase'
+            >
               Instagram
-            </Link>
-            <Link href='/' className='font-medium uppercase'>
+            </a>
+            <a
+              href='https://www.facebook.com/thundertopteam/'
+              target='_blank'
+              className='font-medium uppercase'
+            >
               Facebook
-            </Link>
-            <Link href='/' className='font-medium uppercase'>
+            </a>
+            <a
+              href='https://x.com/thundertopteam'
+              target='_blank'
+              className='font-medium uppercase'
+            >
               X
-            </Link>
-            <Link href='/' className='font-medium uppercase'>
+            </a>
+            <a
+              href='https://www.tiktok.com/@thundertopteam'
+              target='_blank'
+              className='font-medium uppercase'
+            >
               TikTok
-            </Link>
+            </a>
           </div>
           <p className='text-sm sm:text-nowrap'>
             <span className='italic'>Hours</span>:Mo-Fri{' '}

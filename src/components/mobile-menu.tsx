@@ -108,7 +108,7 @@ const MobileNav = () => {
             </div>
 
             <LinkButton
-              href='/'
+              href='/contact-us'
               variant='yellow'
               size='lg'
               className='w-[calc(100%-2*var(--padding-side))] mt-6 mx-auto flex'
