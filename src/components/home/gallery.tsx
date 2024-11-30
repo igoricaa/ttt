@@ -40,7 +40,7 @@ const Gallery = () => {
   }, []);
 
   return (
-    <section className='grid lg:grid-cols-2 mt-12 sm:mt-16 lg:mt-20 2xl:mt-24'>
+    <section className='grid lg:grid-cols-2 mt-12 sm:mt-16 lg:mt-20 2xl:mt-24 overflow-hidden'>
       <div
         ref={imageRef1}
         className='relative aspect-[1300/1154] lg:col-span-1 w-full h-full opacity-0 -translate-x-1/3'

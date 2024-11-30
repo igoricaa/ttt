@@ -47,8 +47,12 @@ export default {
       },
       animation: {
         slide: 'slide 20s linear infinite',
+        reveal: 'reveal 1s forwards cubic-bezier(0.77, 0, 0.175, 1)',
       },
       keyframes: {
+        reveal: {
+          to: { clipPath: 'inset(0 0 0 0)' },
+        },
         slide: {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-50%)' },

@@ -57,7 +57,13 @@
   }
 }
 
-.image {
+@layer utilities {
+  .clip-path-animation {
+    clip-path: inset(0 50% 0 50%);
+  }
+}
+
+/* .image {
   @apply max-w-[30vw] mx-[1vw] grid cursor-pointer relative overflow-hidden;
 }
 
@@ -77,4 +83,4 @@
 
 .image__element {
   @apply w-full h-full bg-cover bg-center;
-}
+} */
