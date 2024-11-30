@@ -4,7 +4,7 @@ import Link from '../ui/link-button';
 
 const Hero = () => {
   return (
-    <section className='grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12 sm:h-[calc(100vw-12px)] lg:h-[769px] 2xl:h-[888px] relative sm:mt-5 sm:pb-5 lg:pb-10 px-4 lg:px-side'>
+    <section className='grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12 sm:h-[calc(100vw-12px)] lg:h-[calc(100vh-1.25rem)] relative sm:mt-5 sm:pb-5 lg:pb-10 px-4 lg:px-side'>
       <div className='relative sm:absolute col-span-full left-1/2 -translate-x-1/2 w-[calc(100vw-32px)] lg:w-[calc(100vw-2*var(--padding-side))] aspect-square sm:aspect-auto sm:h-full -z-10'>
         <Image
           src={heroBg}
