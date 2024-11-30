@@ -40,8 +40,9 @@ const Link = ({
               ? '#30321C'
               : '#fff'
           }
+          className='relative z-10'
         />
-        {children}
+        <span className='relative z-10'>{children}</span>
       </>
     </LinkTransitions>
   );

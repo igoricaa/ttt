@@ -12,13 +12,17 @@
 
   :root {
     --primary-color-rgb: 156, 156, 141;
+    --primary-color-rgb-20: 125, 125, 113;
     --primary-dark-color-rgb: 48, 50, 28;
+    --primary-dark-color-rgb-20: 38, 40, 22;
     --green-color-rgb: 74, 75, 47;
+    --green-color-rgb-20: 59, 60, 38;
     --yellow-color-rgb: 252, 252, 98;
+    --yellow-color-rgb-20: 227, 227, 88;
     --background-rgb: var(--primary-color-rgb);
     --text-color-rgb: 255, 255, 255;
     --button-white-rgb: 254, 255, 234;
-
+    --button-white-rgb-20: 203, 204, 187;
     --padding-side: 3rem;
   }
 

@@ -33,11 +33,22 @@ export default {
         text: 'rgba(var(--text-color-rgb), <alpha-value>)',
         primary: {
           default: 'rgba(var(--primary-color-rgb), <alpha-value>)',
+          defaultDarker: 'rgba(var(--primary-color-rgb-20), <alpha-value>)',
           dark: 'rgba(var(--primary-dark-color-rgb), <alpha-value>)',
+          dark20: 'rgba(var(--primary-dark-color-rgb-20), <alpha-value>)',
         },
-        green: 'rgba(var(--green-color-rgb), <alpha-value>)',
-        yellow: 'rgba(var(--yellow-color-rgb), <alpha-value>)',
-        buttonWhite: 'rgba(var(--button-white-rgb), <alpha-value>)',
+        green: {
+          default: 'rgba(var(--green-color-rgb), <alpha-value>)',
+          darker: 'rgba(var(--green-color-rgb-20), <alpha-value>)',
+        },
+        yellow: {
+          default: 'rgba(var(--yellow-color-rgb), <alpha-value>)',
+          darker: 'rgba(var(--yellow-color-rgb-20), <alpha-value>)',
+        },
+        buttonWhite: {
+          default: 'rgba(var(--button-white-rgb), <alpha-value>)',
+          darker: 'rgba(var(--button-white-rgb-20), <alpha-value>)',
+        },
       },
       padding: {
         side: 'var(--padding-side)',

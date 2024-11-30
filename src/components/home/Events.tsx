@@ -37,7 +37,7 @@ const Events = () => {
                 <span className='text-2xl font-medium text-primary-dark bg-white w-full h-[38px] flex items-center justify-center rounded-t-[4px]'>
                   {event.date.day}
                 </span>
-                <span className='text-sm w-full h-[22px] bg-green flex items-center justify-center rounded-b-[4px]'>
+                <span className='text-sm w-full h-[22px] bg-green-default flex items-center justify-center rounded-b-[4px]'>
                   {event.date.month}
                 </span>
               </div>

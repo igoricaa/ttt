@@ -48,7 +48,7 @@ const MembersSlider = () => {
         <h2 className='text-3xl sm:text-7xl lg:text-6xl font-semibold uppercase'>
           Notable <br className='lg:hidden' /> members
         </h2>
-        <div className='relative flex gap-x-4 sm:gap-x-6 items-center px-4 sm:px-6 h-[40px] sm:h-[72px] bg-green rounded-full border border-primary-dark'>
+        <div className='relative flex gap-x-4 sm:gap-x-6 items-center px-4 sm:px-6 h-[40px] sm:h-[72px] bg-green-default rounded-full border border-primary-dark'>
           {loaded && instanceRef.current && (
             <>
               <Arrow

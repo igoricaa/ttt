@@ -67,7 +67,9 @@ const MembershipCard = ({
     <article
       className={cn(
         'flex flex-col items-center gap-y-6 sm:gap-y-8 col-span-full sm:col-span-5 lg:col-span-4 rounded-t-[529px] px-12 pb-16 sm:pb-[86px] lg:pb-32',
-        isMain ? 'sm:col-start-2 lg:col-start-5 bg-green' : 'bg-green/20',
+        isMain
+          ? 'sm:col-start-2 lg:col-start-5 bg-green-default'
+          : 'bg-green-default/20',
         isLeft && 'rounded-bl-[529px]',
         isRight && 'rounded-br-[529px]'
       )}

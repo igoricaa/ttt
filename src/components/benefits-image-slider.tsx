@@ -53,7 +53,7 @@ const BenefitsImageSlider = ({
   return (
     <div className='relative sm:hidden pl-side'>
       {loaded && instanceRef.current && (
-        <div className='absolute flex z-10 top-6 right-4 gap-x-4 items-center px-4 h-[40px] bg-green rounded-full border border-primary-dark'>
+        <div className='absolute flex z-10 top-6 right-4 gap-x-4 items-center px-4 h-[40px] bg-green-default rounded-full border border-primary-dark'>
           <Arrow
             left
             onClick={(e: any) => handleBenefitChange('previous', e)}
