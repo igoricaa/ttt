@@ -5,7 +5,7 @@ import Logo from './logo';
 import { useEffect, useState } from 'react';
 
 const pageColors: Record<string, string> = {
-  '/': '#000',
+  '/': '#fff',
   '/about-us': '#4A4B2F',
   '/contact-us': '#4A4B2F',
   '/memberships': '#4A4B2F',
