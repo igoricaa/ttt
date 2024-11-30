@@ -1,10 +1,10 @@
 'use client';
 
 import { events } from '@/data/data';
-import LocationIcon from '../icons/LocationIcon';
 import { Calendar } from '../ui/calendar';
 import { useState, useEffect } from 'react';
 import { Event } from '@/lib/types';
+import LocationIconFilled from '../icons/location-icon-filled';
 
 const Events = () => {
   const [date, setDate] = useState<Date>();
@@ -50,7 +50,7 @@ const Events = () => {
                     </span>
                   </div>
                   <span className='flex items-center gap-x-1'>
-                    <LocationIcon />
+                    <LocationIconFilled />
                     <span className='text-xs text-[#777777]'>
                       {event.location}
                     </span>

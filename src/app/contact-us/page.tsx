@@ -55,7 +55,7 @@ const Page = () => {
             </p>
           </div>
 
-          <div className='hidden lg:block'>
+          {/* <div className='hidden lg:block'>
             <div className='flex gap-x-4'>
               {socials.map((social: Social) => (
                 <a
@@ -79,7 +79,7 @@ const Page = () => {
                 View on map <LocationIconFilled color='#4A4B2F' />
               </span>
             </a>
-          </div>
+          </div> */}
         </div>
         <div className='col-span-full lg:col-span-6 lg:col-start-7'>
           <ContactForm />
@@ -99,7 +99,8 @@ const Page = () => {
           </div>
           <div className='flex flex-col gap-y-4 mt-32'>
             <p className='flex gap-x-2 w-fit'>
-              <LocationIcon color='#FCFC62' /> Palmira Toljatija 5/17, Beograd
+              <LocationIconFilled color='#FCFC62' />
+              Palmira Toljatija 5/17, Beograd
               190430
             </p>
             <p className='flex gap-x-2 w-fit'>
