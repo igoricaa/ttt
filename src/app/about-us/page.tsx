@@ -5,8 +5,8 @@ import Image from 'next/image';
 
 const Page = () => {
   return (
-    <main>
-      <section className='flex lg:flex-row justify-between px-side pt-16 sm:pt-28 lg:pt-48'>
+    <main className='pt-6 sm:pt-12 lg:pt-24'>
+      <section className='flex lg:flex-row justify-between px-side'>
         <div>
           <h1 className='text-3xl sm:text-8xl lg:text-9xl font-bold uppercase whitespace-nowrap'>
             About Us

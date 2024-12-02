@@ -19,7 +19,7 @@ const Page = async () => {
   // const t = useTranslations('HomePage');
 
   return (
-    <main>
+    <main className='-mt-11'>
       <Hero />
       <OurStory />
       <Highlights />

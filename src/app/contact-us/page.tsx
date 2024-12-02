@@ -11,7 +11,7 @@ import Image from 'next/image';
 
 const Page = () => {
   return (
-    <main className='pt-[72px] sm:pt-28 lg:pt-44'>
+    <main className='pt-6 sm:pt-12 lg:pt-20'>
       <section className='w-[calc(100vw-2*var(--padding-side))] mx-auto '>
         <div className='relative aspect-[286/159] sm:aspect-[674/375] lg:aspect-[1824/421] flex flex-col justify-end pb-4'>
           <Image

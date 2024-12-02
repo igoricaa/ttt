@@ -3,7 +3,7 @@ import Link from '@/components/ui/link-button';
 
 const Page = () => {
   return (
-    <main className='lg:h-screen flex flex-col justify-center relative px-side pb-16 lg:pb-10'>
+    <main className='lg:h-screen flex flex-col justify-center relative px-side pb-16 lg:pb-10 mt-[-54px] sm:mt-[-64px]'>
       <Programs />
 
       <Link

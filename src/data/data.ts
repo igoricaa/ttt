@@ -108,31 +108,31 @@ export const achievements: Achievement[] = [
     title: 'UFC 303',
     description:
       'Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit.',
-    image: '/achievements/achievements.png',
+    image: '/achievements/achievements-1.png',
   },
   {
     title: 'Jiu Jitsu World Championship',
     description:
       'Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit.',
-    image: '/achievements/achievements.png',
+    image: '/achievements/achievements-2.jpg',
   },
   {
     title: 'ONE Championship',
     description:
       'Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit.',
-    image: '/achievements/achievements.png',
+    image: '/achievements/achievements-3.jpg',
   },
   {
     title: 'Dusko Todorovic vs Neki kontented',
     description:
       'Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit.',
-    image: '/achievements/achievements.png',
+    image: '/achievements/achievements-4.jpeg',
   },
   {
     title: 'Prikupljanje Dzakova za NK-a da ne lomi kicmu',
     description:
       'Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit.',
-    image: '/achievements/achievements.png',
+    image: '/achievements/achievements-5.jpg',
   },
 ];
 
@@ -388,5 +388,4 @@ export const gallery = [
   {
     image: '/gallery/gallery-8.jpg',
   },
-  
 ];

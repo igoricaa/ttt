@@ -1,12 +1,76 @@
+'use client';
+
 import { routes } from '@/data/data';
 import { Route } from '@/lib/types';
 import NavLink from './ui/nav-link';
 import MobileNav from './mobile-menu';
 import HeaderLogo from './ui/logos/header-logo';
+import { useEffect, useState } from 'react';
+import { cn } from '@/lib/utils';
 
 const Header = () => {
+  const [mounted, setMounted] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [scrollTimeout, setScrollTimeout] = useState<NodeJS.Timeout | null>(
+    null
+  );
+
+  const handleStickyHeader = () => {
+    if (typeof window === 'undefined') return;
+
+    const currentScrollY = window.scrollY;
+
+    if (scrollTimeout) {
+      clearTimeout(scrollTimeout);
+    }
+
+    const timeoutId = setTimeout(() => {
+      setIsHidden(false);
+    }, 100);
+
+    setScrollTimeout(timeoutId);
+
+    if (
+      currentScrollY !== lastScrollY &&
+      (currentScrollY - lastScrollY > 2 ||
+        lastScrollY - currentScrollY > 2) &&
+      currentScrollY > 150
+    ) {
+      setIsHidden(true);
+    }
+
+    setLastScrollY(currentScrollY);
+  };
+
+  useEffect(() => {
+    setMounted(true);
+
+    if (typeof window === 'undefined') {
+      return;
+    }
+
+    window.addEventListener('scroll', handleStickyHeader);
+
+    return () => {
+      window.removeEventListener('scroll', handleStickyHeader);
+      if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+      }
+    };
+  }, [lastScrollY]);
+
+  if (!mounted) {
+    return null;
+  }
+
   return (
-    <header className='absolute top-0 left-0 w-full lg:top-5 z-50 flex items-center justify-between sm:justify-end lg:block px-side pt-6 sm:pt-10 lg:pt-0'>
+    <header
+      className={cn(
+        'sticky top-0 left-0 w-full lg:top-5 z-50 flex items-center justify-between sm:justify-end lg:block px-side pt-4 sm:pt-10 lg:pt-0 transition-all duration-200',
+        isHidden && 'opacity-0 invisible'
+      )}
+    >
       <div className='lg:hidden sm:absolute sm:left-1/2 sm:-translate-x-1/2'>
         <HeaderLogo className='h-[38px] w-[34px] sm:h-[60px] sm:w-[53.5px]' />
       </div>

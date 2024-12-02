@@ -3,6 +3,7 @@
 import { usePathname } from 'next/navigation';
 import Logo from './logo';
 import { useEffect, useState } from 'react';
+import { Link } from 'next-view-transitions';
 
 const pageColors: Record<string, string> = {
   '/': '#fff',
@@ -20,7 +21,11 @@ const HeaderLogo = ({ className }: { className?: string }) => {
     setColor(pageColors[pathname]);
   }, [pathname]);
 
-  return <Logo color={color} className={className} />;
+  return (
+    <Link href='/'>
+      <Logo color={color} className={className} />
+    </Link>
+  );
 };
 
 export default HeaderLogo;

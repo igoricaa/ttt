@@ -8,12 +8,18 @@ import LogoTypography from './ui/logos/logo-typography';
 import NavLink from './ui/nav-link';
 import { Route, Social } from '@/lib/types';
 import LinkButton from './ui/link-button';
+import { Link } from 'next-view-transitions';
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const isMobile = useMediaQuery('(max-width: 1025px)');
 
   const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const toggleMenu = () => {
+    document.body.classList.toggle('noscroll');
     setIsOpen(!isOpen);
   };
 
@@ -30,42 +36,48 @@ const MobileNav = () => {
           }`}
         >
           <div className='absolute top-6 left-4 sm:left-8 flex items-center gap-x-2 sm:gap-x-4'>
-            <Logo className='h-[47px] w-[42px] sm:h-[62px] sm:w-[55px]' />
-            <LogoTypography className='w-[171px] h-[13px] sm:w-[328px] sm:h-6 ' />
+            <Link href='/' onClick={toggleMenu}>
+              <Logo className='h-[47px] w-[42px] sm:h-[62px] sm:w-[55px]' />
+            </Link>
+            <Link href='/' onClick={toggleMenu}>
+              <LogoTypography className='w-[171px] h-[13px] sm:w-[328px] sm:h-6 ' />
+            </Link>
           </div>
-          <ul
+          <div
             className={`px-side grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-4 sm:gap-y-6 transition-all duration-500 ease-in-out`}
           >
-            <div className='flex flex-col gap-y-4 sm:gap-y-6'>
+            <ul className='flex flex-col gap-y-4 sm:gap-y-6'>
               {routes.slice(0, 3).map((route: Route, index: number) => {
                 if (route.label === 'Memberships') route.label = 'Members';
                 return (
-                  <NavLink
-                    key={route.path}
-                    href={route.path}
-                    index={index}
-                    variant='mobilemenu'
-                  >
-                    {route.label}
-                  </NavLink>
+                  <li key={route.path} className='w-fit' onClick={toggleMenu}>
+                    <NavLink
+                      href={route.path}
+                      index={index}
+                      variant='mobilemenu'
+                    >
+                      {route.label}
+                    </NavLink>
+                  </li>
                 );
               })}
-            </div>
-            <div className='flex flex-col gap-y-4 sm:gap-y-6'>
+            </ul>
+            <ul className='flex flex-col gap-y-4 sm:gap-y-6'>
               {routes.slice(3).map((route: Route, index: number) => {
                 return (
-                  <NavLink
-                    key={route.path}
-                    href={route.path}
-                    index={index}
-                    variant='mobilemenu'
-                  >
-                    {route.label}
-                  </NavLink>
+                  <li key={route.path} className='w-fit' onClick={toggleMenu}>
+                    <NavLink
+                      href={route.path}
+                      index={index}
+                      variant='mobilemenu'
+                    >
+                      {route.label}
+                    </NavLink>
+                  </li>
                 );
               })}
-            </div>
-          </ul>
+            </ul>
+          </div>
 
           <div className='mt-12 sm:mt-32'>
             <div className='flex flex-col sm:flex-row sm:justify-center gap-2 px-side'>
