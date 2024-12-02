@@ -6,12 +6,14 @@ import { cn } from '@/lib/utils';
 
 const Link = ({
   children,
+  style,
   className,
   variant = 'default',
   size = 'default',
   ...props
 }: LinkProps & {
   children: React.ReactNode;
+  style?: React.CSSProperties;
   className?: string;
   variant?:
     | 'default'
@@ -26,6 +28,7 @@ const Link = ({
     <LinkTransitions
       {...props}
       className={cn(buttonVariants({ variant, size }), className)}
+      style={style}
     >
       <>
         <ArrowIcon

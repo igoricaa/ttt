@@ -8,7 +8,6 @@ import { cn } from '@/lib/utils';
 const NavLink = ({
   children,
   href,
-  index,
   variant = 'header',
 }: {
   children: React.ReactNode;

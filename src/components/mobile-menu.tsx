@@ -9,6 +9,7 @@ import NavLink from './ui/nav-link';
 import { Route, Social } from '@/lib/types';
 import LinkButton from './ui/link-button';
 import { Link } from 'next-view-transitions';
+import { cn } from '@/lib/utils';
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,7 +51,17 @@ const MobileNav = () => {
               {routes.slice(0, 3).map((route: Route, index: number) => {
                 if (route.label === 'Memberships') route.label = 'Members';
                 return (
-                  <li key={route.path} className='w-fit' onClick={toggleMenu}>
+                  <li
+                    key={route.path}
+                    style={{
+                      transitionDelay: isOpen ? `${300 + (index + 1) * 100}ms` : '0ms',
+                    }}
+                    className={cn(
+                      'w-fit opacity-0 invisible -translate-y-5 transition-all duration-500',
+                      isOpen && 'opacity-100 visible translate-y-0 delay-0'
+                    )}
+                    onClick={toggleMenu}
+                  >
                     <NavLink
                       href={route.path}
                       index={index}
@@ -65,7 +76,17 @@ const MobileNav = () => {
             <ul className='flex flex-col gap-y-4 sm:gap-y-6'>
               {routes.slice(3).map((route: Route, index: number) => {
                 return (
-                  <li key={route.path} className='w-fit' onClick={toggleMenu}>
+                  <li
+                    key={route.path}
+                    style={{
+                      transitionDelay: isOpen ? `${300 + (index + 4) * 100}ms` : '0ms',
+                    }}
+                    className={cn(
+                      'w-fit opacity-0 invisible -translate-y-5 transition-all duration-500',
+                      isOpen && 'opacity-100 visible translate-y-0 delay-0'
+                    )}
+                    onClick={toggleMenu}
+                  >
                     <NavLink
                       href={route.path}
                       index={index}
@@ -87,7 +108,13 @@ const MobileNav = () => {
                     key={index}
                     href={social.url}
                     target='_blank'
-                    className='font-medium uppercase'
+                    style={{
+                      transitionDelay: isOpen ? `${300 + (index + 7) * 100}ms` : '0ms',
+                    }}
+                    className={cn(
+                      'font-medium uppercase opacity-0 invisible -translate-y-5 transition-all duration-500',
+                      isOpen && 'opacity-100 visible translate-y-0 delay-0'
+                    )}
                   >
                     {social.name}
                   </a>
@@ -99,14 +126,28 @@ const MobileNav = () => {
                     key={index}
                     href={social.url}
                     target='_blank'
-                    className='font-medium uppercase'
+                    style={{
+                      transitionDelay: isOpen ? `${300 + (index + 8) * 100}ms` : '0ms',
+                    }}
+                    className={cn(
+                      'font-medium uppercase opacity-0 invisible -translate-y-5 transition-all duration-500',
+                      isOpen && 'opacity-100 visible translate-y-0 delay-0'
+                    )}
                   >
                     {social.name}
                   </a>
                 ))}
               </div>
             </div>
-            <div className='w-full overflow-hidden mt-6'>
+            <div
+              style={{
+                transitionDelay: isOpen ? `${300 + 10 * 100}ms` : '0ms',
+              }}
+              className={cn(
+                'w-full overflow-hidden mt-6 opacity-0 invisible -translate-y-5 transition-all duration-500',
+                isOpen && 'opacity-100 visible translate-y-0 delay-0'
+              )}
+            >
               <div className='flex justify-center items-center gap-x-4 sm:gap-x-6 w-fit animate-slide'>
                 {Array.from({ length: 4 }).map((_, index) => (
                   <p
@@ -123,7 +164,13 @@ const MobileNav = () => {
               href='/contact-us'
               variant='yellow'
               size='lg'
-              className='w-[calc(100%-2*var(--padding-side))] mt-6 mx-auto flex'
+              style={{
+                transitionDelay: isOpen ? `${300 + 11 * 100}ms` : '0ms',
+              }}
+              className={cn(
+                'w-[calc(100%-2*var(--padding-side))] mt-6 mx-auto flex opacity-0 invisible -translate-y-5 transition-all duration-500',
+                isOpen && 'opacity-100 visible translate-y-0 delay-0'
+              )}
             >
               Schedula a Free Tour
             </LinkButton>
