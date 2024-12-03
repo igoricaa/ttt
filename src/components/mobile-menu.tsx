@@ -30,7 +30,7 @@ const MobileNav = () => {
 
       {isMobile && (
         <div
-          className={`flex flex-col justify-between lg:hidden absolute top-0 left-0 w-[100vw] h-[100vh] sm:h-auto pt-24 sm:pt-36 pb-8 sm:pb-10 bg-black transition-all duration-500 ${
+          className={`flex flex-col justify-between lg:hidden absolute top-0 left-0 w-[100vw] h-[100vh] sm:h-auto pt-24 sm:pt-36 pb-8 sm:pb-10 bg-black transition-all duration-500 will-change-[transform,opacity] ${
             isOpen
               ? 'translate-y-0 opacity-100 visible'
               : '-translate-y-full opacity-0 invisible'

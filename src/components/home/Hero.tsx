@@ -11,7 +11,7 @@ const Hero = () => {
           alt='Thunder Top Team Hero'
           fill
           priority
-          sizes='95vw'
+          sizes='100vw'
           style={{ objectFit: 'cover' }}
         />
         <div className='z-20 absolute bottom-3 sm:hidden'>

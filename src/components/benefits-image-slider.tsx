@@ -76,6 +76,7 @@ const BenefitsImageSlider = ({
               src={benefit.image}
               alt={`Thunder Top Team - ${benefit.title}`}
               fill
+              sizes='(max-width: 680px) 75vw, (max-width: 1024px) 50vw, 25vw'
               className={cn(
                 'object-cover',
                 index % 2 === 0 && 'rounded-b-[250px]',

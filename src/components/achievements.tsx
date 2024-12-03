@@ -26,7 +26,7 @@ const Achievements = ({ className }: { className?: string }) => {
                 index === activeAchievement && 'opacity-100 visible'
               )}
               priority={index === 0}
-              sizes='100vw'
+              sizes='(max-width: 1024px) 180px, 536px'
             />
           ))}
         </div>

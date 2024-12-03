@@ -16,6 +16,7 @@ const Page = () => {
             alt='Thunder Top Team Members'
             fill
             priority
+            sizes='100vw'
             className='object-cover rounded-[224px] -z-10'
           />
           <h1 className='text-3xl sm:text-8xl lg:text-9xl font-bold uppercase'>
@@ -80,7 +81,14 @@ const MembershipCard = ({
           isMain ? 'sm:w-[337px]' : 'sm:w-[275px]'
         )}
       >
-        <Image src={image} alt={title} fill priority className='object-cover' />
+        <Image
+          src={image}
+          alt={title}
+          fill
+          sizes={`(max-width: 680px) 128px, ${isMain ? '337px' : '275px'}`}
+          priority
+          className='object-cover'
+        />
       </div>
       <h3 className='text-3xl sm:text-6xl font-semibold uppercase'>{title}</h3>
       <ul className='text-center'>

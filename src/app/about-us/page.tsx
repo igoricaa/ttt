@@ -34,8 +34,10 @@ const Page = () => {
           <Image
             src='/about-us.png'
             alt='Thunder Top Team - About Us'
+            priority
             fill
             style={{ objectFit: 'cover' }}
+            sizes='(max-width: 680px) 100vw, (max-width: 1024px) 85vw, 60vw'
           />
         </div>
         <div className='col-span-full flex flex-col items-end lg:hidden pt-4 sm:pt-0'>

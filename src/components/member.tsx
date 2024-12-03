@@ -39,6 +39,7 @@ const Member = ({
           src={member.image}
           alt={`Thunder Top Team - ${member.name}`}
           fill
+          sizes='(max-width: 680px) 100vw, (max-width: 1024px) 70vw, 37vw'
           style={{ objectFit: 'cover' }}
         />
         <div className='absolute top-0 right-[-174px] sm:right-[-108px] lg:-right-32 z-10 w-[240px] sm:w-[282px] lg:w-[325px] h-full sm:h-3/4 lg:h-2/3 flex justify-start sm:justify-center'>

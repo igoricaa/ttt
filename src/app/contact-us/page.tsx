@@ -2,11 +2,8 @@ import ContactForm from '@/components/contact-form';
 import GoogleMap from '@/components/google-map';
 import ClockIcon from '@/components/icons/clock-icon';
 import LocationIconFilled from '@/components/icons/location-icon-filled';
-import LocationIcon from '@/components/icons/LocationIcon';
 import MailIcon from '@/components/icons/mail-icon';
 import PhoneIcon from '@/components/icons/phone-icon';
-import { socials } from '@/data/data';
-import { Social } from '@/lib/types';
 import Image from 'next/image';
 
 const Page = () => {
@@ -19,6 +16,7 @@ const Page = () => {
             alt='Thunder Top Team Contact Us'
             fill
             priority
+            sizes='100vw'
             className='object-cover rounded-[224px] -z-10'
           />
           <h1 className='text-3xl sm:text-8xl lg:text-9xl font-bold uppercase'>
@@ -100,8 +98,7 @@ const Page = () => {
           <div className='flex flex-col gap-y-4 mt-32'>
             <p className='flex gap-x-2 w-fit'>
               <LocationIconFilled color='#FCFC62' />
-              Palmira Toljatija 5/17, Beograd
-              190430
+              Palmira Toljatija 5/17, Beograd 190430
             </p>
             <p className='flex gap-x-2 w-fit'>
               <ClockIcon /> Working Hours: Mo-Fri 8.00 - 22.00 / Sat 8.00 -
