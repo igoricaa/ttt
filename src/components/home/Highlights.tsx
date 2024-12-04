@@ -1,5 +1,6 @@
 import { highlights } from '@/data/data';
 import { Highlight } from '@/lib/types';
+import InViewWrapper from '../inview-wrapper';
 
 const Highlights = () => {
   return (
@@ -11,16 +12,24 @@ const Highlights = () => {
             index % 2 !== 0 ? 'sm:col-start-2' : 'col-start-1'
           } lg:col-start-auto lg:col-span-4 ${
             index === 1 ? 'lg:-translate-y-28' : ''
-          } `}
+          }`}
         >
-          <h3 className='text-3xl sm:text-6xl lg:text-5xl font-semibold uppercase'>
-            {highlight.title.ptOne}
-            <br />
-            <span className='italic'>{highlight.title.ptTwo}</span>
-          </h3>
-          <p className='mt-4 sm:mt-8 text-base sm:text-xl'>
-            {highlight.description}
-          </p>
+          <InViewWrapper
+            from={{ opacity: 0, transform: 'translateY(40px)' }}
+            to={{
+              opacity: 1,
+              transform: 'translateY(0)',
+            }}
+          >
+            <h3 className='text-3xl sm:text-6xl lg:text-5xl font-semibold uppercase'>
+              {highlight.title.ptOne}
+              <br />
+              <span className='italic'>{highlight.title.ptTwo}</span>
+            </h3>
+            <p className='mt-4 sm:mt-8 text-base sm:text-xl'>
+              {highlight.description}
+            </p>
+          </InViewWrapper>
         </div>
       ))}
     </section>
