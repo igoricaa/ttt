@@ -11,16 +11,18 @@ const InViewWrapper = ({
   children,
   start = 'top 70%',
   end = 'bottom top',
-  duration = 0.6,
-  from = { opacity: 0, transform: 'translateY(40px)' },
-  to = { opacity: 1, transform: 'translateY(0)' },
+  duration = 0.5,
+  from,
+  to,
+  className,
 }: {
   children: React.ReactNode;
   start?: string;
   end?: string;
   duration?: number;
-  from?: CSSProperties;
-  to?: CSSProperties;
+  from: CSSProperties;
+  to: CSSProperties;
+  className?: string;
 }) => {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -45,7 +47,7 @@ const InViewWrapper = ({
   }, []);
 
   return (
-    <div ref={ref} style={{ ...from }}>
+    <div ref={ref} style={{ ...from }} className={className}>
       {children}
     </div>
   );
