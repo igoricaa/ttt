@@ -24,9 +24,9 @@ const NavLink = ({
       className={cn(
         `group uppercase transition-all duration-300 hover:opacity-100 `,
         variant === 'header' &&
-          'flex items-center gap-x-2 font-medium hover:blur-0',
+          'flex items-center gap-x-2 font-medium',
         variant === 'mobilemenu' && `text-xl sm:text-5xl font-bold`,
-        variant === 'header' && !isActive && 'opacity-60 blur-[1px]'
+        variant === 'header' && !isActive && 'opacity-60'
       )}
     >
       {children}
