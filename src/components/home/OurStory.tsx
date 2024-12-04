@@ -5,8 +5,8 @@ const OurStory = () => {
   return (
     <section className='grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12 gap-x-4 px-side'>
       <InViewWrapper
-        from={{ opacity: 0, transform: 'translateX(-40px)' }}
-        to={{ opacity: 1, transform: 'translateX(0)' }}
+        from={{ opacity: 0, filter: 'blur(4px)', transform: 'translateX(-40px)' }}
+        to={{ opacity: 1, filter: 'blur(0px)', transform: 'translateX(0)' }}
         className='hidden lg:flex col-span-3 2xl:col-span-2'
       >
         <div className='flex gap-x-10'>
@@ -20,8 +20,8 @@ const OurStory = () => {
       </InViewWrapper>
       <div className='pt-12 sm:pt-11 col-span-full lg:col-span-8 lg:col-start-4'>
         <InViewWrapper
-          from={{ opacity: 0, transform: 'translateY(40px)' }}
-          to={{ opacity: 1, transform: 'translateY(0)' }}
+          from={{ opacity: 0, filter: 'blur(4px)', transform: 'translateY(40px)' }}
+          to={{ opacity: 1, filter: 'blur(0px)', transform: 'translateY(0)' }}
         >
           <p className='text-xl sm:text-2xl text-center uppercase'>
             At TTT, fighters of all levels come together to push their limits,
@@ -32,8 +32,8 @@ const OurStory = () => {
         </InViewWrapper>
         <div className='mt-12 sm:mt-16 lg:mt-11 2xl:mt-[88px] grid grid-cols-8 gap-x-4'>
           <InViewWrapper
-            from={{ opacity: 0, transform: 'translateY(40px)' }}
-            to={{ opacity: 1, transform: 'translateY(0)' }}
+            from={{ opacity: 0, filter: 'blur(4px)', transform: 'translateY(40px)' }}
+            to={{ opacity: 1, filter: 'blur(0px)', transform: 'translateY(0)' }}
             className='col-span-full lg:col-span-6 lg:col-start-2'
           >
             <h2 className='text-3xl sm:text-6xl 2xl:text-7xl font-semibold uppercase'>
@@ -41,8 +41,8 @@ const OurStory = () => {
             </h2>
           </InViewWrapper>
           <InViewWrapper
-            from={{ opacity: 0, transform: 'translateY(40px)' }}
-            to={{ opacity: 1, transform: 'translateY(0)' }}
+            from={{ opacity: 0, filter: 'blur(4px)', transform: 'translateY(40px)' }}
+            to={{ opacity: 1, filter: 'blur(0px)', transform: 'translateY(0)' }}
             className='mt-8 col-span-full lg:col-span-6 lg:col-start-2'
           >
             <p className='text-base sm:text-xl'>
@@ -53,8 +53,8 @@ const OurStory = () => {
             </p>
           </InViewWrapper>
           <InViewWrapper
-            from={{ opacity: 0, transform: 'translateY(40px)' }}
-            to={{ opacity: 1, transform: 'translateY(0)' }}
+            from={{ opacity: 0, filter: 'blur(4px)', transform: 'translateY(40px)' }}
+            to={{ opacity: 1, filter: 'blur(0px)', transform: 'translateY(0)' }}
             className='col-span-full lg:col-span-6 lg:col-start-2 mt-5'
           >
             <p className='text-base sm:text-xl'>

@@ -15,9 +15,14 @@ const Highlights = () => {
           }`}
         >
           <InViewWrapper
-            from={{ opacity: 0, transform: 'translateY(40px)' }}
+            from={{
+              opacity: 0,
+              filter: 'blur(4px)',
+              transform: 'translateY(40px)',
+            }}
             to={{
               opacity: 1,
+              filter: 'blur(0px)',
               transform: 'translateY(0)',
             }}
           >
