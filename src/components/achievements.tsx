@@ -13,7 +13,7 @@ const Achievements = ({ className }: { className?: string }) => {
     <div
       className={`px-2 sm:px-6 lg:px-0 grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12 gap-4 mt-6 sm:mt-8 lg:mt-0 ${className}`}
     >
-      <div className='hidden lg:flex lg:col-span-5 items-center justify-center 4xl:pt-80'>
+      <div className='hidden lg:flex lg:col-span-5 items-center justify-center 4xl:pt-80 animate-float'>
         <div className='sticky top-1/2 transform -translate-y-1/2 w-[100px] sm:w-[171px] lg:w-[536px] aspect-square rounded-full overflow-hidden'>
           {achievements.map((achievement: Achievement, index: number) => (
             <Image
@@ -27,6 +27,10 @@ const Achievements = ({ className }: { className?: string }) => {
               )}
               priority={index === 0}
               sizes='(max-width: 1024px) 180px, 536px'
+              // style={{
+              //   animationDelay: `${Math.random() * 5}s`,
+              //   animationDuration: `${Math.random() * 3 + 2}s`,
+              // }}
             />
           ))}
         </div>

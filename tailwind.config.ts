@@ -60,6 +60,7 @@ export default {
       animation: {
         slide: 'slide 20s linear infinite',
         reveal: 'reveal 1s forwards cubic-bezier(0.77, 0, 0.175, 1)',
+        float: 'float 10s ease-in-out infinite',
       },
       keyframes: {
         reveal: {
@@ -68,6 +69,13 @@ export default {
         slide: {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-50%)' },
+        },
+        float: {
+          '0%': { transform: 'translate(0, 0)' },
+          '25%': { transform: 'translate(40px, 45px)' },
+          '50%': { transform: 'translate(30px, -40px)' },
+          '75%': { transform: 'translate(-40px, 35px)' },
+          '100%': { transform: 'translate(0, 0)' },
         },
       },
     },
