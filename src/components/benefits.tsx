@@ -56,7 +56,7 @@ const Benefits = () => {
   return (
     <section className='relative lg:aspect-[1920/852] mt-14 sm:mt-16 lg:mt-32 bg-[#1C1E11] grid grid-cols-1 lg:grid-cols-2'>
       {isDesktop && (
-        <div className='absolute hidden lg:flex z-10 right-8 top-8 gap-x-6 items-center px-6 h-[72px] bg-green-default rounded-full border border-primary-dark'>
+        <div className='absolute hidden lg:flex z-10 right-8 top-8 gap-x-6 items-center px-6 h-[72px] bg-green-default rounded-full border border-primary-dark [&:has(*:active)]:bg-[#30321C] transition-bg duration-200'>
           <Arrow left onClick={() => handleSetActiveBenefit('previous')} />
           <Arrow onClick={() => handleSetActiveBenefit('next')} />
         </div>
