@@ -24,7 +24,7 @@ const Page = async () => {
       <OurStory />
       <Highlights />
       <Gallery />
-      <Events />
+      {/* <Events /> */}
     </main>
   );
 };
