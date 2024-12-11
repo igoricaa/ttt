@@ -22,6 +22,12 @@ const Lenis = ({ children }: PropsWithChildren) => {
         wheelMultiplier: 1.5,
         touchMultiplier: 2,
         infinite: false,
+        prevent(node) {
+          if (typeof window !== 'undefined' && window.innerWidth > 1024) {
+            return node.id === 'achievements';
+          }
+          return false;
+        },
       }}
     >
       {children}

@@ -72,7 +72,7 @@ const Page = () => {
         <h2 className='text-3xl sm:text-6xl font-semibold uppercase'>
           Our Achievements
         </h2>
-        <Achievements className='lg:-translate-y-9' />
+        <Achievements className='lg:mt-20'/>
       </section>
 
       <section className='px-side lg:pr-0 pt-16 pb-[72px] sm:pt-[72px] sm:pb-24 lg:py-32'>

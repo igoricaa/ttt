@@ -3,13 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  /* --primary-color: #9c9c8d;
-  --primary-dark-color: #30321c;
-  --green-color: #4a4b2f;
-  --yellow-color: #fcfc62;
-  --background: var(--primary-color);
-  --text-color: #fff; */
-
   :root {
     --primary-color-rgb: 156, 156, 141;
     --primary-color-rgb-20: 125, 125, 113;
@@ -43,6 +36,27 @@
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #7d7d71;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #262816;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 @media (max-width: 1440px) {
   :root {
     --padding-side: 2rem;
@@ -66,25 +80,3 @@
     clip-path: inset(0 50% 0 50%);
   }
 }
-
-/* .image {
-  @apply max-w-[30vw] mx-[1vw] grid cursor-pointer relative overflow-hidden;
-}
-
-.image--style-1 {
-  @apply w-[285px] h-[450px] rounded-[145px];
-}
-
-.image > .image__element,
-.image__wrap {
-  @apply relative w-full h-full will-change-transform;
-  grid-area: 1 / 1 / 2 / 2;
-}
-
-.image__wrap {
-  @apply overflow-hidden;
-}
-
-.image__element {
-  @apply w-full h-full bg-cover bg-center;
-} */
