@@ -2,5 +2,16 @@
   "HomePage": {
     "title": "Hello world!",
     "about": "Go to the about page"
+  },
+  "AboutUsPage": {
+    "title": "About Us"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, en {EN} sr {SR} ru {RU} other {Unknown}}"
+  },
+  "notFoundPage": {
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist."
   }
 }

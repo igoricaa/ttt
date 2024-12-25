@@ -1,11 +1,19 @@
 import Achievements from '@/components/achievements';
 import MembersSlider from '@/components/members-slider';
 import Link from '@/components/ui/link-button';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Image from 'next/image';
 
-const Page = () => {
+const Page = async ({ params }: { params: Promise<{ locale: string }> }) => {
+  const { locale } = await params;
+
+  setRequestLocale(locale);
+
+  const t = await getTranslations('AboutUsPage');
+
   return (
     <main className='pt-6 sm:pt-12 lg:pt-24'>
+      <h1>{t('title')}</h1>
       <section className='flex lg:flex-row justify-between px-side'>
         <div>
           <h1 className='text-3xl sm:text-8xl lg:text-9xl font-bold uppercase whitespace-nowrap'>
@@ -72,7 +80,7 @@ const Page = () => {
         <h2 className='text-3xl sm:text-6xl font-semibold uppercase'>
           Our Achievements
         </h2>
-        <Achievements className='lg:mt-20'/>
+        <Achievements className='lg:mt-20' />
       </section>
 
       <section className='px-side lg:pr-0 pt-16 pb-[72px] sm:pt-[72px] sm:pb-24 lg:py-32'>

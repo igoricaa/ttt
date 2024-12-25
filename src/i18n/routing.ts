@@ -1,15 +1,39 @@
-// import { defineRouting } from 'next-intl/routing';
-// import { createNavigation } from 'next-intl/navigation';
+import { defineRouting } from 'next-intl/routing';
+import { createNavigation } from 'next-intl/navigation';
 
-// export const routing = defineRouting({
-//   // A list of all locales that are supported
-//   locales: ['en', 'sr, ru'],
+export const localePrefix = 'never';
 
-//   // Used when no locale matches
-//   defaultLocale: 'en',
-// });
+export const routing = defineRouting({
+  locales: ['en', 'sr', 'ru'],
+  defaultLocale: 'en',
+  localePrefix: localePrefix,
+  pathnames: {
+    '/': '/',
+    '/about-us': {
+      en: '/about-us',
+      sr: '/o-nama',
+      ru: '/o-nas',
+    },
+    '/memberships': {
+      en: '/memberships',
+      sr: '/clanovi',
+      ru: '/члены',
+    },
+    '/contact': {
+      en: '/contact',
+      sr: '/kontakt',
+      ru: '/контакт',
+    },
+    '/[...rest]': {
+      en: '/[...rest]',
+      sr: '/[...rest]',
+      ru: '/[...rest]',
+    },
+  },
+});
 
-// // Lightweight wrappers around Next.js' navigation APIs
-// // that will consider the routing configuration
-// export const { Link, redirect, usePathname, useRouter } =
-//   createNavigation(routing);
+export type Pathnames = keyof typeof routing.pathnames;
+export type Locale = (typeof routing.locales)[number];
+
+export const { Link, redirect, usePathname, useRouter, getPathname } =
+  createNavigation(routing);
