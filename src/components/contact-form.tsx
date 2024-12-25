@@ -83,7 +83,7 @@ const ContactForm = () => {
           autoComplete='name'
         />
         {errors.name && (
-          <p className='text-xs absolute left-2 -bottom-6 text-red-500'>
+          <p className='text-xs absolute left-2 -bottom-5 text-red-500'>
             {errors.name.message}
           </p>
         )}
@@ -106,7 +106,7 @@ const ContactForm = () => {
           autoComplete='email'
         />
         {errors.email && (
-          <p className='text-xs absolute left-2 -bottom-6 text-red-500'>
+          <p className='text-xs absolute left-2 -bottom-5 text-red-500'>
             {errors.email.message}
           </p>
         )}
@@ -133,7 +133,7 @@ const ContactForm = () => {
           autoComplete='tel'
         />
         {errors.phone && (
-          <p className='text-xs absolute left-2 -bottom-6 text-red-500'>
+          <p className='text-xs absolute left-2 -bottom-5 text-red-500'>
             {errors.phone.message}
           </p>
         )}
@@ -154,7 +154,7 @@ const ContactForm = () => {
           })}
         />
         {errors.message && (
-          <p className='text-xs absolute left-2 -bottom-6 text-red-500'>
+          <p className='text-xs absolute left-2 -bottom-5 text-red-500'>
             {errors.message.message}
           </p>
         )}

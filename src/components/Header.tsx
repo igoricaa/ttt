@@ -7,6 +7,7 @@ import MobileNav from './mobile-menu';
 import HeaderLogo from './ui/logos/header-logo';
 import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
+import ThemeSwitcher from './theme-switcher';
 
 const Header = () => {
   const [mounted, setMounted] = useState(false);
@@ -92,6 +93,8 @@ const Header = () => {
             </NavLink>
           ))}
         </nav>
+
+        <ThemeSwitcher />
       </div>
 
       <MobileNav />

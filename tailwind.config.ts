@@ -50,6 +50,13 @@ export default {
           default: 'rgba(var(--button-white-rgb), <alpha-value>)',
           darker: 'rgba(var(--button-white-rgb-20), <alpha-value>)',
         },
+        footerBackground: 'rgba(var(--footer-background-rgb), <alpha-value>)',
+        button: {
+          default: 'rgba(var(--button-default-rgb), <alpha-value>)',
+          default20: 'rgba(var(--button-default-rgb-20), <alpha-value>)',
+          // dark: 'rgba(var(--button-dark-rgb), <alpha-value>)',
+          // dark20: 'rgba(var(--button-dark-rgb-20), <alpha-value>)',
+        },
       },
       padding: {
         side: 'var(--padding-side)',

@@ -4,9 +4,6 @@ import { cva, type VariantProps } from 'class-variance-authority';
 
 import { cn } from '@/lib/utils';
 
-// const hoverEffect =
-//   '[&:hover::before]:w-[200%] [&:hover::before]:h-[200%] before:content-[""] before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:w-0 before:h-0 before:transition-all before:duration-300 before:ease-out before:z-10';
-
 const buttonAfter =
   'after:content-[""] after:inline-block after:absolute after:inset-0 after:rounded-[100px] after:transition-all after:duration-300 after:ease-out after:-z-10 after:w-full after:h-full after:opacity-30';
 
@@ -18,7 +15,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          'bg-primary-default after:bg-primary-default text-white hover:bg-primary-defaultDarker border-[#AEAEB2]',
+          'bg-button-default after:bg-button-default text-white hover:bg-button-default20 border-[#AEAEB2]',
         dark: `bg-primary-dark after:bg-primary-dark text-white border-[#AEAEB2] hover:bg-primary-dark20`,
         yellow:
           'bg-yellow-default after:bg-yellow-default text-black hover:bg-yellow-darker border-white/40',

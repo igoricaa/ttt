@@ -6,7 +6,7 @@ import { Route } from '@/lib/types';
 
 const Footer = () => {
   return (
-    <footer className='sm:h-[804px] px-side pt-6 sm:pt-9 pb-5 bg-black flex flex-col justify-between overflow-hidden'>
+    <footer className='sm:h-[804px] px-side pt-6 sm:pt-9 pb-5 bg-footerBackground flex flex-col justify-between overflow-hidden'>
       <div className='grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12 gap-x-4 gap-y-14 sm:gap-y-0'>
         <div className='order-2 sm:order-1 col-span-full sm:col-span-2 flex flex-col sm:flex-row gap-y-4 sm:gap-y-0 gap-x-6 group'>
           <ul className='flex flex-col gap-y-4'>
