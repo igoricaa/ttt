@@ -14,7 +14,6 @@ const Page = async ({ params }: { params: Promise<{ locale: string }> }) => {
 
   return (
     <main className='-mt-11'>
-      <h1>{t('title')}</h1>
       <Hero />
       <OurStory />
       <Highlights />

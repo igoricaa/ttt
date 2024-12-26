@@ -8,7 +8,7 @@
   },
   "LocaleSwitcher": {
     "label": "Change language",
-    "locale": "{locale, select, en {EN} sr {SR} ru {RU} other {Unknown}}"
+    "locale": "{locale, select, en {ENG} sr {SRB} ru {RUS} other {Unknown}}"
   },
   "notFoundPage": {
     "title": "Page not found",

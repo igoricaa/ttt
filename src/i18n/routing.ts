@@ -27,7 +27,7 @@ export const routing = defineRouting({
     '/schedule': {
       en: '/schedule',
       sr: '/raspored',
-      ru: '/расписание',
+      ru: '/raspisanie',
     },
     '/[...rest]': {
       en: '/[...rest]',

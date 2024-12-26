@@ -2,14 +2,24 @@
 
 import clsx from 'clsx';
 import { useParams } from 'next/navigation';
-import { ChangeEvent, ReactNode, useTransition } from 'react';
+import {
+  ChangeEvent,
+  ReactNode,
+  useEffect,
+  useState,
+  useTransition,
+} from 'react';
 import { Locale, usePathname, useRouter } from '@/i18n/routing';
+import React from 'react';
+import { cn } from '@/lib/utils';
 
 type Props = {
   children: ReactNode;
   defaultValue: string;
   label: string;
 };
+
+const locales = ['en', 'sr', 'ru'];
 
 export default function LocaleSwitcherSelect({
   children,
@@ -20,9 +30,12 @@ export default function LocaleSwitcherSelect({
   const [isPending, startTransition] = useTransition();
   const pathname = usePathname();
   const params = useParams();
+  const [activeIndex, setActiveIndex] = useState<number>(0);
 
-  function onSelectChange(event: ChangeEvent<HTMLSelectElement>) {
+  function onSelectChange(event: ChangeEvent<HTMLInputElement>, index: number) {
     const nextLocale = event.target.value as Locale;
+
+    setActiveIndex(index);
     startTransition(() => {
       router.replace(
         // @ts-expect-error -- TypeScript will validate that only known `params`
@@ -34,6 +47,34 @@ export default function LocaleSwitcherSelect({
     });
   }
 
+  useEffect(() => {
+    const index = locales.indexOf(defaultValue);
+    setActiveIndex(index);
+  }, [defaultValue]);
+
+  function getButtonClasses(
+    index: number,
+    isSelected: boolean,
+    activeIndex: number
+  ) {
+    return cn(
+      'bg-white/20 py-1 px-1',
+      index === 0 ? 'pl-3' : index === 2 ? 'pr-3' : '',
+      isSelected && 'bg-[#6c6c58]',
+      isSelected && [
+        index === 0 && 'rounded-tr-2xl',
+        index === 1 && 'rounded-t-2xl',
+        index === 2 && 'rounded-tl-2xl',
+      ],
+      activeIndex === 0 && index === 1 && 'rounded-tl-2xl',
+      activeIndex === 1 && [
+        index === 2 && 'rounded-tl-2xl',
+        index === 0 && 'rounded-tr-2xl',
+      ],
+      activeIndex === 2 && index === 1 && 'rounded-tr-2xl'
+    );
+  }
+
   return (
     <label
       className={clsx(
@@ -42,15 +83,41 @@ export default function LocaleSwitcherSelect({
       )}
     >
       <p className='sr-only'>{label}</p>
-      <select
-        className='inline-flex appearance-none bg-transparent py-3 pl-2 pr-6'
-        defaultValue={defaultValue}
-        disabled={isPending}
-        onChange={onSelectChange}
-      >
-        {children}
-      </select>
-      <span className='pointer-events-none absolute right-2 top-[8px]'>⌄</span>
+      <div className='flex items-center w-fit bg-white/20 rounded-[20px] overflow-hidden'>
+        {React.Children.map(children, (child, index) => {
+          if (React.isValidElement(child) && child.props.value) {
+            const isSelected = defaultValue === child.props.value;
+
+            return (
+              <div
+                key={child.props.value}
+                className={getButtonClasses(index, isSelected, activeIndex)}
+              >
+                <input
+                  type='radio'
+                  id={child.props.value}
+                  name='locale'
+                  value={child.props.value}
+                  checked={defaultValue === child.props.value}
+                  disabled={isPending}
+                  onChange={(event) => onSelectChange(event, index)}
+                  className='sr-only'
+                />
+                <label
+                  htmlFor={child.props.value}
+                  className={cn(
+                    'cursor-pointer font-medium text-white/40',
+                    isSelected && 'text-white'
+                  )}
+                >
+                  {child.props.children}
+                </label>
+              </div>
+            );
+          }
+          return null;
+        })}
+      </div>
     </label>
   );
 }

@@ -1,14 +1,14 @@
 {
   "HomePage": {
-    "title": "Test world!",
+    "title": "Hello world!",
     "about": "Go to the about page"
   },
   "AboutUsPage": {
-    "title": "O nama"
+    "title": "About Us"
   },
   "LocaleSwitcher": {
     "label": "Change language",
-    "locale": "{locale, select, en {EN} sr {SR} ru {RU} other {Unknown}}"
+    "locale": "{locale, select, en {ENG} sr {SRB} ru {RUS} other {Unknown}}"
   },
   "notFoundPage": {
     "title": "Page not found",

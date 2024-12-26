@@ -13,7 +13,6 @@ const Page = async ({ params }: { params: Promise<{ locale: string }> }) => {
 
   return (
     <main className='pt-6 sm:pt-12 lg:pt-24'>
-      <h1>{t('title')}</h1>
       <section className='flex lg:flex-row justify-between px-side'>
         <div>
           <h1 className='text-3xl sm:text-8xl lg:text-9xl font-bold uppercase whitespace-nowrap'>

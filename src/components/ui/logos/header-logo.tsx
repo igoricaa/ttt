@@ -1,15 +1,16 @@
 'use client';
 
-import { usePathname } from 'next/navigation';
 import Logo from './logo';
 import { useEffect, useState } from 'react';
 import { Link } from 'next-view-transitions';
+import { usePathname } from '@/i18n/routing';
 
 const pageColors: Record<string, string> = {
   '/': '#fff',
   '/about-us': '#4A4B2F',
   '/contact-us': '#4A4B2F',
   '/memberships': '#4A4B2F',
+  '/schedule': '#4A4B2F',
   '/programs': '#FFFFFF',
 };
 
