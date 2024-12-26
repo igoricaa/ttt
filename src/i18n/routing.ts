@@ -19,10 +19,15 @@ export const routing = defineRouting({
       sr: '/clanovi',
       ru: '/члены',
     },
-    '/contact': {
-      en: '/contact',
+    '/contact-us': {
+      en: '/contact-us',
       sr: '/kontakt',
       ru: '/контакт',
+    },
+    '/schedule': {
+      en: '/schedule',
+      sr: '/raspored',
+      ru: '/расписание',
     },
     '/[...rest]': {
       en: '/[...rest]',

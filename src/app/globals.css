@@ -21,6 +21,23 @@
     --button-default-rgb: 156, 156, 141;
     --button-default-rgb-20: 125, 125, 113;
 
+    /* classes colors */
+    --no-gi-color-rgb: 176, 203, 173;
+    --no-gi-color-rgb-20: 141, 162, 138;
+    --gi-color-rgb: 235, 233, 202;
+    --gi-color-rgb-20: 188, 186, 162;
+    --kids-color-rgb: 234, 249, 221;
+    --kids-color-rgb-20: 187, 199, 177;
+    --mma-color-rgb: 132, 208, 203;
+    --mma-color-rgb-20: 106, 166, 162;
+    --wrestling-color-rgb: 195, 232, 234;
+    --wrestling-color-rgb-20: 156, 186, 187;
+    --striking-color-rgb: 177, 206, 219;
+    --striking-color-rgb-20: 142, 165, 175;
+    --schedule-darkblue-color-rgb: 48, 44, 54;
+    --schedule-darkblue-color-rgb-20: 38, 35, 43;
+    --schedule-bg-color-rgb: 146, 141, 117;
+
     /* --primary-color-rgb: #9c9c8d;
     --primary-color-rgb-20: #7d7d71;
     --primary-dark-color-rgb: #30321c;

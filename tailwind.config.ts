@@ -19,6 +19,7 @@ export default {
         '8xl': '1440px',
       },
       fontSize: {
+        xxs: ['0.625rem', { lineHeight: '0.75rem' }],
         '3xl': ['2rem', { lineHeight: '2.35rem' }],
         '6xl': [
           '3.5rem',
@@ -57,6 +58,37 @@ export default {
           // dark: 'rgba(var(--button-dark-rgb), <alpha-value>)',
           // dark20: 'rgba(var(--button-dark-rgb-20), <alpha-value>)',
         },
+        classes: {
+          noGi: {
+            default: 'rgba(var(--no-gi-color-rgb), <alpha-value>)',
+            darker: 'rgba(var(--no-gi-color-rgb-20), <alpha-value>)',
+          },
+          gi: {
+            default: 'rgba(var(--gi-color-rgb), <alpha-value>)',
+            darker: 'rgba(var(--gi-color-rgb-20), <alpha-value>)',
+          },
+          kids: {
+            default: 'rgba(var(--kids-color-rgb), <alpha-value>)',
+            darker: 'rgba(var(--kids-color-rgb-20), <alpha-value>)',
+          },
+          mma: {
+            default: 'rgba(var(--mma-color-rgb), <alpha-value>)',
+            darker: 'rgba(var(--mma-color-rgb-20), <alpha-value>)',
+          },
+          wrestling: {
+            default: 'rgba(var(--wrestling-color-rgb), <alpha-value>)',
+            darker: 'rgba(var(--wrestling-color-rgb-20), <alpha-value>)',
+          },
+          striking: {
+            default: 'rgba(var(--striking-color-rgb), <alpha-value>)',
+            darker: 'rgba(var(--striking-color-rgb-20), <alpha-value>)',
+          },
+          darkblue: 'rgba(var(--schedule-darkblue-color-rgb), <alpha-value>)',
+          bg: 'rgba(var(--schedule-bg-color-rgb), <alpha-value>)',
+        },
+      },
+      boxShadow: {
+        schedule: '0px 0px 20px 24px rgba(0, 0, 0, 0.05)',
       },
       padding: {
         side: 'var(--padding-side)',
