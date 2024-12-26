@@ -248,7 +248,7 @@ export function Schedule() {
                           key={eventIndex}
                           className={`absolute left-0 right-0 mx-auto max-w-[90%] p-2 font-semibold text-classes-darkblue rounded-lg ${getClassBackground(
                             event.classType
-                          )} overflow-hidden`}
+                          )} overflow-hidden border-0 hover:shadow-classCard hover:border-l-4 border-[#20121259] transition-all duration-200 ease-out `}
                           style={{
                             top: `${offset ? offset * 3.3 : 0.2}rem`,
                             height: `${duration * 2.7}rem`,

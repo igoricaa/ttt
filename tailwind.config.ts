@@ -89,6 +89,7 @@ export default {
       },
       boxShadow: {
         schedule: '0px 0px 20px 24px rgba(0, 0, 0, 0.05)',
+        classCard: '0px 4px 10px 0px rgba(0, 0, 0, 0.25)',
       },
       padding: {
         side: 'var(--padding-side)',
