@@ -5,7 +5,11 @@ const OurStory = () => {
   return (
     <section className='grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12 gap-x-4 px-side'>
       <InViewWrapper
-        from={{ opacity: 0, filter: 'blur(4px)', transform: 'translateX(-40px)' }}
+        from={{
+          opacity: 0,
+          filter: 'blur(4px)',
+          transform: 'translateX(-40px)',
+        }}
         to={{ opacity: 1, filter: 'blur(0px)', transform: 'translateX(0)' }}
         className='hidden lg:flex col-span-3 2xl:col-span-2'
       >
@@ -20,7 +24,11 @@ const OurStory = () => {
       </InViewWrapper>
       <div className='pt-12 sm:pt-11 col-span-full lg:col-span-8 lg:col-start-4'>
         <InViewWrapper
-          from={{ opacity: 0, filter: 'blur(4px)', transform: 'translateY(40px)' }}
+          from={{
+            opacity: 0,
+            filter: 'blur(4px)',
+            transform: 'translateY(40px)',
+          }}
           to={{ opacity: 1, filter: 'blur(0px)', transform: 'translateY(0)' }}
         >
           <p className='text-xl sm:text-2xl text-center uppercase'>
@@ -32,7 +40,11 @@ const OurStory = () => {
         </InViewWrapper>
         <div className='mt-12 sm:mt-16 lg:mt-11 2xl:mt-[88px] grid grid-cols-8 gap-x-4'>
           <InViewWrapper
-            from={{ opacity: 0, filter: 'blur(4px)', transform: 'translateY(40px)' }}
+            from={{
+              opacity: 0,
+              filter: 'blur(4px)',
+              transform: 'translateY(40px)',
+            }}
             to={{ opacity: 1, filter: 'blur(0px)', transform: 'translateY(0)' }}
             className='col-span-full lg:col-span-6 lg:col-start-2'
           >
@@ -41,27 +53,34 @@ const OurStory = () => {
             </h2>
           </InViewWrapper>
           <InViewWrapper
-            from={{ opacity: 0, filter: 'blur(4px)', transform: 'translateY(40px)' }}
+            from={{
+              opacity: 0,
+              filter: 'blur(4px)',
+              transform: 'translateY(40px)',
+            }}
             to={{ opacity: 1, filter: 'blur(0px)', transform: 'translateY(0)' }}
             className='mt-8 col-span-full lg:col-span-6 lg:col-start-2'
           >
             <p className='text-base sm:text-xl'>
-              Founded by UFC fighter Dusko Todorovic and a group of elite
-              Brazilian Jiu-Jitsu experts, TTT is dedicated to training the next
-              generation of fighters with a passion for excellence and a
-              commitment to discipline.
+              Founded by UFC fighter Dusko Todorovic and a group of elite MMA,
+              Wrestling and Brazilian Jiu-Jitsu experts, TTT is dedicated to
+              training the next generation of fighters with a passion for
+              excellence and a commitment to discipline.
             </p>
           </InViewWrapper>
           <InViewWrapper
-            from={{ opacity: 0, filter: 'blur(4px)', transform: 'translateY(40px)' }}
+            from={{
+              opacity: 0,
+              filter: 'blur(4px)',
+              transform: 'translateY(40px)',
+            }}
             to={{ opacity: 1, filter: 'blur(0px)', transform: 'translateY(0)' }}
             className='col-span-full lg:col-span-6 lg:col-start-2 mt-5'
           >
             <p className='text-base sm:text-xl'>
-              At TTT, fighters of all levels come together to push their limits,
-              refine their skills, and build the mental strength needed to
-              dominate in and out of the cage. Join us and experience top-tier
-              training from some of the best in the fight world.
+              We created a space we envisioned for ourselves — everything we
+              ever wanted in a place dedicated to pushing the boundaries of
+              physical and mental endurance. Now, we opened it for you.
             </p>
           </InViewWrapper>
         </div>

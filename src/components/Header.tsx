@@ -98,14 +98,14 @@ const Header = () => {
           ))}
         </nav>
 
-        <div className='hidden absolute top-1/2 -translate-y-1/2 right-0 lg:block'>
+        {/* <div className='hidden absolute top-1/2 -translate-y-1/2 right-0 lg:block'>
           <LocaleSwitcher />
-        </div>
+        </div> */}
       </div>
 
-      <div className='lg:hidden mr-4'>
+      {/* <div className='lg:hidden mr-4'>
         <LocaleSwitcher />
-      </div>
+      </div> */}
 
       <MobileNav />
     </header>

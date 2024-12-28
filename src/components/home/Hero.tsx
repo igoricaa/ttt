@@ -16,25 +16,25 @@ const Hero = () => {
         />
         <div className='z-20 absolute bottom-3 sm:hidden'>
           <h1 className='text-3xl sm:text-8xl lg:text-9xl font-bold uppercase'>
-            Welcome to TTT
+            Thunder Top Team
           </h1>
-          <h4 className='sm:text-2xl'>Your Ultimate training Destination</h4>
+          <h4 className='sm:text-2xl'>Your Ultimate Training Destination</h4>
         </div>
       </div>
 
       <div className='col-span-full flex flex-col justify-end h-full sm:px-4 lg:px-0 lg:pl-0'>
         <h1 className='hidden sm:block text-3xl sm:text-8xl lg:text-9xl font-bold uppercase lg:-translate-x-4'>
-          Welcome to TTT
+          Thunder Top Team
         </h1>
         <div className='flex flex-col gap-y-4 lg:flex-row lg:gap-y-0 justify-between lg:items-end'>
           <div className='lg:-translate-x-2 2xl:-translate-x-4'>
             <h4 className='hidden sm:block text-2xl'>
-              Your Ultimate training Destination
+              Your Ultimate Training Destination
             </h4>
             <p className='text-xs sm:mt-4 '>
-              Join the most modern combat sports
+              Become a member of one of Europe's
               <br />
-              and fitness centre in the Balkans
+              most modern martial arts and fitness centers.
             </p>
           </div>
 
@@ -43,13 +43,13 @@ const Hero = () => {
             className='sm:hidden self-end'
             variant='dark'
           >
-            SCHEDULE A FREE TOUR
+            Contact Us
           </Link>
           <Link
             href='/contact-us'
             className='hidden sm:inline-flex self-end lg:mr-4 2xl:mr-8'
           >
-            SCHEDULE A FREE TOUR
+            Contact Us
           </Link>
         </div>
       </div>

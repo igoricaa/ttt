@@ -44,15 +44,15 @@ export const highlights: Highlight[] = [
       ptTwo: 'Equipment',
     },
     description:
-      'Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit.',
+      'Every part of the TTT area has the highest quality equipment, from Zebra mats for fighting sports - to the most modern exercise equipment in the gym area.',
   },
   {
     title: {
-      ptOne: 'TTTOP',
+      ptOne: 'TTT',
       ptTwo: 'Trainers',
     },
     description:
-      'Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit.',
+      'Our team is comprised of professionals who are dedicated to excellence and are continuously developing their skills and knowledge.',
   },
   {
     title: {
@@ -60,7 +60,7 @@ export const highlights: Highlight[] = [
       ptTwo: 'Classes',
     },
     description:
-      'Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit.',
+      'MMA, boxing, wrestling, BJJ for children and adults.The schedule is made to suit everyone - over 10 sessions per week for each sport.',
   },
 ];
 
