@@ -2,6 +2,7 @@ import { Schedule } from '@/components/schedule';
 import { JoinUsSlider } from '@/components/ui/join-us-slider';
 import Link from '@/components/ui/link-button';
 import Image from 'next/image';
+import header from '@/../public/thunder-top-team-header.jpg';
 
 export default function Page() {
   return (
@@ -9,12 +10,15 @@ export default function Page() {
       <section className='w-[calc(100vw-2*var(--padding-side))] mx-auto '>
         <div className='relative aspect-[286/159] sm:aspect-[674/375] lg:aspect-[1824/421] flex flex-col justify-end pb-4'>
           <Image
-            src='/memberships-bg.png'
+            src={header}
             alt='Thunder Top Team Schedule'
             fill
             priority
             sizes='100vw'
             className='object-cover rounded-[224px] -z-10'
+            style={{
+              objectPosition: 'center 60%',
+            }}
           />
           <h1 className='text-3xl sm:text-8xl lg:text-9xl font-bold uppercase'>
             Schedule

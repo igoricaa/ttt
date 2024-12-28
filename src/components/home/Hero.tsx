@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import heroBg from '@/../public/hero-bg.png';
+import heroBg from '@/../public/thunder-top-team-hero.png';
 import Link from '../ui/link-button';
 
 const Hero = () => {

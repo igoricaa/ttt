@@ -3,6 +3,7 @@ import MembersSlider from '@/components/members-slider';
 import Link from '@/components/ui/link-button';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Image from 'next/image';
+import aboutUs from '@/../public/thunder-top-team-about-us.png';
 
 const Page = async ({ params }: { params: Promise<{ locale: string }> }) => {
   const { locale } = await params;
@@ -39,7 +40,7 @@ const Page = async ({ params }: { params: Promise<{ locale: string }> }) => {
       <section className='px-side grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12 gap-4 lg:-translate-y-6 mt-8 lg:mt-0'>
         <div className='relative col-span-4 sm:col-span-5 lg:col-span-7 aspect-[1054/765]'>
           <Image
-            src='/about-us.png'
+            src={aboutUs}
             alt='Thunder Top Team - About Us'
             priority
             fill

@@ -5,6 +5,8 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
+import gallery1 from '@/../public/gallery/thunder-top-team-gallery-1.png';
+import gallery2 from '@/../public/gallery/thunder-top-team-gallery-2.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,7 +48,7 @@ const Gallery = () => {
         className='relative aspect-[1300/1154] lg:col-span-1 w-full h-full opacity-0 -translate-x-1/3'
       >
         <Image
-          src='/gallery/gallery-1.png'
+          src={gallery1}
           alt='Thunder Top Team'
           fill
           className='object-cover'
@@ -58,7 +60,7 @@ const Gallery = () => {
         className='relative aspect-[1300/1154] lg:col-span-1 w-full h-full opacity-0 translate-x-1/3'
       >
         <Image
-          src='/gallery/gallery-2.png'
+          src={gallery2}
           alt='Thunder Top Team'
           fill
           className='object-cover'
