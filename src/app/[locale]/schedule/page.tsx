@@ -33,12 +33,12 @@ export default function Page() {
         </p>
       </section>
 
-      <section className='mt-20 mb-32 grid grid-cols-12'>
-        <div className='col-span-10 col-start-2 flex justify-between items-center mb-8'>
-          <p className='text-xl uppercase'>
+      <section className='mt-6 sm:mt-16 lg:mt-20 mb-32 grid grid-cols-12'>
+        <div className='col-span-10 col-start-2 flex flex-col gap-4 sm:flex-row justify-between items-center mb-8'>
+          <p className='text-base sm:text-xl uppercase'>
             Feel free to roach out for any questions regarding our classes.{' '}
           </p>
-          <Link href='/contact-us' variant='dark' className='flex'>
+          <Link href='/contact-us' variant='dark' className='flex self-end sm:self-start'>
             Contact Us
           </Link>
         </div>

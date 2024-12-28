@@ -72,14 +72,14 @@ const Header = () => {
         isHidden && 'opacity-0 invisible'
       )}
     >
+      <div className='flex fixed w-fit top-1/2 -translate-y-1/2 left-4 sm:absolute sm:left-8 sm:translate-y-0 z-50 lg:absolute lg:left-8 lg:-translate-y-1/2 mr-auto '>
+        <ThemeSwitcher />
+      </div>
+
       <div className='lg:hidden sm:absolute sm:left-1/2 sm:-translate-x-1/2'>
         <HeaderLogo className='h-[38px] w-[34px] sm:h-[60px] sm:w-[53.5px]' />
       </div>
       <div className='relative hidden lg:flex items-center justify-center gap-16'>
-        <div className='hidden absolute top-1/2 -translate-y-1/2 left-0 lg:block'>
-          <ThemeSwitcher />
-        </div>
-
         <nav className='flex items-center gap-16 w-[475px] justify-end'>
           {routes.slice(0, 3).map((route: Route, index: number) => (
             <NavLink key={route.path} href={route.path} index={index}>
@@ -101,6 +101,10 @@ const Header = () => {
         <div className='hidden absolute top-1/2 -translate-y-1/2 right-0 lg:block'>
           <LocaleSwitcher />
         </div>
+      </div>
+
+      <div className='lg:hidden mr-4'>
+        <LocaleSwitcher />
       </div>
 
       <MobileNav />

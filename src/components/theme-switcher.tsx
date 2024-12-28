@@ -28,11 +28,11 @@ export default function ThemeSwitcher() {
       aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} theme`}
     >
       {theme === 'light' ? (
-        <div className='bg-[#4A4B2F] lg:p-[10px] rounded-full'>
+        <div className='bg-[#4A4B2F] p-[5px] sm:p-2 lg:p-[10px] rounded-full'>
           <LightbulbDark />
         </div>
       ) : (
-        <div className='relative flex items-center justify-center translate-x-[10px]'>
+        <div className='w-12 h-12 relative flex items-center justify-center -translate-x-[4px] sm:translate-x-[0px] lg:translate-x-[2px]'>
           <LightbulbLightBg className='absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' />
           <LightbulbLight className='z-10' />
         </div>
