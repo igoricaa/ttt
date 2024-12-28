@@ -37,6 +37,7 @@
     --schedule-darkblue-color-rgb: 48, 44, 54;
     --schedule-darkblue-color-rgb-20: 38, 35, 43;
     --schedule-bg-color-rgb: 146, 141, 117;
+    --cf-text-color-rgb: var(--primary-dark-color-rgb);
 
     /* --primary-color-rgb: #9c9c8d;
     --primary-color-rgb-20: #7d7d71;
@@ -56,6 +57,7 @@
     /* #121212 */
     --primary-color-rgb: 18, 18, 18;
     --footer-background-rgb: 48, 50, 28; /* #30321C; */
+    --cf-text-color-rgb: 255, 255, 255;
 
     /* --primary-color-rgb-20: 125, 125, 113;
     --primary-dark-color-rgb: 48, 50, 28;

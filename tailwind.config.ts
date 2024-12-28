@@ -58,6 +58,9 @@ export default {
           // dark: 'rgba(var(--button-dark-rgb), <alpha-value>)',
           // dark20: 'rgba(var(--button-dark-rgb-20), <alpha-value>)',
         },
+        cf: {
+          text: 'rgba(var(--cf-text-color-rgb), <alpha-value>)',
+        },
         classes: {
           noGi: {
             default: 'rgba(var(--no-gi-color-rgb), <alpha-value>)',

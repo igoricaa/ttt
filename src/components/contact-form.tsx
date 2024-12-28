@@ -53,7 +53,7 @@ const ContactForm = () => {
   };
 
   const inputClasses =
-    'w-full bg-transparent border rounded-[32px] h-14 flex items-center px-6 outline-none text-sm uppercase font-medium text-primary-dark placeholder:text-primary-dark';
+    'w-full bg-transparent border rounded-[32px] h-14 flex items-center px-6 outline-none text-sm uppercase font-medium text-cf-text placeholder:text-cf-text';
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>

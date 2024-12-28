@@ -24,6 +24,11 @@ export const routing = defineRouting({
       sr: '/kontakt',
       ru: '/контакт',
     },
+    '/programs': {
+      en: '/programs',
+      sr: '/programi',
+      ru: '/programi',
+    },
     '/schedule': {
       en: '/schedule',
       sr: '/raspored',

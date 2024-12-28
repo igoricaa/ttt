@@ -72,7 +72,7 @@ const Header = () => {
         isHidden && 'opacity-0 invisible'
       )}
     >
-      <div className='flex fixed w-fit top-1/2 -translate-y-1/2 left-4 sm:absolute sm:left-8 sm:translate-y-0 z-50 lg:absolute lg:left-8 lg:-translate-y-1/2 mr-auto '>
+      <div className='flex fixed w-fit top-3/4 -translate-y-3/4 left-4 sm:absolute sm:left-8 sm:translate-y-0 z-50 lg:absolute lg:left-8 lg:top-1/2 lg:-translate-y-1/2 mr-auto '>
         <ThemeSwitcher />
       </div>
 
