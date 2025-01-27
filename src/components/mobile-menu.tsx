@@ -10,10 +10,12 @@ import { Route, Social } from '@/lib/types';
 import LinkButton from './ui/link-button';
 import { Link } from 'next-view-transitions';
 import { cn } from '@/lib/utils';
+import { useTranslations } from 'next-intl';
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const isMobile = useMediaQuery('(max-width: 1025px)');
+  const t = useTranslations('nav');
 
   const handleClick = () => {
     setIsOpen(!isOpen);
@@ -49,12 +51,14 @@ const MobileNav = () => {
           >
             <ul className='flex flex-col gap-y-4 sm:gap-y-6'>
               {routes.slice(0, 3).map((route: Route, index: number) => {
-                if (route.label === 'Memberships') route.label = 'Members';
+                // if (route.label === 'Memberships') route.label = 'Members';
                 return (
                   <li
                     key={route.path}
                     style={{
-                      transitionDelay: isOpen ? `${300 + (index + 1) * 100}ms` : '0ms',
+                      transitionDelay: isOpen
+                        ? `${300 + (index + 1) * 100}ms`
+                        : '0ms',
                     }}
                     className={cn(
                       'w-fit opacity-0 invisible -translate-y-5 transition-all duration-500',
@@ -67,7 +71,7 @@ const MobileNav = () => {
                       index={index}
                       variant='mobilemenu'
                     >
-                      {route.label}
+                      {t(`${route.slug}`)}
                     </NavLink>
                   </li>
                 );
@@ -79,7 +83,9 @@ const MobileNav = () => {
                   <li
                     key={route.path}
                     style={{
-                      transitionDelay: isOpen ? `${300 + (index + 4) * 100}ms` : '0ms',
+                      transitionDelay: isOpen
+                        ? `${300 + (index + 4) * 100}ms`
+                        : '0ms',
                     }}
                     className={cn(
                       'w-fit opacity-0 invisible -translate-y-5 transition-all duration-500',
@@ -92,7 +98,7 @@ const MobileNav = () => {
                       index={index}
                       variant='mobilemenu'
                     >
-                      {route.label}
+                      {t(`${route.slug}`)}
                     </NavLink>
                   </li>
                 );
@@ -109,7 +115,9 @@ const MobileNav = () => {
                     href={social.url}
                     target='_blank'
                     style={{
-                      transitionDelay: isOpen ? `${300 + (index + 7) * 100}ms` : '0ms',
+                      transitionDelay: isOpen
+                        ? `${300 + (index + 7) * 100}ms`
+                        : '0ms',
                     }}
                     className={cn(
                       'font-medium uppercase opacity-0 invisible -translate-y-5 transition-all duration-500',
@@ -127,7 +135,9 @@ const MobileNav = () => {
                     href={social.url}
                     target='_blank'
                     style={{
-                      transitionDelay: isOpen ? `${300 + (index + 8) * 100}ms` : '0ms',
+                      transitionDelay: isOpen
+                        ? `${300 + (index + 8) * 100}ms`
+                        : '0ms',
                     }}
                     className={cn(
                       'font-medium uppercase opacity-0 invisible -translate-y-5 transition-all duration-500',
