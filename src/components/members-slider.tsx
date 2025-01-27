@@ -2,13 +2,18 @@
 
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
-import { members } from '@/data/data';
 import { Member as MemberType } from '@/lib/types';
 import Member from './member';
 import { useState } from 'react';
 import Arrow from './ui/arrow-button';
 
-const MembersSlider = () => {
+const MembersSlider = ({
+  members,
+  title,
+}: {
+  members: MemberType[];
+  title: string;
+}) => {
   const [activeMemberIndex, setActiveMemberIndex] = useState<number | null>(
     null
   );
@@ -46,7 +51,7 @@ const MembersSlider = () => {
     <div className=''>
       <div className='flex justify-between items-center pr-side gap-4'>
         <h2 className='text-3xl sm:text-7xl lg:text-6xl font-semibold uppercase'>
-          Notable <br className='lg:hidden' /> members
+          {title}
         </h2>
         <div className='relative flex gap-x-4 sm:gap-x-6 items-center px-4 sm:px-6 h-[40px] sm:h-[72px] bg-green-default rounded-full border border-primary-dark'>
           {loaded && instanceRef.current && (

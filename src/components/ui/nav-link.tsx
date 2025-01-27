@@ -28,7 +28,7 @@ const NavLink = ({
     <Link
       href={localizedHref}
       className={cn(
-        `group uppercase transition-all duration-300 hover:opacity-100 `,
+        `group uppercase transition-all duration-300 hover:opacity-100 whitespace-nowrap `,
         variant === 'header' && 'flex items-center gap-x-2 font-medium',
         variant === 'mobilemenu' && `text-xl sm:text-5xl font-bold`,
         variant === 'header' && !isActive && 'opacity-60'

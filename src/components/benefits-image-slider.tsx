@@ -66,7 +66,7 @@ const BenefitsImageSlider = ({
           <div
             key={index}
             className={cn(
-              'keen-slider__slide relative aspect-[215/191] opacity-40 cursor-pointer',
+              'keen-slider__slide relative aspect-[215/191] h-full opacity-40 cursor-pointer',
               activeBenefit === index && 'opacity-100',
               `number-slide-${index + 1}`
             )}

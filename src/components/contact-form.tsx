@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { buttonVariants } from './ui/button';
 import ArrowIcon from './ui/icons/arrow';
+import { useTranslations } from 'next-intl';
 
 type FormData = {
   access_key: string;
@@ -17,6 +18,8 @@ type FormData = {
 };
 
 const ContactForm = () => {
+  const t = useTranslations('contactUs.contactForm');
+
   const {
     register,
     handleSubmit,
@@ -40,15 +43,15 @@ const ContactForm = () => {
         if (result.success) {
           setIsSuccess(true);
           reset();
-          setMessage('Poruka je uspešno poslata');
+          setMessage(t('success'));
         } else {
           setIsSuccess(false);
-          setMessage('Došlo je do greške');
+          setMessage(t('error'));
         }
       })
       .catch((error) => {
         setIsSuccess(false);
-        setMessage('Došlo je do greške');
+        setMessage(t('error'));
       });
   };
 
@@ -75,10 +78,10 @@ const ContactForm = () => {
             errors.name ? 'border-red-500' : 'border-white'
           } ${inputClasses}`}
           type='text'
-          placeholder='Ime i prezime'
+          placeholder={t('name')}
           {...register('name', {
-            required: { value: true, message: 'Obavezno polje' },
-            maxLength: { value: 50, message: 'Maksimalno 50 karaktera' },
+            required: { value: true, message: t('required') },
+            maxLength: { value: 50, message: t('maxLength50') },
           })}
           autoComplete='name'
         />
@@ -95,12 +98,12 @@ const ContactForm = () => {
             errors.email ? 'border-red-500' : 'border-white'
           } ${inputClasses}`}
           type='email'
-          placeholder='Email'
+          placeholder={t('email')}
           {...register('email', {
-            required: { value: true, message: 'Obavezno polje' },
+            required: { value: true, message: t('required') },
             pattern: {
               value: /^\S+@\S+$/i,
-              message: 'Email adresa nije validna',
+              message: t('invalidEmail'),
             },
           })}
           autoComplete='email'
@@ -118,16 +121,14 @@ const ContactForm = () => {
             errors.phone ? 'border-red-500' : 'border-white'
           } ${inputClasses}`}
           type='tel'
-          placeholder='Telefon'
+          placeholder={t('phone')}
           {...register('phone', {
-            required: { value: true, message: 'Obavezno polje' },
+            required: { value: true, message: t('required') },
             validate: {
               pattern: (value) =>
-                /^[+\d\s\-()]+$/.test(value) || 'Broj telefona nije ispravan',
-              minLength: (value) =>
-                value.length >= 6 || 'Broj telefona je prekratak',
-              maxLength: (value) =>
-                value.length <= 20 || 'Broj telefona je predugačak',
+                /^[+\d\s\-()]+$/.test(value) || t('invalidPhone'),
+              minLength: (value) => value.length >= 6 || t('minLength'),
+              maxLength: (value) => value.length <= 20 || t('maxLength20'),
             },
           })}
           autoComplete='tel'
@@ -145,12 +146,12 @@ const ContactForm = () => {
           className={`${
             errors.message ? 'border-red-500' : 'border-white'
           } ${inputClasses} py-6 h-auto !rounded-3xl resize-none`}
-          placeholder='Poruka'
+          placeholder={t('message')}
           rows={8}
           {...register('message', {
-            required: { value: true, message: 'Obavezno polje' },
-            minLength: { value: 10, message: 'Minimalno 10 karaktera' },
-            maxLength: { value: 1000, message: 'Maksimalno 1000 karaktera' },
+            required: { value: true, message: t('required') },
+            minLength: { value: 10, message: t('minLength') },
+            maxLength: { value: 1000, message: t('maxLength1000') },
           })}
         />
         {errors.message && (
@@ -173,7 +174,7 @@ const ContactForm = () => {
         type='submit'
       >
         <ArrowIcon color='#fff' />
-        <span>Pošaljite poruku</span>
+        <span>{t('submit')}</span>
       </button>
     </form>
   );

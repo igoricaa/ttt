@@ -3,32 +3,42 @@ import LinkButton from '@/components/ui/link-button';
 import LogoTypography from './icons/LogoTypography';
 import { routes } from '@/data/data';
 import { Route } from '@/lib/types';
+import { useTranslations } from 'next-intl';
 
 const Footer = () => {
+  const navT = useTranslations('nav');
+  const footerT = useTranslations('footer');
+
   return (
     <footer className='sm:h-[804px] px-side pt-6 sm:pt-9 pb-5 bg-footerBackground flex flex-col justify-between overflow-hidden'>
       <div className='grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12 gap-x-4 gap-y-14 sm:gap-y-0'>
         <div className='order-2 sm:order-1 col-span-full sm:col-span-2 flex flex-col sm:flex-row gap-y-4 sm:gap-y-0 gap-x-6 group'>
           <ul className='flex flex-col gap-y-4'>
             {routes.slice(0, 3).map((route: Route) => (
-              <li key={route.path} className='w-fit opacity-100 transition-opacity duration-200 group-hover:opacity-50 hover:!opacity-100'>
+              <li
+                key={route.path}
+                className='w-fit opacity-100 transition-opacity duration-200 group-hover:opacity-50 hover:!opacity-100'
+              >
                 <Link
                   href={route.path}
                   className='font-medium uppercase whitespace-nowrap'
                 >
-                  {route.label}
+                  {navT(`${route.slug}`)}
                 </Link>
               </li>
             ))}
           </ul>
           <ul className='flex flex-col gap-y-4'>
             {routes.slice(3).map((route: Route) => (
-              <li key={route.path} className='w-fit opacity-100 transition-opacity duration-200 group-hover:opacity-50 hover:!opacity-100'>
+              <li
+                key={route.path}
+                className='w-fit opacity-100 transition-opacity duration-200 group-hover:opacity-50 hover:!opacity-100'
+              >
                 <Link
                   href={route.path}
                   className='font-medium uppercase whitespace-nowrap'
                 >
-                  {route.label}
+                  {navT(`${route.slug}`)}
                 </Link>
               </li>
             ))}
@@ -41,7 +51,7 @@ const Footer = () => {
             size='lg'
             className='w-full max-w-[444px]'
           >
-            Schedula a Free Tour
+            {footerT('ctaButton')}
           </LinkButton>
           <LinkButton
             href='/contact-us'
@@ -49,7 +59,7 @@ const Footer = () => {
             size='lg'
             className='w-full max-w-[444px] mt-4'
           >
-            Contact Us
+            {footerT('contactUs')}
           </LinkButton>
         </div>
       </div>
@@ -138,12 +148,10 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <p className='text-sm sm:text-nowrap'>
-            <span className='italic'>Hours</span>:Mo-Fri{' '}
-            <span className='italic'>8.00 - 22.00</span>/Sat{' '}
-            <span className='italic'>8.00 - 22.00</span>/Sun{' '}
-            <span className='italic'>Closed</span>
-          </p>
+          <p
+            className='text-sm sm:text-nowrap'
+            dangerouslySetInnerHTML={{ __html: footerT.raw('workingHours') }}
+          />
         </div>
       </div>
     </footer>

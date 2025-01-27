@@ -1,17 +1,221 @@
 {
-  "HomePage": {
-    "title": "Hello world!",
-    "about": "Go to the about page"
+  "nav": {
+    "home": "Početna",
+    "aboutUs": "O nama",
+    "memberships": "Članstva",
+    "programs": "Programi",
+    "schedule": "Raspored",
+    "contactUs": "Kontakt"
   },
-  "AboutUsPage": {
-    "title": "About Us"
+  "footer": {
+    "workingHours": "<span className='italic'>Radno vreme</span>: Ponedeljak - Petak 8.00 - 22.00 / Subota 8.00 - 22.00 / Nedelja Zatvoreno",
+    "ctaButton": "Zakaži besplatan trening",
+    "contactUs": "Kontaktirajte nas"
+  },
+  "home": {
+    "hero": {
+      "subtitle": "Ultimativno mesto za trening i borbu",
+      "text": "Postani član jednog od najmodernijih borilačkih i fitness centara u Evropi.",
+      "buttonText": "Pridruži nam se"
+    },
+    "ourStory": {
+      "intro": "Thunder Top Team je prostor u kom borci svih nivoa pomeraju svoje granice, oštre svoje veštine, i grade mentalnu snagu za borbu u kavezu, ali i van njega. Pridruži nam se i iskusi vrhunski način fizičke i mentalne pripreme sa onima koji su među najboljima na svetu.",
+      "title": "Naša priča",
+      "aboutText": {
+        "ptOne": "Prvi put kada smo otišli na UFC, pale su nam vilice kad smo videli njihov prostor za trening. Kad smo se sabrali i ponovo počeli da razmišljamo - zapitali smo se zašto ovo ne možemo da imamo u Srbiji? Naši uslovi za treniranje u celoj državi nisu baš sjajni, a svi naši vrhunski sportisti su svakodnevno  suočeni sa tim.",
+        "ptTwo": "Mi to ne želimo.",
+        "ptThree": "Želimo da pružimo kvalitetne uslove svima koji žele da se okušaju u borbi, koji žele da daju svoje vreme, energiju i telo ovim sportovima. Poželeli smo da stvorimo prostor za pomeranje granica, izgradnju fokusa, posvećenosti i izdržljivosti.",
+        "ptFour": "I to smo i uradili."
+      }
+    },
+    "highlights": [
+      {
+        "title": {
+          "ptOne": "Vrhunska ",
+          "ptTwo": "Oprema"
+        },
+        "description": "U svakom delu TTT prostora se nalazi najkvalitetnija oprema za vežbanje, od Zebra strunjača za borbe do najmodernijih sprava u prostoru za funkcionalne treninge."
+      },
+      {
+        "title": {
+          "ptOne": "Stručni ",
+          "ptTwo": "Treneri"
+        },
+        "description": "TTT tim čine profesionalci u svojim poljima koji ne samo da teže ka izvrsnosti, već konstantno rade na razvijanju svojih veština i znanja."
+      },
+      {
+        "title": {
+          "ptOne": "Fleksibilni ",
+          "ptTwo": "Termini Treninga "
+        },
+        "description": "MMA, boks, rvanje, BJJ za decu i za odrasle. Raspored je napravljen da odgovara svima - preko 10 termina nedeljno za svaki sport."
+      }
+    ]
+  },
+  "aboutUs": {
+    "header": {
+      "title": "O nama",
+      "subtitle": "Naša misija",
+      "text": "Pridružite se najmodernijem centru za borilačke sportove i fitnes na Balkanu"
+    },
+    "introText": {
+      "ptOne": "Osnovan od strane UFC borca Duška Todorovića i grupe stručnjaka za BJJ, TTT je posvećen treniranju sledeće generacije boraca koja izričito želi da dostigne svoj maksimum, i ide još dalje od toga.",
+      "ptTwo": "Stvorili smo prostor koji smo želeli za sebe - sve što smo ikada zamislili na mestu posvećenom pomeranju granica fizičke i mentalne izdržljivosti. Sada smo ga otvorili za vas."
+    },
+    "buttonText": "Kontaktirajte nas",
+    "facility": {
+      "title": "TTT prostor",
+      "text": {
+        "ptOne": "TTT se prostire na tri sprata:",
+        "ptTwo": "1. Chill Zona - ovde možete popiti kafu, sačekati dete da završi sa treningom, popričati sa trenerima ili samo odmoriti.",
+        "ptThree": "2. Funkcionalni Treninzi - ovaj sprat koji sadrži sve što vam je potrebno za funkcionalne treninge.",
+        "ptFour": "3. Borba - ceo sprat pod strunjačama, posvećen borbenim sportovima, sa fokusom na MMA i BJJ.",
+        "ptFive": "U svakom delu prostora se nalazi najkvalitetnija oprema za vežbanje, od Zebra strunjača za borbe do najmodernijih sprava u prostoru za funkcionalne treninge."
+      }
+    },
+    "achievements": {
+      "title": "Naši uspesi",
+      "achievements": {
+        "one": {
+          "title": "ONE Championship",
+          "description": "Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit."
+        },
+        "kontender": {
+          "title": "Dusko Todorovic vs Neki kontender",
+          "description": "Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit."
+        },
+        "dzakovi": {
+          "title": "Prikupljanje Dzakova za NK-a da ne lomi kicmu",
+          "description": "Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit."
+        }
+      }
+    },
+    "members": {
+      "title": "Treneri",
+      "ivan": {
+        "name": "Ivan Popović",
+        "title": "Glavni BJJ trener",
+        "bio": "Ivan Popović, crni pojas u brazilskoj džiu džici, sa preko 15 godina iskustva u sportu. Glavni trener brazilske džiu džice u Thunder Top Team-u, gde radi sa rekreativcima i profesionalnim MMA i BJJ borcima. Takođe ima bogato iskustvo kao trener dece, gde postiže izuzetne rezultate i gradi sledeću generaciju boraca. Njegov pristup kombinuje tehničku preciznost i praktičnu primenu, što ga čini jednim od najcenjenijih trenera u zajednici."
+      },
+      "dusan": {
+        "name": "Dušan Jazić",
+        "title": "S&C trener",
+        "bio": "Diplomirani trener u sportu (Fakultet sporta i fizickog vaspitanja), sa visegodisnjim iskustvom u vodjenju personalnih i grupnih treninga u teretani, sto sa rekreativcima sto sa profesionalnim sportistima. Specijalizovan za treninge snage i kondicije u sportu. Visegodisnje iskustvo u borilackim sportovima, ljubicasti pojas u BJJ."
+      },
+      "andjela": {
+        "name": "Anđela Nešovanović",
+        "title": "BJJ trener",
+        "bio": "Ja sam Anđela, imam 28 godina. Iako imam diplomu Medicnskog fakulteta, pored trenerskog posla radim i kao tattoo majstor. Nosilac sam ljubicastog pojasa u džiu-džici i u Thunder-u radim kao dečiji i pomoćni trener. Već dugi niz godina, Ivan i ja poducavamo klince ovom plemenitom veštinom. :)"
+      },
+      "dusko": {
+        "name": "Duško Todorović",
+        "title": "UFC Fighter and MMA Head Coach",
+        "bio": "Duško Todorović, UFC borac u srednjoj kategoriji i crni pojas u brazilskoj džiu džici, takmiči se u profesionalnom MMA-u od 2015. godine. Glavni je trener u Thunder Top Team-u, gde trenira kako rekreativce, tako i profesionalne borce. Poznat po tehničkoj preciznosti i svestranom stilu borbe, Duško kombinuje svoje znanje u stand-upu i parteru kako bi ostvario uspeh u oktagonu. Sa snažnom pozadinom u borilačkim veštinama i strašću prema treniranju, posvećen je razvoju sledeće generacije boraca."
+      }
+    }
+  },
+  "memberships": {
+    "title": "Članstva",
+    "description": "U TTT-u, borci svih nivoa se okupljaju da pomere svoje granice, usavrše svoje veštine i izgrade mentalnu snagu.",
+    "buttonText": "Kontaktirajte nas",
+    "benefits": {
+      "coaches": {
+        "title": "Najbolji treneri borenja",
+        "subtitle": "Za sve članove",
+        "description": "Thunder Top Team čine treneri svetske klase koji su posvećeni razvoju vaših veština u svakom aspektu borbe. Njihovo duboko poznavanje različitih stilova borbe, u kombinaciji sa praktičnim iskustvom, garantuje da svaki član tima dobije personalizovanu pažnju koja će mu pomoći da se razvije. Okruženje je okruženje saradnje, poštovanja i nepokolebljive podrške. Bilo da ste početnik ili iskusan borac, bićete okruženi zajednicom koja vas gura da postignete veličinu, negujući prostor gde se šampioni stvaraju i unutar i izvan ringa."
+      },
+      "environment": {
+        "title": "Najbolje Okruženje za Trening",
+        "subtitle": "Za sve članove",
+        "description": "Prostor za trening je pažljivo osmišljen da inspiriše vrhunske performanse i nepokolebljivu motivaciju. Teretana je opremljena modernom opremom koja nudi sve, od sparing prostora do fitnes sprava za snagu, agilnost i kondiciju. TTT je više od fizičkog prostora, ovde vlada atmosfera discipline i podrške, gde se svaki pojedinac podstiče da prevaziđe svoje granice. Bilo da trenirate solo ili kao deo tima, naći ćete sve što vam je potrebno da unapredite svoje veštine i telo, i postanete najbolja verzija sebe."
+      },
+      "welness": {
+        "title": "Wellness & Spa",
+        "subtitle": "Za sve članove",
+        "description": "TTT spa je savršena prilika za opuštanje nakon napornog treninga. Dizajniran sa ciljem da pomogne pri oporavku ili samo kao odličan način da se opustite, spa centar pruža pristup tretmanima kao što su masaže, sauna i terapeutske kupke. Ovo je prostor gde sportisti mogu da oporave svoja tela, napune svoje umove i pripreme se za sledeći izazov. Bez obzira da li tražite oporavak nakon intenzivnog treninga ili jednostavno želite da se umirite, TTT spa je tu da pomogne."
+      },
+      "chillarea": {
+        "title": "Chill Area",
+        "subtitle": "Za sve članove",
+        "description": "TTT Chill Area je prostor namenjen za opuštanje i komfor, pružajući miran odmor nakon treninga. Meka sedišta, ambijentalno osvetljenje i umirujuća atmosfera, prave savršen kutak za chill, povezivanje sa drugima ili sopstveni mir. Idealno mesto za druženje, razmenu iskustava ili jednostavno opuštanje u okruženju bez stresa. Bilo da pravite pauzu između treninga ili se opuštate nakon dugog dana, TTT Chill Area je savršen prostor za lagano uživanje."
+      }
+    }
+  },
+  "programs": {
+    "buttonText": "Zakaži besplatan trening",
+    "strength": {
+      "title": "Snaga i kondicija",
+      "description": "Najviši nivo treniranja u Balkanima. Od UFC i KSW veterana"
+    },
+    "bjj": {
+      "title": "Brazilska džiu džica",
+      "description": "Treningi svakog dana. Najviši nivo treniranja u Balkanima. Od UFC i KSW veterana"
+    },
+    "mma": {
+      "title": "MMA",
+      "description": "Treningi svakog dana. Najviši nivo treniranja u Balkanima. Od UFC i KSW veterana"
+    },
+    "boxing": {
+      "title": "Boks",
+      "description": "Treningi svakog dana. Najviši nivo treniranja u Balkanima. Od UFC i KSW veterana"
+    },
+    "selfDefense": {
+      "title": "Samoobrana za žene",
+      "description": "Najviši nivo treniranja u Balkanima. Od UFC i KSW veterana"
+    },
+    "kids": {
+      "title": "Treninzi za decu",
+      "description": "Treninzi svakog dana. Najviši nivo treniranja u Balkanima. Od UFC i KSW veterana"
+    }
+  },
+  "schedule": {
+    "title": "Raspored",
+    "description": "Ne propusti - imaj pristup svim treningima.",
+    "subtitle": "Slobodno nas kontaktirajte za sva pitanja u vezi sa našim treninzima.",
+    "buttonText": "Kontaktirajte nas",
+    "days": {
+      "monday": "Ponedeljak",
+      "tuesday": "Utorak",
+      "wednesday": "Sreda",
+      "thursday": "Četvrtak",
+      "friday": "Petak",
+      "saturday": "Subota",
+      "sunday": "Nedelja"
+    }
+  },
+  "contactUs": {
+    "title": "Kontakt",
+    "description": "Postanite deo nove sportske revolucije!",
+    "reachOut": "Kontaktirajte nas",
+    "text": "Ukoliko imate bilo kakva pitanja u vezi programa, rasporeda, ili načina rada, popunite kontakt formu i odgovorićemo vam u najkraćem mogućem roku.",
+    "info": "Popunite formular i odgovorićemo vam u najkraćem mogućem roku.",
+    "contactForm": {
+      "name": "Ime",
+      "email": "Email",
+      "phone": "Telefon",
+      "message": "Poruka",
+      "submit": "Pošalji",
+      "success": "Vaša poruka je uspešno poslata",
+      "error": "Došlo je do greške prilikom slanja poruke",
+      "required": "Obavezno polje",
+      "invalidPhone": "Neispravan broj telefona",
+      "invalidEmail": "Neispravna email adresa",
+      "minLength": "Minimum 10 karaktera",
+      "maxLength1000": "Maksimum 1000 karaktera",
+      "maxLength50": "Maksimum 50 karaktera",
+      "maxLength20": "Maksimum 20 karaktera"
+    },
+    "mapSection": {
+      "subtitle": "Naše informacije",
+      "workingHours": "Radno vreme: Pon-Pet 8.00 - 22.00 / Sub 8.00 - 22.00 / Ned Zatvoreno"
+    }
   },
   "LocaleSwitcher": {
-    "label": "Change language",
-    "locale": "{locale, select, en {ENG} sr {SRB} ru {RUS} other {Unknown}}"
+    "label": "Promeni jezik",
+    "locale": "{locale, select, en {ENG} sr {SRB} ru {RUS} other {Nepoznato}}"
   },
   "notFoundPage": {
-    "title": "Page not found",
-    "description": "The page you are looking for does not exist."
+    "title": "Stranica nije pronađena",
+    "description": "Stranica koju tražite ne postoji."
   }
 }

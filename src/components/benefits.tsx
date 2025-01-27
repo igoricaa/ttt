@@ -1,6 +1,5 @@
 'use client';
 
-import { benefits } from '@/data/data';
 import { Benefit } from '@/lib/types';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
@@ -11,7 +10,7 @@ import Arrow from './ui/arrow-button';
 import useMediaQuery from '@/hooks/useMediaQuery';
 import BenefitsImageSlider from './benefits-image-slider';
 
-const Benefits = () => {
+const Benefits = ({ benefits }: { benefits: Benefit[] }) => {
   const [activeBenefit, setActiveBenefit] = useState<number>(0);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const descriptionRef = useRef<HTMLParagraphElement>(null);

@@ -1,10 +1,214 @@
 {
-  "HomePage": {
-    "title": "Hello world!",
-    "about": "Go to the about page"
+  "nav": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "memberships": "Memberships",
+    "programs": "Programs",
+    "schedule": "Schedule",
+    "contactUs": "Contact Us"
   },
-  "AboutUsPage": {
-    "title": "About Us"
+  "footer": {
+    "workingHours": "<span className='italic'>Hours</span>:Mo-Fri <span className='italic'>8.00 - 22.00</span>/Sat <span className='italic'>8.00 - 22.00</span>/Sun <span className='italic'>Closed</span>",
+    "ctaButton": "Schedule a Free Session",
+    "contactUs": "Contact Us"
+  },
+  "home": {
+    "hero": {
+      "subtitle": "Your Ultimate Training Destination",
+      "text": "Become a member of one of Europe's most modern martial arts and fitness centers.",
+      "buttonText": "Join Us"
+    },
+    "ourStory": {
+      "intro": "At TTT, fighters of all levels come together to push their limits, refine their skills, and build the mental strength needed to dominate in and out of the cage. Join us and experience top-tier training from some of the best in the fight world.",
+      "title": "Our Story",
+      "aboutText": {
+        "ptOne": "The first time we went to UFC our jaws dropped when we saw their training facilities. Once the wow moment passed - we asked ourselves why can't we have this in Serbia? Let's face it, our training conditions throughout the state aren't that great - our top athletes overcome those struggles every day.",
+        "ptTwo": "We don't want that.",
+        "ptThree": "We want to give high-quality conditions to everyone who wants to try fighting, and who wants to give their time, energy, and body to these sports. We wanted to create a space for pushing limits, building focus and dedication, and endurance. ",
+        "ptFour": "So we did."
+      }
+    },
+    "highlights": [
+      {
+        "title": {
+          "ptOne": "State-of the Art",
+          "ptTwo": "Equipment"
+        },
+        "description": "Every part of the TTT area has the highest quality equipment, from Zebra mats for fighting sports - to the most modern exercise equipment in the gym area."
+      },
+      {
+        "title": {
+          "ptOne": "TTT",
+          "ptTwo": "Trainers"
+        },
+        "description": "Our team is comprised of professionals who are dedicated to excellence and are continuously developing their skills and knowledge."
+      },
+      {
+        "title": {
+          "ptOne": "Variety of",
+          "ptTwo": "Classes"
+        },
+        "description": "MMA, boxing, wrestling, BJJ for children and adults.The schedule is made to suit everyone - over 10 sessions per week for each sport."
+      }
+    ]
+  },
+  "aboutUs": {
+    "header": {
+      "title": "About Us",
+      "subtitle": "Our Mission and Commitment",
+      "text": "Join the most modern combat sports and fitness centre in the Balkans"
+    },
+    "introText": {
+      "ptOne": "Founded by UFC fighter Dusko Todorovic and a group of elite Brazilian Jiu-Jitsu experts, TTT is dedicated to training the next generation of fighters with a passion for excellence and a commitment to discipline.",
+      "ptTwo": "We created a space we envisioned for ourselves — everything we ever wanted in a place dedicated to pushing the boundaries of physical and mental endurance. Now, we opened it for you."
+    },
+    "buttonText": "Contact Us",
+    "facility": {
+      "title": "Our Facility",
+      "text": {
+        "ptOne": "TTT is spread over three floors:",
+        "ptTwo": "1. Chill Zone - here you can drink a coffee, wait for your child to finish his/her training session, talk to the trainers, or just rest.",
+        "ptThree": "2. Functional Training - this floor contains everything you need for functional training.",
+        "ptFour": "3. Fighting - an entire floor padded with mats and dedicated to combat sports, with a focus on MMA and BJJ.",
+        "ptFive": "Every part of the TTT area has the highest quality equipment, from Zebra mats for fighting sports - to the most modern exercise equipment in the gym area. "
+      }
+    },
+    "achievements": {
+      "title": "Our Achievements",
+      "achievements": {
+        "one": {
+          "title": "ONE Championship",
+          "description": "Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit."
+        },
+        "kontender": {
+          "title": "Dusko Todorovic vs Neki kontender",
+          "description": "Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit."
+        },
+        "dzakovi": {
+          "title": "Prikupljanje Dzakova za NK-a da ne lomi kicmu",
+          "description": "Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit."
+        }
+      }
+    },
+    "members": {
+      "title": "Notable Members",
+      "ivan": {
+        "name": "Ivan Popović",
+        "title": "BJJ Head Coach",
+        "bio": "Ivan Popović, a black belt in Brazilian Jiu-Jitsu with over 15 years of experience in the sport. He is the head coach of Brazilian Jiu-Jitsu at Thunder Top Team, where he works with both recreational practitioners and professional MMA and BJJ fighters. He also has extensive experience as a children's coach, achieving exceptional results and nurturing the next generation of fighters."
+      },
+      "dusan": {
+        "name": "Dušan Jazić",
+        "title": "S&C Coach",
+        "bio": "A graduate sports coach (Faculty of Sport and Physical Education) with years of experience leading personal and group training sessions in the gym, working with both recreational clients and professional athletes. Specialized in strength and conditioning training in sports. Has extensive experience in martial arts and holds a purple belt in Brazilian Jiu-Jitsu."
+      },
+      "andjela": {
+        "name": "Anđela Nešovanović",
+        "title": "BJJ Coach",
+        "bio": "Ja sam Anđela, imam 28 godina. Iako imam diplomu Medicnskog fakulteta, pored trenerskog posla radim i kao tattoo majstor. Nosilac sam ljubicastog pojasa u džiu-džici i u Thunder-u radim kao dečiji i pomoćni trener. Već dugi niz godina, Ivan i ja poducavamo klince ovom plemenitom veštinom. :)"
+      },
+      "dusko": {
+        "name": "Duško Todorović",
+        "title": "UFC Fighter and MMA Head Coach",
+        "bio": "Duško Todorović, a UFC Middleweight fighter and a black belt in Brazilian Jiu-Jitsu, has been competing in professional MMA since 2015. and he is the MMA head coach at Thunder Top Team. Known for his technical precision and well-rounded fighting style, Duško combines his expertise in striking and grappling to achieve success in the octagon."
+      }
+    }
+  },
+  "memberships": {
+    "title": "Memberships",
+    "description": "At TTT, fighters of all levels come together to push their limits, refine their skills, and build the mental strength.",
+    "buttonText": "Contact Us",
+    "benefits": {
+      "coaches": {
+        "title": "Best Fighting Coaches",
+        "subtitle": "All Members Benefits",
+        "description": "At our facility, you'll find a team of world-class fighting coaches who are committed to developing your skills in every aspect of combat. Their deep knowledge of various fighting styles, combined with hands-on experience, ensures that every student receives personalized attention to help them excel. The environment is one of collaboration, respect, and unwavering support. Whether you're a beginner or a seasoned fighter, you'll be surrounded by a community that pushes you to achieve greatness, fostering a space where champions are made both inside and outside the ring."
+      },
+      "environment": {
+        "title": "Best Training Environment",
+        "subtitle": "All Members Benefits",
+        "description": "Our training environment is carefully curated to inspire peak performance and unwavering focus. The gym is equipped with top-of-the-line equipment, offering everything from sparring areas to fitness tools that support strength, agility, and conditioning. More than just a physical space, the atmosphere is one of discipline and camaraderie, where every individual is encouraged to push beyond their limits. Whether you're training solo or as part of a team, you'll find everything you need to elevate your skills and become the best version of yourself."
+      },
+      "welness": {
+        "title": "Wellness Spa Access",
+        "subtitle": "All Members Benefits",
+        "description": "After a demanding training session, our wellness spa offers the perfect opportunity to unwind. Designed to help you recover and relax, the spa provides access to indulging treatments that include massages, a sauna, and therapeutic baths. It's a space where athletes can restore their bodies, recharge their minds, and prepare for the next challenge. Whether you're seeking recovery after an intense workout or simply looking to pamper yourself, our wellness spa offers the ultimate experience in relaxation and care for your well-being."
+      },
+      "chillarea": {
+        "title": "Cozy Chill Area",
+        "subtitle": "All Members Benefits",
+        "description": "Our cozy chill area is designed for ultimate relaxation and comfort, providing a peaceful retreat after a workout. With soft seating, ambient lighting, and a soothing atmosphere, it's the perfect place to decompress, connect with others, or enjoy some quiet time. The space encourages socializing and unwinding, making it an ideal spot for athletes to bond, share experiences, or simply relax in a stress-free environment. Whether you're taking a break between training sessions or unwinding after a long day, our chill area offers a cozy space for everyone to enjoy."
+      }
+    }
+  },
+  "programs": {
+    "buttonText": "Book a free session",
+    "strength": {
+      "title": "Strength & Conditioning",
+      "description": "Highest level of coaching in the baklans. From the UFC & KSW veterans"
+    },
+    "bjj": {
+      "title": "Brazilian Jiu-Jitsu",
+      "description": "Sessions held Every Day. Highest level of coaching in the baklans. From the UFC & KSW veterans"
+    },
+    "mma": {
+      "title": "MMA",
+      "description": "Sessions held Every Day. Highest level of coaching in the baklans. From the UFC & KSW veterans"
+    },
+    "boxing": {
+      "title": "Boxing",
+      "description": "Sessions held Every Day. Highest level of coaching in the baklans. From the UFC & KSW veterans"
+    },
+    "selfDefense": {
+      "title": "Self-Defense for Women",
+      "description": "Highest level of coaching in the baklans. From the UFC & KSW veterans"
+    },
+    "kids": {
+      "title": "Kids classes",
+      "description": "Sessions held Every Day. Highest level of coaching in the baklans. From the UFC & KSW veterans"
+    }
+  },
+  "schedule": {
+    "title": "Schedule",
+    "description": "Don't miss out - grab an ALL-ACCESS pass and have access to all training sessions.",
+    "subtitle": "Feel free to reach out for any questions regarding our classes.",
+    "buttonText": "Contact Us",
+    "days": {
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday"
+    }
+  },
+  "contactUs": {
+    "title": "Contact Us",
+    "description": "Become a part of the new sports revolution!",
+    "reachOut": "Reach out",
+    "text": "If you have any questions about the membership program, schedule, or our training sessions, fill out the contact form and we will reply as soon as possible.",
+    "info": "Fill out the form, and we'll get back to you as soon as possible.",
+    "contactForm": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "submit": "Submit",
+      "success": "Your message has been sent successfully",
+      "error": "An error occurred while sending your message",
+      "required": "Required field",
+      "invalidPhone": "Invalid phone number",
+      "invalidEmail": "Invalid email address",
+      "minLength": "Minimum 10 characters",
+      "maxLength1000": "Maximum 1000 characters",
+      "maxLength50": "Maximum 50 characters",
+      "maxLength20": "Maximum 20 characters"
+    },
+    "mapSection": {
+      "subtitle": "Our information",
+      "workingHours": "Working Hours: Mo-Fri 8.00 - 22.00 / Sat 8.00 - 22.00 / Sun Closed"
+    }
   },
   "LocaleSwitcher": {
     "label": "Change language",

@@ -1,7 +1,10 @@
 import Image from 'next/image';
 import InViewWrapper from '../inview-wrapper';
+import { getTranslations } from 'next-intl/server';
 
-const OurStory = () => {
+const OurStory = async () => {
+  const t = await getTranslations('home.ourStory');
+
   return (
     <section className='grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12 gap-x-4 px-side'>
       <InViewWrapper
@@ -32,10 +35,7 @@ const OurStory = () => {
           to={{ opacity: 1, filter: 'blur(0px)', transform: 'translateY(0)' }}
         >
           <p className='text-xl sm:text-2xl text-center uppercase'>
-            At TTT, fighters of all levels come together to push their limits,
-            refine their skills, and build the mental strength needed to
-            dominate in and out of the cage. Join us and experience top-tier
-            training from some of the best in the fight world.
+            {t('intro')}
           </p>
         </InViewWrapper>
         <div className='mt-12 sm:mt-16 lg:mt-11 2xl:mt-[88px] grid grid-cols-8 gap-x-4'>
@@ -49,7 +49,7 @@ const OurStory = () => {
             className='col-span-full lg:col-span-6 lg:col-start-2'
           >
             <h2 className='text-3xl sm:text-6xl 2xl:text-7xl font-semibold uppercase'>
-              Our Story
+              {t('title')}
             </h2>
           </InViewWrapper>
           <InViewWrapper
@@ -61,12 +61,7 @@ const OurStory = () => {
             to={{ opacity: 1, filter: 'blur(0px)', transform: 'translateY(0)' }}
             className='mt-8 col-span-full lg:col-span-6 lg:col-start-2'
           >
-            <p className='text-base sm:text-xl'>
-              Founded by UFC fighter Dusko Todorovic and a group of elite MMA,
-              Wrestling and Brazilian Jiu-Jitsu experts, TTT is dedicated to
-              training the next generation of fighters with a passion for
-              excellence and a commitment to discipline.
-            </p>
+            <p className='text-base sm:text-xl'>{t('aboutText.ptOne')}</p>
           </InViewWrapper>
           <InViewWrapper
             from={{
@@ -77,11 +72,29 @@ const OurStory = () => {
             to={{ opacity: 1, filter: 'blur(0px)', transform: 'translateY(0)' }}
             className='col-span-full lg:col-span-6 lg:col-start-2 mt-5'
           >
-            <p className='text-base sm:text-xl'>
-              We created a space we envisioned for ourselves — everything we
-              ever wanted in a place dedicated to pushing the boundaries of
-              physical and mental endurance. Now, we opened it for you.
-            </p>
+            <p className='text-base sm:text-xl'>{t('aboutText.ptTwo')}</p>
+          </InViewWrapper>
+          <InViewWrapper
+            from={{
+              opacity: 0,
+              filter: 'blur(4px)',
+              transform: 'translateY(40px)',
+            }}
+            to={{ opacity: 1, filter: 'blur(0px)', transform: 'translateY(0)' }}
+            className='col-span-full lg:col-span-6 lg:col-start-2 mt-5'
+          >
+            <p className='text-base sm:text-xl'>{t('aboutText.ptThree')}</p>
+          </InViewWrapper>
+          <InViewWrapper
+            from={{
+              opacity: 0,
+              filter: 'blur(4px)',
+              transform: 'translateY(40px)',
+            }}
+            to={{ opacity: 1, filter: 'blur(0px)', transform: 'translateY(0)' }}
+            className='col-span-full lg:col-span-6 lg:col-start-2 mt-5'
+          >
+            <p className='text-base sm:text-xl'>{t('aboutText.ptFour')}</p>
           </InViewWrapper>
         </div>
       </div>

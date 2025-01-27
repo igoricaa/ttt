@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 import ThemeSwitcher from './theme-switcher';
 import LocaleSwitcher from './locale/locale-switcher';
+import { useTranslations } from 'next-intl';
 
 const Header = () => {
   const [mounted, setMounted] = useState(false);
@@ -17,6 +18,7 @@ const Header = () => {
   const [scrollTimeout, setScrollTimeout] = useState<NodeJS.Timeout | null>(
     null
   );
+  const t = useTranslations('nav');
 
   const handleStickyHeader = () => {
     if (typeof window === 'undefined') return;
@@ -83,7 +85,7 @@ const Header = () => {
         <nav className='flex items-center gap-16 w-[475px] justify-end'>
           {routes.slice(0, 3).map((route: Route, index: number) => (
             <NavLink key={route.path} href={route.path} index={index}>
-              {route.label}
+              {t(`${route.slug}`)}
             </NavLink>
           ))}
         </nav>
@@ -93,19 +95,19 @@ const Header = () => {
         <nav className='flex items-center gap-16 w-[475px]'>
           {routes.slice(-3).map((route: Route, index: number) => (
             <NavLink key={route.path} href={route.path} index={index}>
-              {route.label}
+              {t(`${route.slug}`)}
             </NavLink>
           ))}
         </nav>
 
-        {/* <div className='hidden absolute top-1/2 -translate-y-1/2 right-0 lg:block'>
+        <div className='hidden absolute top-1/2 -translate-y-1/2 right-0 lg:block'>
           <LocaleSwitcher />
-        </div> */}
+        </div>
       </div>
 
-      {/* <div className='lg:hidden mr-4'>
+      <div className='lg:hidden mr-4'>
         <LocaleSwitcher />
-      </div> */}
+      </div>
 
       <MobileNav />
     </header>

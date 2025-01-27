@@ -1,11 +1,12 @@
-import { highlights } from '@/data/data';
-import { Highlight } from '@/lib/types';
 import InViewWrapper from '../inview-wrapper';
+import { getTranslations } from 'next-intl/server';
 
-const Highlights = () => {
+const Highlights = async () => {
+  const t = await getTranslations('home.highlights');
+
   return (
     <section className='px-side grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12 gap-x-4 gap-y-8 sm:gap-y-12 max-w-8xl mx-auto mt-12 sm:mt-16 lg:mt-48'>
-      {highlights.map((highlight: Highlight, index: number) => (
+      {Array.from({ length: 3 }).map((_, index) => (
         <div
           key={index}
           className={`col-span-full sm:col-span-5 ${
@@ -27,12 +28,12 @@ const Highlights = () => {
             }}
           >
             <h3 className='text-3xl sm:text-6xl lg:text-5xl font-semibold uppercase'>
-              {highlight.title.ptOne}
+              {t(`${index}.title.ptOne`)}
               <br />
-              <span className='italic'>{highlight.title.ptTwo}</span>
+              <span className='italic'>{t(`${index}.title.ptTwo`)}</span>
             </h3>
             <p className='mt-4 sm:mt-8 text-base sm:text-xl'>
-              {highlight.description}
+              {t(`${index}.description`)}
             </p>
           </InViewWrapper>
         </div>

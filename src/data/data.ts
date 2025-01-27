@@ -2,7 +2,6 @@ import {
   Achievement,
   Benefit,
   Event,
-  Highlight,
   Member,
   Membership,
   Program,
@@ -12,55 +11,28 @@ import {
 
 export const routes: Route[] = [
   {
-    label: 'Home',
+    slug: 'home',
     path: '/',
   },
   {
-    label: 'About Us',
+    slug: 'aboutUs',
     path: '/about-us',
   },
   {
-    label: 'Memberships',
+    slug: 'memberships',
     path: '/memberships',
   },
   {
-    label: 'Programs',
+    slug: 'programs',
     path: '/programs',
   },
   {
-    label: 'Schedule',
+    slug: 'schedule',
     path: '/schedule',
   },
   {
-    label: 'Contact Us',
+    slug: 'contactUs',
     path: '/contact-us',
-  },
-];
-
-export const highlights: Highlight[] = [
-  {
-    title: {
-      ptOne: 'State-of the Art',
-      ptTwo: 'Equipment',
-    },
-    description:
-      'Every part of the TTT area has the highest quality equipment, from Zebra mats for fighting sports - to the most modern exercise equipment in the gym area.',
-  },
-  {
-    title: {
-      ptOne: 'TTT',
-      ptTwo: 'Trainers',
-    },
-    description:
-      'Our team is comprised of professionals who are dedicated to excellence and are continuously developing their skills and knowledge.',
-  },
-  {
-    title: {
-      ptOne: 'Variety of',
-      ptTwo: 'Classes',
-    },
-    description:
-      'MMA, boxing, wrestling, BJJ for children and adults.The schedule is made to suit everyone - over 10 sessions per week for each sport.',
   },
 ];
 
@@ -105,131 +77,61 @@ export const events: Event[] = [
 
 export const achievements: Achievement[] = [
   {
-    title: 'UFC 303',
-    description:
-      'Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit.',
-    image: '/achievements/achievements-1.png',
-  },
-  {
-    title: 'Jiu Jitsu World Championship',
-    description:
-      'Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit.',
-    image: '/achievements/achievements-2.jpg',
-  },
-  {
-    title: 'ONE Championship',
-    description:
-      'Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit.',
+    slug: 'one',
     image: '/achievements/achievements-3.jpg',
   },
   {
-    title: 'Dusko Todorovic vs Neki kontented',
-    description:
-      'Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit.',
+    slug: 'kontender',
     image: '/achievements/achievements-4.jpeg',
   },
   {
-    title: 'Prikupljanje Dzakova za NK-a da ne lomi kicmu',
-    description:
-      'Lorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sitLorem ipsum dolor amaet sit.',
+    slug: 'dzakovi',
     image: '/achievements/achievements-5.jpg',
   },
 ];
 
 export const members: Member[] = [
   {
-    name: 'Dusko Todorovic',
-    title: 'UFC Fighter & BJJ Black Belt',
-    image: '/members/dusko-todorovic.png',
-    bio: 'At TTT, fighters of all levels come together to push their limits, refine their skills, and build the mental strength needed to dominate in and out of the cage. Join us and experience top-tier training from some of the best in the fight world.',
-    socials: [
-      {
-        name: 'Instagram',
-        url: 'https://www.instagram.com/thunder_top_team/',
-      },
-      {
-        name: 'Facebook',
-        url: 'https://www.instagram.com/thunder_top_team/',
-      },
-    ],
-  },
-  {
+    slug: 'ivan',
     name: 'Ivan Popović',
-    title: 'BJJ Head Coach',
-    image: '/members/ivan-popovic.png',
-    bio: 'At TTT, fighters of all levels come together to push their limits, refine their skills, and build the mental strength needed to dominate in and out of the cage. Join us and experience top-tier training from some of the best in the fight world.',
+    image: '/members/thundertopteam-ivan-popovic.jpg',
     socials: [
       {
         name: 'Instagram',
-        url: 'https://www.instagram.com/thunder_top_team/',
-      },
-      {
-        name: 'Facebook',
-        url: 'https://www.instagram.com/thunder_top_team/',
+        url: 'https://www.instagram.com/nk_kid/',
       },
     ],
   },
   {
+    slug: 'dusko',
     name: 'Dusko Todorovic',
-    title: 'UFC Fighter & BJJ Black Belt',
-    image: '/members/dusko-todorovic.png',
-    bio: 'At TTT, fighters of all levels come together to push their limits, refine their skills, and build the mental strength needed to dominate in and out of the cage. Join us and experience top-tier training from some of the best in the fight world.',
+    image: '/members/thundertopteam-dusko-todorovic.png',
     socials: [
       {
         name: 'Instagram',
-        url: 'https://www.instagram.com/thunder_top_team/',
-      },
-      {
-        name: 'Facebook',
-        url: 'https://www.instagram.com/thunder_top_team/',
+        url: 'https://www.instagram.com/todorovic_ufc/',
       },
     ],
   },
   {
-    name: 'Ivan Popović',
-    title: 'BJJ Head Coach',
-    image: '/members/ivan-popovic.png',
-    bio: 'At TTT, fighters of all levels come together to push their limits, refine their skills, and build the mental strength needed to dominate in and out of the cage. Join us and experience top-tier training from some of the best in the fight world.',
+    slug: 'dusan',
+    name: 'Dušan Jazić',
+    image: '/members/thundertopteam-dusan-jazic.jpg',
     socials: [
       {
         name: 'Instagram',
-        url: 'https://www.instagram.com/thunder_top_team/',
-      },
-      {
-        name: 'Facebook',
-        url: 'https://www.instagram.com/thunder_top_team/',
+        url: 'https://www.instagram.com/dusan_coach/',
       },
     ],
   },
   {
-    name: 'Dusko Todorovic',
-    title: 'UFC Fighter & BJJ Black Belt',
-    image: '/members/dusko-todorovic.png',
-    bio: 'At TTT, fighters of all levels come together to push their limits, refine their skills, and build the mental strength needed to dominate in and out of the cage. Join us and experience top-tier training from some of the best in the fight world.',
+    slug: 'andjela',
+    name: 'Anđela Nešovanović',
+    image: '/members/thundertopteam-andjela-nesovanovic.jpg',
     socials: [
       {
         name: 'Instagram',
-        url: 'https://www.instagram.com/thunder_top_team/',
-      },
-      {
-        name: 'Facebook',
-        url: 'https://www.instagram.com/thunder_top_team/',
-      },
-    ],
-  },
-  {
-    name: 'Ivan Popović',
-    title: 'BJJ Head Coach',
-    image: '/members/ivan-popovic.png',
-    bio: 'At TTT, fighters of all levels come together to push their limits, refine their skills, and build the mental strength needed to dominate in and out of the cage. Join us and experience top-tier training from some of the best in the fight world.',
-    socials: [
-      {
-        name: 'Instagram',
-        url: 'https://www.instagram.com/thunder_top_team/',
-      },
-      {
-        name: 'Facebook',
-        url: 'https://www.instagram.com/thunder_top_team/',
+        url: 'https://www.instagram.com/angelneshtattoo/',
       },
     ],
   },
@@ -276,31 +178,16 @@ export const memberships: Membership[] = [
 
 export const benefits: Benefit[] = [
   {
-    subtitle: 'All Members Benefits',
-    title: 'Best Fighting Coaches',
-    description:
-      "At our facility, you'll find a team of world-class fighting coaches who are committed to developing your skills in every aspect of combat. Their deep knowledge of various fighting styles, combined with hands-on experience, ensures that every student receives personalized attention to help them excel. The environment is one of collaboration, respect, and unwavering support. Whether you're a beginner or a seasoned fighter, you'll be surrounded by a community that pushes you to achieve greatness, fostering a space where champions are made both inside and outside the ring.",
+    slug: 'coaches',
     image: '/benefits/borenje.jpeg',
   },
   {
-    subtitle: 'All Members Benefits 2',
-    title: 'Best Training Environment',
-    description:
-      "Our training environment is carefully curated to inspire peak performance and unwavering focus. The gym is equipped with top-of-the-line equipment, offering everything from sparring areas to fitness tools that support strength, agility, and conditioning. More than just a physical space, the atmosphere is one of discipline and camaraderie, where every individual is encouraged to push beyond their limits. Whether you're training solo or as part of a team, you'll find everything you need to elevate your skills and become the best version of yourself.",
+    slug: 'environment',
     image: '/benefits/functional.jpeg',
   },
+  { slug: 'welness', image: '/benefits/spa.jpeg' },
   {
-    subtitle: 'All Members Benefits 3',
-    title: 'Wellness Spa Access',
-    description:
-      "After a demanding training session, our wellness spa offers the perfect opportunity to unwind and rejuvenate. Designed to help you recover and relax, the spa provides access to luxury treatments that include massages, saunas, and therapeutic baths. It's a space where athletes can restore their bodies, recharge their minds, and prepare for the next challenge. Whether you're seeking recovery after an intense workout or simply looking to pamper yourself, our wellness spa offers the ultimate experience in relaxation and care for your well-being.",
-    image: '/benefits/spa.jpeg',
-  },
-  {
-    subtitle: 'All Members Benefits 4',
-    title: 'Cozy Chill Area',
-    description:
-      "Our cozy chill area is designed for ultimate relaxation and comfort, providing a peaceful retreat after a workout. With soft seating, ambient lighting, and a soothing atmosphere, it's the perfect place to decompress, connect with others, or enjoy some quiet time. The space encourages socializing and unwinding, making it an ideal spot for athletes to bond, share experiences, or simply relax in a stress-free environment. Whether you're taking a break between training sessions or unwinding after a long day, our chill area offers a cozy space for everyone to enjoy.",
+    slug: 'chillarea',
     image: '/benefits/caffe.jpeg',
   },
 ];
@@ -326,39 +213,27 @@ export const socials: Social[] = [
 
 export const programs: Program[] = [
   {
-    title: 'Strength TRAINING',
-    description:
-      'Highest level of coaching in the baklans. From the UFC & KSW veterans',
+    slug: 'strength',
     image: '/programs/strength.webp',
   },
   {
-    title: 'Jiu-Jitsu',
-    description:
-      'Sessions held Every Day. Highest level of coaching in the baklans. From the UFC & KSW veterans',
+    slug: 'bjj',
     image: '/programs/jiu-jitsu.jpg',
   },
   {
-    title: 'MMA',
-    description:
-      'Highest level of coaching in the baklans. From the UFC & KSW veterans',
+    slug: 'mma',
     image: '/programs/mma.jpg',
   },
   {
-    title: 'BOXING',
-    description:
-      'Sessions held Every Day. Highest level of coaching in the baklans. From the UFC & KSW veterans',
+    slug: 'boxing',
     image: '/programs/boxing.jpg',
   },
   {
-    title: 'Self-Defense for women',
-    description:
-      'Highest level of coaching in the baklans. From the UFC & KSW veterans',
+    slug: 'selfDefense',
     image: '/programs/self-defense.jpg',
   },
   {
-    title: 'Kids Classes',
-    description:
-      'Sessions held Every Day. Highest level of coaching in the baklans. From the UFC & KSW veterans',
+    slug: 'kids',
     image: '/programs/kids.jpeg',
   },
 ];

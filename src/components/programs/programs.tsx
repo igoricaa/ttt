@@ -1,12 +1,11 @@
 'use client';
 
-import { programs } from '@/data/data';
 import { Program } from '@/lib/types';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import { useState } from 'react';
 
-const Programs = () => {
+const Programs = ({ programs }: { programs: Program[] }) => {
   const [activeProgram, setActiveProgram] = useState(0);
 
   return (
@@ -15,7 +14,7 @@ const Programs = () => {
         <Image
           key={program.title}
           src={program.image}
-          alt={program.title}
+          alt={program.title!}
           fill
           className={cn(
             'object-cover object-center -z-10 opacity-0 invisible transition-all duration-300',

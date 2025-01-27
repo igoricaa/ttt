@@ -42,7 +42,7 @@ const Member = ({
           sizes='(max-width: 680px) 100vw, (max-width: 1024px) 70vw, 37vw'
           style={{ objectFit: 'cover' }}
         />
-        <div className='absolute top-0 right-[-174px] sm:right-[-108px] lg:-right-32 z-10 w-[240px] sm:w-[282px] lg:w-[325px] h-full sm:h-3/4 lg:h-2/3 flex justify-start sm:justify-center'>
+        <div className='absolute top-0 right-[-174px] sm:right-[-108px] lg:-right-32 z-10 w-[240px] sm:w-[282px] lg:w-[325px] h-full sm:max-h-[500px] lg:max-h-[550px] flex justify-start sm:justify-center'>
           <div
             onClick={() => setActiveMemberIndex(memberIndex)}
             style={{
@@ -56,7 +56,7 @@ const Member = ({
               isActive
                 ? 'w-full h-full rounded-br-[75px]'
                 : 'w-[66px] h-[75px] rounded-br-3xl'
-            } relative bg-primary-dark cursor-pointer max-h-full sm:max-h-[470px] lg:max-h-[549px]`}
+            } relative bg-primary-dark cursor-pointer max-h-full sm:max-h-[500px] lg:max-h-[550px]`}
           >
             <PersonIcon
               style={{

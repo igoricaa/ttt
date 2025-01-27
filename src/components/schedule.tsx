@@ -9,8 +9,9 @@ const ClassTypes = {
   MMA: { type: 'MMA', label: 'MMA' },
   WRESTLING: { type: 'WRESTLING', label: 'WRESTLING' },
   KIDS: { type: 'KIDS', label: 'BJJ' },
-  STRIKING: { type: 'STRIKING', label: 'STRIKING' },
   OPEN_MAT: { type: 'OPEN_MAT', label: 'BJJ' },
+  BOXING: { type: 'BOXING', label: 'BOXING' },
+  KICKBOXING: { type: 'KICKBOXING', label: 'KICKBOXING' },
 } as const;
 
 type ClassType = (typeof ClassTypes)[keyof typeof ClassTypes];
@@ -32,38 +33,62 @@ const schedule: DaySchedule[] = [
     day: 'Monday',
     classes: [
       {
-        name: 'No-Gi Class',
-        startTime: '07:00',
+        name: 'No-Gi',
+        startTime: '07:30',
         endTime: '08:30',
         classType: ClassTypes.NO_GI,
       },
       {
         name: 'MMA Class',
         startTime: '09:00',
-        endTime: '10:30',
+        endTime: '10:00',
         classType: ClassTypes.MMA,
       },
       {
-        name: 'Wrestling Class',
-        startTime: '17:30',
-        endTime: '18:30',
-        classType: ClassTypes.WRESTLING,
+        name: 'Kids Combat',
+        startTime: '18:30',
+        endTime: '19:30',
+        classType: ClassTypes.KIDS,
       },
       {
-        name: 'No-Gi Class',
+        name: 'Boxing',
         startTime: '18:30',
-        endTime: '20:00',
+        endTime: '19:30',
+        classType: ClassTypes.BOXING,
+      },
+      {
+        name: 'No-Gi',
+        startTime: '19:30',
+        endTime: '20:30',
         classType: ClassTypes.NO_GI,
       },
       {
-        name: 'GI + Kids',
-        startTime: '17:30',
-        endTime: '18:30',
+        name: 'Kickboxing',
+        startTime: '19:30',
+        endTime: '20:30',
+        classType: ClassTypes.KICKBOXING,
+      },
+      {
+        name: 'No-Gi',
+        startTime: '20:30',
+        endTime: '21:30',
+        classType: ClassTypes.NO_GI,
+      },
+      {
+        name: 'MMA Basic',
+        startTime: '20:30',
+        endTime: '21:30',
+        classType: ClassTypes.MMA,
+      },
+      {
+        name: 'BJJ',
+        startTime: '21:30',
+        endTime: '22:30',
         classType: ClassTypes.GI,
       },
       {
-        name: 'MMA Class',
-        startTime: '21:00',
+        name: 'MMA Advanced',
+        startTime: '21:30',
         endTime: '22:30',
         classType: ClassTypes.MMA,
       },
@@ -73,38 +98,255 @@ const schedule: DaySchedule[] = [
     day: 'Tuesday',
     classes: [
       {
-        name: 'GI Class',
-        startTime: '07:00',
+        name: 'No-Gi',
+        startTime: '07:30',
         endTime: '08:30',
-        classType: ClassTypes.GI,
+        classType: ClassTypes.NO_GI,
       },
       {
-        name: 'Kids 3-6 6-9',
-        startTime: '17:30',
-        endTime: '18:30',
-        classType: ClassTypes.KIDS,
-      },
-      {
-        name: 'Striking',
-        startTime: '18:30',
-        endTime: '19:30',
-        classType: ClassTypes.STRIKING,
-      },
-      {
-        name: 'MMA Class',
-        startTime: '19:30',
-        endTime: '21:00',
+        name: 'MMA',
+        startTime: '09:00',
+        endTime: '10:00',
         classType: ClassTypes.MMA,
       },
       {
-        name: 'No-Gi Class',
-        startTime: '21:00',
-        endTime: '22:30',
+        name: 'Freestyle Wrestling',
+        startTime: '18:30',
+        endTime: '19:30',
+        classType: ClassTypes.WRESTLING,
+      },
+      {
+        name: 'No-Gi',
+        startTime: '19:30',
+        endTime: '20:30',
         classType: ClassTypes.NO_GI,
+      },
+      {
+        name: 'No-Gi',
+        startTime: '20:30',
+        endTime: '21:30',
+        classType: ClassTypes.NO_GI,
+      },
+      {
+        name: 'MMA Basic',
+        startTime: '20:30',
+        endTime: '21:30',
+        classType: ClassTypes.MMA,
+      },
+      {
+        name: 'MMA Advanced',
+        startTime: '21:30',
+        endTime: '22:30',
+        classType: ClassTypes.MMA,
       },
     ],
   },
-  // Add other days...
+  {
+    day: 'Wednesday',
+    classes: [
+      {
+        name: 'No-Gi',
+        startTime: '07:30',
+        endTime: '08:30',
+        classType: ClassTypes.NO_GI,
+      },
+      {
+        name: 'MMA Class',
+        startTime: '09:00',
+        endTime: '10:00',
+        classType: ClassTypes.MMA,
+      },
+      {
+        name: 'Kids Combat',
+        startTime: '18:30',
+        endTime: '19:30',
+        classType: ClassTypes.KIDS,
+      },
+      {
+        name: 'Boxing',
+        startTime: '18:30',
+        endTime: '19:30',
+        classType: ClassTypes.BOXING,
+      },
+      {
+        name: 'No-Gi',
+        startTime: '19:30',
+        endTime: '20:30',
+        classType: ClassTypes.NO_GI,
+      },
+      {
+        name: 'Kickboxing',
+        startTime: '18:30',
+        endTime: '19:30',
+        classType: ClassTypes.KICKBOXING,
+      },
+      {
+        name: 'No-Gi',
+        startTime: '20:30',
+        endTime: '21:30',
+        classType: ClassTypes.NO_GI,
+      },
+      {
+        name: 'MMA Basic',
+        startTime: '20:30',
+        endTime: '21:30',
+        classType: ClassTypes.MMA,
+      },
+      {
+        name: 'BJJ',
+        startTime: '21:30',
+        endTime: '22:30',
+        classType: ClassTypes.GI,
+      },
+      {
+        name: 'MMA Advanced',
+        startTime: '21:30',
+        endTime: '22:30',
+        classType: ClassTypes.MMA,
+      },
+    ],
+  },
+  {
+    day: 'Thursday',
+    classes: [
+      {
+        name: 'No-Gi',
+        startTime: '07:30',
+        endTime: '08:30',
+        classType: ClassTypes.NO_GI,
+      },
+      {
+        name: 'MMA',
+        startTime: '09:00',
+        endTime: '10:00',
+        classType: ClassTypes.MMA,
+      },
+      {
+        name: 'Freestyle Wrestling',
+        startTime: '18:30',
+        endTime: '19:30',
+        classType: ClassTypes.WRESTLING,
+      },
+      {
+        name: 'No-Gi',
+        startTime: '19:30',
+        endTime: '20:30',
+        classType: ClassTypes.NO_GI,
+      },
+      {
+        name: 'No-Gi',
+        startTime: '20:30',
+        endTime: '21:30',
+        classType: ClassTypes.NO_GI,
+      },
+      {
+        name: 'MMA Basic',
+        startTime: '20:30',
+        endTime: '21:30',
+        classType: ClassTypes.MMA,
+      },
+      {
+        name: 'MMA Advanced',
+        startTime: '21:30',
+        endTime: '22:30',
+        classType: ClassTypes.MMA,
+      },
+    ],
+  },
+  {
+    day: 'Friday',
+    classes: [
+      {
+        name: 'No-Gi',
+        startTime: '07:30',
+        endTime: '08:30',
+        classType: ClassTypes.NO_GI,
+      },
+      {
+        name: 'MMA Class',
+        startTime: '09:00',
+        endTime: '10:00',
+        classType: ClassTypes.MMA,
+      },
+      {
+        name: 'Kids Combat',
+        startTime: '18:30',
+        endTime: '19:30',
+        classType: ClassTypes.KIDS,
+      },
+      {
+        name: 'Boxing',
+        startTime: '18:30',
+        endTime: '19:30',
+        classType: ClassTypes.BOXING,
+      },
+      {
+        name: 'No-Gi',
+        startTime: '19:30',
+        endTime: '20:30',
+        classType: ClassTypes.NO_GI,
+      },
+      {
+        name: 'Kickboxing',
+        startTime: '18:30',
+        endTime: '19:30',
+        classType: ClassTypes.KICKBOXING,
+      },
+      {
+        name: 'No-Gi',
+        startTime: '20:30',
+        endTime: '21:30',
+        classType: ClassTypes.NO_GI,
+      },
+      {
+        name: 'MMA Basic',
+        startTime: '20:30',
+        endTime: '21:30',
+        classType: ClassTypes.MMA,
+      },
+      {
+        name: 'BJJ',
+        startTime: '21:30',
+        endTime: '22:30',
+        classType: ClassTypes.GI,
+      },
+      {
+        name: 'MMA Advanced',
+        startTime: '21:30',
+        endTime: '22:30',
+        classType: ClassTypes.MMA,
+      },
+    ],
+  },
+  {
+    day: 'Saturday',
+    classes: [
+      {
+        name: 'No-Gi',
+        startTime: '13:00',
+        endTime: '14:00',
+        classType: ClassTypes.NO_GI,
+      },
+      {
+        name: 'MMA Day',
+        startTime: '13:00',
+        endTime: '14:00',
+        classType: ClassTypes.MMA,
+      },
+      {
+        name: 'Open mat',
+        startTime: '14:00',
+        endTime: '15:30',
+        classType: ClassTypes.NO_GI,
+      },
+      {
+        name: 'Freestyle Wrestling',
+        startTime: '15:30',
+        endTime: '16:30',
+        classType: ClassTypes.WRESTLING,
+      },
+    ],
+  },
 ];
 
 const getClassBackground = (classType: ClassType) => {
@@ -119,7 +361,9 @@ const getClassBackground = (classType: ClassType) => {
       return 'bg-classes-wrestling-default';
     case 'KIDS':
       return 'bg-classes-kids-default';
-    case 'STRIKING':
+    case 'BOXING':
+      return 'bg-classes-striking-default';
+    case 'KICKBOXING':
       return 'bg-classes-striking-default';
     case 'OPEN_MAT':
       return 'bg-classes-gi-default';
@@ -140,7 +384,9 @@ const getClassLabelBackground = (classType: ClassType) => {
       return 'bg-classes-wrestling-darker';
     case 'KIDS':
       return 'bg-classes-kids-darker';
-    case 'STRIKING':
+    case 'BOXING':
+      return 'bg-classes-striking-darker';
+    case 'KICKBOXING':
       return 'bg-classes-striking-darker';
     case 'OPEN_MAT':
       return 'bg-classes-gi-darker';
@@ -217,41 +463,55 @@ export function Schedule() {
                 'Thursday',
                 'Friday',
                 'Saturday',
-              ].map((day) => (
-                <div
-                  key={`${day}-${time}`}
-                  className={`h-12 relative border-r-[0.5px] border-b-[0.5px] border-[#403155] ${
-                    day === 'Saturday' ? 'bg-[#726e5c]' : ''
-                  } ${
-                    index === 16 && day === 'Saturday'
-                      ? 'rounded-br-[45px]'
-                      : ''
-                  }`}
-                >
-                  {schedule
+              ].map((day) => {
+                const eventsInSlot =
+                  schedule
                     .find((d) => d.day === day)
                     ?.classes.filter((event) => {
                       const eventStart = timeToMinutes(event.startTime);
                       const slotStart = timeToMinutes(time);
                       const slotEnd = slotStart + 60;
                       return eventStart >= slotStart && eventStart < slotEnd;
-                    })
-                    .map((event, eventIndex) => {
+                    }) || [];
+
+                // Calculate width for each event based on number of concurrent events
+                const eventWidth =
+                  eventsInSlot.length > 0 ? 90 / eventsInSlot.length : 90; // 90% total width divided by number of events
+
+                return (
+                  <div
+                    key={`${day}-${time}`}
+                    className={`h-12 relative border-r-[0.5px] border-b-[0.5px] border-[#403155] ${
+                      day === 'Saturday' ? 'bg-[#726e5c]' : ''
+                    } ${
+                      index === 16 && day === 'Saturday'
+                        ? 'rounded-br-[45px]'
+                        : ''
+                    }`}
+                  >
+                    {eventsInSlot.map((event, eventIndex) => {
                       const startMinutes = timeToMinutes(event.startTime);
                       const endMinutes = timeToMinutes(event.endTime);
                       const slotStart = timeToMinutes(time);
                       const duration = (endMinutes - startMinutes) / 60;
                       const offset = (startMinutes - slotStart) / 60;
 
+                      // Calculate left offset for each card
+                      const leftOffset =
+                        eventIndex * eventWidth +
+                        (100 - eventWidth * eventsInSlot.length) / 2;
+
                       return (
                         <Card
                           key={eventIndex}
-                          className={`absolute left-0 right-0 mx-auto max-w-[90%] p-2 font-semibold text-classes-darkblue rounded-lg ${getClassBackground(
+                          className={`absolute p-2 font-semibold text-classes-darkblue rounded-lg ${getClassBackground(
                             event.classType
-                          )} overflow-hidden border-0 hover:shadow-classCard hover:border-l-4 border-[#20121259] transition-all duration-200 ease-out `}
+                          )} overflow-hidden border-0 hover:shadow-classCard hover:border-l-4 border-[#20121259] transition-all duration-200 ease-out`}
                           style={{
                             top: `${offset ? offset * 3.3 : 0.2}rem`,
                             height: `${duration * 2.7}rem`,
+                            left: `${leftOffset}%`,
+                            width: `${eventWidth}%`,
                             zIndex: 10,
                           }}
                         >
@@ -269,8 +529,9 @@ export function Schedule() {
                         </Card>
                       );
                     })}
-                </div>
-              ))}
+                  </div>
+                );
+              })}
             </React.Fragment>
           ))}
         </div>

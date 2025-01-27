@@ -1,11 +1,10 @@
 export type Route = {
-  label: string;
+  slug: string;
   path: string;
 };
 
 export type Achievement = {
-  title: string;
-  description: string;
+  slug: string;
   image: string;
 };
 
@@ -19,19 +18,12 @@ export type Event = {
   time: string;
 };
 
-export type Highlight = {
-  title: {
-    ptOne: string;
-    ptTwo: string;
-  };
-  description: string;
-};
-
 export type Member = {
+  slug: string;
   name: string;
-  title: string;
+  title?: string;
   image: string;
-  bio: string;
+  bio?: string;
   socials: Social[];
 };
 
@@ -47,14 +39,16 @@ export type Membership = {
 };
 
 export type Benefit = {
-  subtitle: string;
-  title: string;
-  description: string;
+  slug: string;
+  subtitle?: string;
+  title?: string;
+  description?: string;
   image: string;
 };
 
 export type Program = {
-  title: string;
-  description: string;
+  slug: string;
+  title?: string;
+  description?: string;
   image: string;
 };

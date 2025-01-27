@@ -1,10 +1,25 @@
 import Programs from '@/components/programs/programs';
 import Link from '@/components/ui/link-button';
+import { programs } from '@/data/data';
+import { Program } from '@/lib/types';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
-const Page = () => {
+const Page = async ({ params }: { params: Promise<{ locale: string }> }) => {
+  const { locale } = await params;
+
+  setRequestLocale(locale);
+
+  const t = await getTranslations('programs');
+
+  const programsFull = programs.map((program: Program) => ({
+    ...program,
+    title: t(`${program.slug}.title`),
+    description: t(`${program.slug}.description`),
+  }));
+
   return (
     <main className='lg:h-screen flex flex-col justify-center relative px-side pb-16 lg:pb-10 mt-[-54px] sm:mt-[-64px]'>
-      <Programs />
+      <Programs programs={programsFull} />
 
       <Link
         href='/contact-us'
