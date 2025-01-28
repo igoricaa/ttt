@@ -32,12 +32,6 @@ export type Social = {
   url: string;
 };
 
-export type Membership = {
-  title: string;
-  description: string[];
-  image: string;
-};
-
 export type Benefit = {
   slug: string;
   subtitle?: string;

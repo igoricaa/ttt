@@ -120,7 +120,166 @@
   "memberships": {
     "title": "Членство",
     "description": "В TTT собираются бойцы всех уровней, чтобы преодолевать свои пределы, совершенствовать свои навыки и развивать умственную силу.",
-    "buttonText": "Связаться с нами",
+    "buttonText": "Подробнее",
+    "packages": {
+      "standup": {
+        "title": "Stand-Up пакет",
+        "subtitle": "MMA / Бокс / Кикбоксинг / Борьба для MMA",
+        "includesText": {
+          "title": "Включено",
+          "description": {
+            "ptOne": "MMA",
+            "ptTwo": "Бокс",
+            "ptThree": "Кикбоксинг",
+            "ptFour": "Борьба для MMA"
+          }
+        },
+        "prices": {
+          "title": "Цены",
+          "threeX": {
+            "title": "3x недельно",
+            "description": "7,500 RSD"
+          },
+          "unlimitedMonthly": {
+            "title": "Безлимитный месяц",
+            "description": "9,500 RSD"
+          },
+          "unlimitedYearly": {
+            "title": "Безлимитный год",
+            "description": "95,000 RSD"
+          }
+        },
+        "discountsText": {
+          "title": "Скидки",
+          "description": "<span>1.</span> Скидка <span>20%</span> доступна для: Студентов, Студентов Высших Учебных Заведений, Служащих Служб Экстренной Помощи: <span>армия, полиция, экстренные службы.</span>"
+        },
+        "examplesText": {
+          "title": "Примеры",
+          "threeX": {
+            "title": "3x недельно",
+            "description": "7,500 RSD - <span>20%</span> = <span>6,000 RSD</span>."
+          },
+          "unlimitedMonthly": {
+            "title": "Безлимитный месяц",
+            "description": "9,500 RSD - <span>20%</span> = <span>7,600 RSD</span>."
+          }
+        },
+        "additionalOption": {
+          "title": "Дополнительный опцион - Свободное борьба:",
+          "description": "- Вы можете добавить <span>борьбу 3x</span> еженедельно за <span>1,500 RSD</span> ежемесячно, если вы уже подписаны на <span>Stand-Up package</span>."
+        },
+        "hightlightText": "Более 25 тренировочных сессий в неделю!"
+      },
+      "grappling": {
+        "title": "Грапплинг пакет",
+        "subtitle": "NOGI Грапплинг / BJJ / NOGI Борьба",
+        "includesText": {
+          "title": "Включено",
+          "description": {
+            "ptOne": "NOGI Грапплинг",
+            "ptTwo": "BJJ",
+            "ptThree": "NOGI Борьба"
+          }
+        },
+        "prices": {
+          "title": "Цены",
+          "threeX": {
+            "title": "3x недельно",
+            "description": "7,500 RSD"
+          },
+          "unlimitedMonthly": {
+            "title": "Безлимитный месяц",
+            "description": "9,500 RSD"
+          },
+          "unlimitedYearly": {
+            "title": "Безлимитный год",
+            "description": "95,000 RSD"
+          }
+        },
+        "discountsText": {
+          "title": "Скидки",
+          "description": "<span>1.</span> Скидка <span>20%</span> доступна для: Студентов, Студентов Высших Учебных Заведений, Служащих Служб Экстренной Помощи: <span>армия, полиция, экстренные службы.</span>"
+        },
+        "examplesText": {
+          "title": "Примеры",
+          "threeX": {
+            "title": "3x недельно",
+            "description": "7,500 RSD - <span>20%</span> = <span>6,000 RSD</span>."
+          },
+          "unlimitedMonthly": {
+            "title": "Безлимитный месяц",
+            "description": "9,500 RSD - <span>20%</span> = <span>7,600 RSD</span>."
+          }
+        },
+        "additionalOption": {
+          "title": "Дополнительный опцион - Вольная борьба:",
+          "description": "- Вы можете добавить <span>борьбу 3x</span> еженедельно за <span>1,500 RSD</span> ежемесячно, если вы уже подписаны на <span>Грапплинг пакет</span>."
+        },
+        "hightlightText": "Более 25 тренировочных сессий в неделю!"
+      },
+      "wrestling": {
+        "title": "Вольная борьба",
+        "subtitle": "NOGI Грапплинг / BJJ / NOGI Борьба",
+        "includesText": {
+          "title": "Включено",
+          "description": {
+            "ptOne": "Freestyle Wrestling"
+          }
+        },
+        "prices": {
+          "title": "Цены",
+          "threeX": {
+            "title": "3x недельно",
+            "description": "3,000 RSD"
+          }
+        },
+        "discountsText": {
+          "title": "Скидки",
+          "description": "<span>1.</span> Скидка <span>20%</span> доступна для: Студентов, Студентов Высших Учебных Заведений, Служащих Служб Экстренной Помощи: <span>армия, полиция, экстренные службы.</span>"
+        },
+        "examplesText": {
+          "title": "Примеры",
+          "threeX": {
+            "title": "3x недельно",
+            "description": "3,000 RSD - <span>20%</span> = <span>2,400 RSD</span>."
+          }
+        },
+        "additionalOption": {
+          "title": "Дополнительный опцион:",
+          "description": "- Свободное борьба - это идеальное добавление для всех бойцов, которые хотят улучшить свои броски, контроль и доминирование в бою. Он рекомендуется как дополнение для членов пакетов Грапплинг и Stand-Up."
+        },
+        "hightlightText": "\"После борьбы, все в жизни легко.\""
+      },
+      "kids": {
+        "title": "Программа для детей",
+        "subtitle": "Программа основана на бразильском джиу-джитсу, но включает борьбу и No-Gi навыки для полного подготовления детей.",
+        "includesText": {
+          "title": "Включено",
+          "description": {
+            "ptOne": "Тренировки, разработанные для развития дисциплины, самооценки и навыков самообороны!"
+          }
+        },
+        "prices": {
+          "title": "Цены",
+          "kiddos": {
+            "title": "3-6 лет, 2x недельно",
+            "description": "4,000 RSD"
+          },
+          "teens": {
+            "title": "7-13 лет, 3x недельно",
+            "description": "6,000 RSD"
+          }
+        },
+        "discountsText": {
+          "title": "Скидки",
+          "description": "<ul><li>Скидки для семей - Применяются ко всем детям:</li><li>Второй ребенок: 1,000 RSD скидка.</li><li>Третий ребенок: 1,500 RSD скидка.</li><li>Четвертый ребенок: 2,000 RSD скидка.</li>  </ul>"
+        },
+        "examplesText": {
+          "title": "Родители",
+          "promo": "<ul><li>Родители, наденьте Gi и присоединитесь к сессии джиу-джитсу с вашим ребенком!</li><li>Пока ваш ребенок учится боевым навыкам и самообороне, вы можете:</li><li>Тренировать джиу-джитсу на той же тренировке или параллельно в группе для взрослых.</li><li>Цена: Добавьте только 3,000 RSD ежемесячно для вашей тренировки с пакетом для детей!</li><li>Не ждите матов - присоединяйтесь и тренируйтесь вместе с вашим ребенком!</li></ul>"
+        }
+      }
+    },
     "benefits": {
       "coaches": {
         "title": "Лучшие тренеры по боевым искусствам",

@@ -129,3 +129,15 @@
     clip-path: inset(0 50% 0 50%);
   }
 }
+
+.membershipHightlightedText {
+  span {
+    @apply font-bold;
+  }
+}
+
+.membershipsLists {
+  li {
+    @apply list-disc mt-2;
+  }
+}

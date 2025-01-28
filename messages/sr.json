@@ -120,7 +120,170 @@
   "memberships": {
     "title": "Članstva",
     "description": "U TTT-u, borci svih nivoa se okupljaju da pomere svoje granice, usavrše svoje veštine i izgrade mentalnu snagu.",
-    "buttonText": "Kontaktirajte nas",
+    "buttonText": "Saznaj više",
+    "packages": {
+      "standup": {
+        "title": "Stand-Up paket",
+        "subtitle": "MMA / Boks / KikBoks / Rvanje za MMA",
+        "includesText": {
+          "title": "Uključeno",
+          "description": {
+            "ptOne": "MMA",
+            "ptTwo": "Boks",
+            "ptThree": "KikBoks",
+            "ptFour": "Rvanje za MMA"
+          }
+        },
+        "prices": {
+          "title": "Cene",
+          "threeX": {
+            "title": "3x nedeljno",
+            "description": "7,500 RSD"
+          },
+          "unlimitedMonthly": {
+            "title": "Neograničeno mesečno",
+            "description": "9,500 RSD"
+          },
+          "unlimitedYearly": {
+            "title": "Neograničeno godišnje",
+            "description": "95,000 RSD"
+          }
+        },
+        "discountsText": {
+          "title": "Popusti",
+          "description": "<span>1.</span> Popust od <span>20%</span> Dostupan za: Studenti, Srednjoškolci, Pripadnici hitnih službi: <span>vojska, policija, hitna pomoć.</span>"
+        },
+        "examplesText": {
+          "title": "Primeri",
+          "threeX": {
+            "title": "3x Nedeljno",
+            "description": "7,500 RSD - <span>20%</span> = <span>6,000 RSD</span>."
+          },
+          "unlimitedMonthly": {
+            "title": "Neograničeno Mesečno",
+            "description": "9,500 RSD - <span>20%</span> = <span>7,600 RSD</span>."
+          }
+        },
+        "additionalOption": {
+          "title": "Dodatna Opcija - Rvanje slobodnim stilom:",
+          "description": "- Možete dodati <span>rvanje slobodnim stilom 3x</span> nedeljno za samo <span>1,500 RSD</span> mesečno ako ste već pretplaćeni na <span>Stand-Up paket</span>."
+        },
+        "hightlightText": "Preko 25 treninga nedeljno!"
+      },
+      "grappling": {
+        "title": "Grappling paket",
+        "subtitle": "NOGI Grappling / BJJ / NOGI Rvanje",
+        "includesText": {
+          "title": "Uključeno",
+          "description": {
+            "ptOne": "NOGI Grappling",
+            "ptTwo": "BJJ",
+            "ptThree": "NOGI Rvanje"
+          }
+        },
+        "prices": {
+          "title": "Cene",
+          "threeX": {
+            "title": "3x nedeljno",
+            "description": "7,500 RSD"
+          },
+          "unlimitedMonthly": {
+            "title": "Neograničeno mesečno",
+            "description": "9,500 RSD"
+          },
+          "unlimitedYearly": {
+            "title": "Neograničeno godišnje",
+            "description": "95,000 RSD"
+          }
+        },
+        "discountsText": {
+          "title": "Popusti",
+          "description": "<span>1.</span> Popust od <span>20%</span> Dostupan za: Studenti, Srednjoškolci, Pripadnici hitnih službi: <span>vojska, policija, hitna pomoć.</span>"
+        },
+        "examplesText": {
+          "title": "Primeri",
+          "threeX": {
+            "title": "3x Nedeljno",
+            "description": "7,500 RSD - <span>20%</span> = <span>6,000 RSD</span>."
+          },
+          "unlimitedMonthly": {
+            "title": "Neograničeno Mesečno",
+            "description": "9,500 RSD - <span>20%</span> = <span>7,600 RSD</span>."
+          }
+        },
+        "additionalOption": {
+          "title": "Dodatna Opcija - Rvanje slobodnim stilom:",
+          "description": "- Možete dodati <span>rvanje slobodnim stilom 3x</span> nedeljno za samo <span>1,500 RSD</span> mesečno ako ste već pretplaćeni na <span>Grappling paket</span>."
+        },
+        "hightlightText": "Preko 25 treninga nedeljno!"
+      },
+      "wrestling": {
+        "title": "Rvanje slobodnim stilom",
+        "subtitle": "NOGI Grappling / BJJ / NOGI Rvanje",
+        "includesText": {
+          "title": "Uključeno",
+          "description": {
+            "ptOne": "Rvanje slobodnim stilom"
+          }
+        },
+        "prices": {
+          "title": "Cene",
+          "threeX": {
+            "title": "3x nedeljno",
+            "description": "3,000 RSD"
+          }
+        },
+        "discountsText": {
+          "title": "Popusti",
+          "description": "<span>1.</span> Popust od <span>20%</span> Dostupan za: Studenti, Srednjoškolci, Pripadnici hitnih službi: <span>vojska, policija, hitna pomoć.</span>"
+        },
+        "examplesText": {
+          "title": "Primeri",
+          "threeX": {
+            "title": "3x Nedeljno",
+            "description": "3,000 RSD - <span>20%</span> = <span>2,400 RSD</span>."
+          }
+        },
+        "additionalOption": {
+          "title": "Dodatna Napomena:",
+          "description": "- Rvanje slobodnim stilom je savršen dodatak za sve borce koji žele da poboljšaju svoje veštine bacanja, kontrole i dominacije u borbi na tlu. Preporučuje se kao dopuna za članove Grappling i Stand-Up paketa."
+        },
+        "hightlightText": "\"Nakon rvanja, sve u životu je lako.\""
+      },
+      "kids": {
+        "title": "Kids Combat Program",
+        "subtitle": "Program je baziran na BJJ-u, ali uključuje i rvanje i No-Gi veštine za kompletnu pripremu dece.",
+        "includesText": {
+          "title": "Uključeno",
+          "description": {
+            "ptOne": "Treninzi oblikovani da izgrade disciplinu, samopouzdanje i veštine samoodbrane!"
+          }
+        },
+        "prices": {
+          "title": "Cene",
+          "kiddos": {
+            "title": "3-6 godina, 2x nedeljno",
+            "description": "4,000 RSD"
+          },
+          "teens": {
+            "title": "7-13 godina, 3x nedeljno",
+            "description": "6,000 RSD"
+          }
+        },
+        "discountsText": {
+          "title": "Popusti",
+          "description": "<ul><li>Porodični Popusti - Važi za SVAKO dete:</li><li>Drugo dete: 1,000 RSD popusta.</li><li>Treće dete: 1,500 RSD popusta.</li><li>Četvrto dete: 2,000 RSD popusta.</li>  </ul>"
+        },
+        "examplesText": {
+          "title": "Promo za roditelje",
+          "promo": "<ul><li>Roditelji, obucite Gi i pridružite se BJJ sesiji sa svojom decom!</li><li>Dok vaša deca uče borilačke veštine i samoodbranu, vi možete:</li><li>Trenirati BJJ na istom treningu ili paralelno u odrasloj grupi.</li><li>Cena: Dodajte samo 3,000 RSD mesečno za vaš trening uz dečiji paket!</li><li>Ne čekajte na tribinama - pridružite se i vežbajte zajedno sa svojim detetom!</li></ul>"
+        },
+        "additionalOption": {
+          "title": "Dodatna Opcija - Rvanje slobodnim stilom:",
+          "description": "- Možete dodati <span>rvanje slobodnim stilom 3x</span> nedeljno za samo <span>1,500 RSD</span> mesečno ako ste već pretplaćeni na <span>Grappling paket</span>."
+        }
+      }
+    },
     "benefits": {
       "coaches": {
         "title": "Najbolji treneri borenja",

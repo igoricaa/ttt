@@ -120,7 +120,166 @@
   "memberships": {
     "title": "Memberships",
     "description": "At TTT, fighters of all levels come together to push their limits, refine their skills, and build the mental strength.",
-    "buttonText": "Contact Us",
+    "buttonText": "Read More",
+    "packages": {
+      "standup": {
+        "title": "Stand-Up package",
+        "subtitle": "MMA / Boxing / Kickboxing / Wrestling for MMA",
+        "includesText": {
+          "title": "Included",
+          "description": {
+            "ptOne": "MMA",
+            "ptTwo": "Boxing",
+            "ptThree": "Kickboxing",
+            "ptFour": "Wrestling for MMA"
+          }
+        },
+        "prices": {
+          "title": "Prices",
+          "threeX": {
+            "title": "3x weekly",
+            "description": "7,500 RSD"
+          },
+          "unlimitedMonthly": {
+            "title": "Unlimited monthly",
+            "description": "9,500 RSD"
+          },
+          "unlimitedYearly": {
+            "title": "Unlimited yearly",
+            "description": "95,000 RSD"
+          }
+        },
+        "discountsText": {
+          "title": "Discounts",
+          "description": "<span>1.</span> Discount of <span>20%</span> Available for: Students, High School Students, Emergency Service Personnel: <span>army, police, emergency services.</span>"
+        },
+        "examplesText": {
+          "title": "Examples",
+          "threeX": {
+            "title": "3x weekly",
+            "description": "7,500 RSD - <span>20%</span> = <span>6,000 RSD</span>."
+          },
+          "unlimitedMonthly": {
+            "title": "Unlimited monthly",
+            "description": "9,500 RSD - <span>20%</span> = <span>7,600 RSD</span>."
+          }
+        },
+        "additionalOption": {
+          "title": "Additional Option - Freestyle Wrestling:",
+          "description": "- You can add <span>wrestling 3x</span> weekly for only <span>1,500 RSD</span> monthly if you are already subscribed to the <span>Stand-Up package</span>."
+        },
+        "hightlightText": "Over 25 training sessions per week!"
+      },
+      "grappling": {
+        "title": "Grappling package",
+        "subtitle": "NOGI Grappling / BJJ / NOGI Wrestling",
+        "includesText": {
+          "title": "Included",
+          "description": {
+            "ptOne": "NOGI Grappling",
+            "ptTwo": "BJJ",
+            "ptThree": "NOGI Wrestling"
+          }
+        },
+        "prices": {
+          "title": "Prices",
+          "threeX": {
+            "title": "3x weekly",
+            "description": "7,500 RSD"
+          },
+          "unlimitedMonthly": {
+            "title": "Unlimited monthly",
+            "description": "9,500 RSD"
+          },
+          "unlimitedYearly": {
+            "title": "Unlimited yearly",
+            "description": "95,000 RSD"
+          }
+        },
+        "discountsText": {
+          "title": "Discounts",
+          "description": "<span>1.</span> Discount of <span>20%</span> Available for: Students, High School Students, Emergency Service Personnel: <span>army, police, emergency services.</span>"
+        },
+        "examplesText": {
+          "title": "Examples",
+          "threeX": {
+            "title": "3x weekly",
+            "description": "7,500 RSD - <span>20%</span> = <span>6,000 RSD</span>."
+          },
+          "unlimitedMonthly": {
+            "title": "Unlimited monthly",
+            "description": "9,500 RSD - <span>20%</span> = <span>7,600 RSD</span>."
+          }
+        },
+        "additionalOption": {
+          "title": "Additional Option - Freestyle Wrestling:",
+          "description": "- You can add <span>wrestling 3x</span> weekly for only <span>1,500 RSD</span> monthly if you are already subscribed to the <span>Grappling package</span>."
+        },
+        "hightlightText": "Over 25 training sessions per week!"
+      },
+      "wrestling": {
+        "title": "Freestyle Wrestling",
+        "subtitle": "NOGI Grappling / BJJ / NOGI Wrestling",
+        "includesText": {
+          "title": "Included",
+          "description": {
+            "ptOne": "Freestyle Wrestling"
+          }
+        },
+        "prices": {
+          "title": "Prices",
+          "threeX": {
+            "title": "3x weekly",
+            "description": "3,000 RSD"
+          }
+        },
+        "discountsText": {
+          "title": "Discounts",
+          "description": "<span>1.</span> Discount of <span>20%</span> Available for: Students, High School Students, Emergency Service Personnel: <span>army, police, emergency services.</span>"
+        },
+        "examplesText": {
+          "title": "Examples",
+          "threeX": {
+            "title": "3x weekly",
+            "description": "3,000 RSD - <span>20%</span> = <span>2,400 RSD</span>."
+          }
+        },
+        "additionalOption": {
+          "title": "Additional Note:",
+          "description": "- Freestyle Wrestling is the perfect addition for all fighters who want to improve their throwing, control, and dominance in combat. It is recommended as a supplement for members of the Grappling and Stand-Up packages."
+        },
+        "hightlightText": "\"After wrestling, everything in life is easy.\""
+      },
+      "kids": {
+        "title": "Kids Combat Program",
+        "subtitle": "The program is based on BJJ, but includes wrestling and No-Gi skills for complete preparation of the children.",
+        "includesText": {
+          "title": "Included",
+          "description": {
+            "ptOne": "Training designed to build discipline, self-confidence, and self-defense skills!"
+          }
+        },
+        "prices": {
+          "title": "Prices",
+          "kiddos": {
+            "title": "3-6 years old, 2x weekly",
+            "description": "4,000 RSD"
+          },
+          "teens": {
+            "title": "7-13 years old, 3x weekly",
+            "description": "6,000 RSD"
+          }
+        },
+        "discountsText": {
+          "title": "Discounts",
+          "description": "<ul><li>Family Discounts - Applies to EVERY child:</li><li>Second child: 1,000 RSD discount.</li><li>Third child: 1,500 RSD discount.</li><li>Fourth child: 2,000 RSD discount.</li>  </ul>"
+        },
+        "examplesText": {
+          "title": "Parents Promo",
+          "promo": "<ul><li>Parents, put on Gi and join BJJ session with your child!</li><li>While your child learns combat skills and self-defense, you can:</li><li>Train BJJ on the same training or parallel in the adult group.</li><li>Price: Add only 3,000 RSD monthly for your training with the child package!</li><li>Don't wait for the mats - join and train together with your child!</li></ul>"
+        }
+      }
+    },
     "benefits": {
       "coaches": {
         "title": "Best Fighting Coaches",

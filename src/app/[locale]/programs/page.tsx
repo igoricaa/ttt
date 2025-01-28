@@ -27,7 +27,7 @@ const Page = async ({ params }: { params: Promise<{ locale: string }> }) => {
         className='mt-8 sm:mt-12 lg:mt-auto w-full'
         //mt-8 sm:mt-12 lg:mt-20
       >
-        Book a free session
+        {t('buttonText')}
       </Link>
     </main>
   );
