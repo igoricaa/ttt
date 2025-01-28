@@ -407,6 +407,22 @@ const timeToMinutes = (time: string): number => {
 };
 
 export function Schedule() {
+  const hasClassesInTimeSlot = (time: string) => {
+    return schedule.some((day) =>
+      day.classes.some((event) => {
+        const eventStart = timeToMinutes(event.startTime);
+        const slotStart = timeToMinutes(time);
+        const slotEnd = slotStart + 60;
+        return eventStart >= slotStart && eventStart < slotEnd;
+      })
+    );
+  };
+
+  // Determine which time slots have classes
+  const timeSlotsWithClasses = timeSlots.map((time) =>
+    hasClassesInTimeSlot(time)
+  );
+
   return (
     <div className='col-span-full 3xl:col-span-10 3xl:col-start-2 p-4 overflow-x-auto'>
       <div className='min-w-[1400px] relative'>
@@ -449,12 +465,14 @@ export function Schedule() {
           {timeSlots.map((time, index) => (
             <React.Fragment key={time}>
               <div
-                className={`h-12  ${
+                className={`h-12 ${
                   index === 16
                     ? 'border-b-0'
+                    : index >= 3 && index < 11
+                    ? ''
                     : 'border-b-[0.5px] border-[#403155]'
                 }`}
-              />{' '}
+              />
               {/* Time slot cell (covered by sidebar) */}
               {[
                 'Monday',
@@ -481,9 +499,15 @@ export function Schedule() {
                 return (
                   <div
                     key={`${day}-${time}`}
-                    className={`h-12 relative border-r-[0.5px] border-b-[0.5px] border-[#403155] ${
-                      day === 'Saturday' ? 'bg-[#726e5c]' : ''
+                    className={`h-12 relative ${
+                      index >= 3 && index < 10 && day !== 'Saturday'
+                        ? ''
+                        : 'border-b-[0.5px] border-[#403155]'
                     } ${
+                      index >= 3 && index < 11 && day !== 'Saturday'
+                        ? ''
+                        : 'border-r-[0.5px] border-[#403155]'
+                    } ${day === 'Saturday' ? 'bg-[#726e5c]' : ''} ${
                       index === 16 && day === 'Saturday'
                         ? 'rounded-br-[45px]'
                         : ''
