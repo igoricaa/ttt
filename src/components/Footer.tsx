@@ -6,7 +6,7 @@ import { Route } from '@/lib/types';
 import { useTranslations } from 'next-intl';
 
 const Footer = () => {
-  const navT = useTranslations('nav');
+  const navT = useTranslations('menu.nav');
   const footerT = useTranslations('footer');
 
   return (

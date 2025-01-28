@@ -1,11 +1,14 @@
 {
-  "nav": {
-    "home": "Главная",
-    "aboutUs": "O нас",
-    "memberships": "Членство",
-    "programs": "Программы",
-    "schedule": "Расписание",
-    "contactUs": "Связаться с нами"
+  "menu": {
+    "nav": {
+      "home": "Главная",
+      "aboutUs": "O нас",
+      "memberships": "Членство",
+      "programs": "Программы",
+      "schedule": "Расписание",
+      "contactUs": "Связаться с нами"
+    },
+    "buttonText": "Присоединиться"
   },
   "footer": {
     "workingHours": "<span className='italic'>Часы работы</span>:Пн-Пт <span className='italic'>8.00 - 22.00</span>/Сб <span className='italic'>8.00 - 22.00</span>/Вс <span className='italic'>Закрыто</span>",

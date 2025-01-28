@@ -15,7 +15,7 @@ import { useTranslations } from 'next-intl';
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const isMobile = useMediaQuery('(max-width: 1025px)');
-  const t = useTranslations('nav');
+  const t = useTranslations('menu');
 
   const handleClick = () => {
     setIsOpen(!isOpen);
@@ -71,7 +71,7 @@ const MobileNav = () => {
                       index={index}
                       variant='mobilemenu'
                     >
-                      {t(`${route.slug}`)}
+                      {t(`nav.${route.slug}`)}
                     </NavLink>
                   </li>
                 );
@@ -98,7 +98,7 @@ const MobileNav = () => {
                       index={index}
                       variant='mobilemenu'
                     >
-                      {t(`${route.slug}`)}
+                      {t(`nav.${route.slug}`)}
                     </NavLink>
                   </li>
                 );
@@ -182,7 +182,7 @@ const MobileNav = () => {
                 isOpen && 'opacity-100 visible translate-y-0 delay-0'
               )}
             >
-              Schedula a Free Tour
+              {t('buttonText')}
             </LinkButton>
           </div>
         </div>

@@ -1,11 +1,14 @@
 {
-  "nav": {
-    "home": "Početna",
-    "aboutUs": "O nama",
-    "memberships": "Članstva",
-    "programs": "Programi",
-    "schedule": "Raspored",
-    "contactUs": "Kontakt"
+  "menu": {
+    "nav": {
+      "home": "Početna",
+      "aboutUs": "O nama",
+      "memberships": "Članstva",
+      "programs": "Programi",
+      "schedule": "Raspored",
+      "contactUs": "Kontakt"
+    },
+    "buttonText": "Pridruži nam se"
   },
   "footer": {
     "workingHours": "<span className='italic'>Radno vreme</span>: Ponedeljak - Petak 8.00 - 22.00 / Subota 8.00 - 22.00 / Nedelja Zatvoreno",

@@ -18,7 +18,7 @@ const Header = () => {
   const [scrollTimeout, setScrollTimeout] = useState<NodeJS.Timeout | null>(
     null
   );
-  const t = useTranslations('nav');
+  const t = useTranslations('menu.nav');
 
   const handleStickyHeader = () => {
     if (typeof window === 'undefined') return;
@@ -100,7 +100,7 @@ const Header = () => {
           ))}
         </nav>
 
-        <div className='hidden absolute top-1/2 -translate-y-1/2 right-0 lg:block'>
+        <div className='hidden lg:block absolute top-16 2xl:top-1/2 2xl:-translate-y-1/2 right-0'>
           <LocaleSwitcher />
         </div>
       </div>

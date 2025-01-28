@@ -1,11 +1,14 @@
 {
-  "nav": {
-    "home": "Home",
-    "aboutUs": "About Us",
-    "memberships": "Memberships",
-    "programs": "Programs",
-    "schedule": "Schedule",
-    "contactUs": "Contact Us"
+  "menu": {
+    "nav": {
+      "home": "Home",
+      "aboutUs": "About Us",
+      "memberships": "Memberships",
+      "programs": "Programs",
+      "schedule": "Schedule",
+      "contactUs": "Contact Us"
+    },
+    "buttonText": "Join Us"
   },
   "footer": {
     "workingHours": "<span className='italic'>Hours</span>:Mo-Fri <span className='italic'>8.00 - 22.00</span>/Sat <span className='italic'>8.00 - 22.00</span>/Sun <span className='italic'>Closed</span>",
