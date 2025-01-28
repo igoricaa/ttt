@@ -43,7 +43,7 @@ export default async function Page({
         </p>
       </section>
 
-      <section className='mt-6 sm:mt-16 lg:mt-20 mb-32 grid grid-cols-12'>
+      <section className='mt-6 sm:mt-16 lg:mt-20 mb-32 lg:grid lg:grid-cols-12'>
         <div className='col-span-10 col-start-2 flex flex-col gap-4 sm:flex-row justify-between items-center mb-8'>
           <p className='text-base sm:text-xl uppercase'>{t('subtitle')}</p>
           <Link

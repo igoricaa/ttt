@@ -176,8 +176,8 @@ const schedule: DaySchedule[] = [
       },
       {
         name: 'Kickboxing',
-        startTime: '18:30',
-        endTime: '19:30',
+        startTime: '19:30',
+        endTime: '20:30',
         classType: ClassTypes.KICKBOXING,
       },
       {
@@ -288,8 +288,8 @@ const schedule: DaySchedule[] = [
       },
       {
         name: 'Kickboxing',
-        startTime: '18:30',
-        endTime: '19:30',
+        startTime: '19:30',
+        endTime: '20:30',
         classType: ClassTypes.KICKBOXING,
       },
       {
@@ -408,8 +408,8 @@ const timeToMinutes = (time: string): number => {
 
 export function Schedule() {
   return (
-    <div className='col-span-10 col-start-2 p-4 overflow-x-auto'>
-      <div className='min-w-[800px] relative'>
+    <div className='col-span-full 3xl:col-span-10 3xl:col-start-2 p-4 overflow-x-auto'>
+      <div className='min-w-[1400px] relative'>
         {/* Fixed time sidebar */}
         <div className='absolute left-0 top-0 bottom-0 w-8 bg-classes-darkblue text-white z-10 rounded-tl-[45px] rounded-bl-[45px]'>
           <div className='h-8 flex items-center justify-center'></div>

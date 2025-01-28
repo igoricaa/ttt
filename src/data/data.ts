@@ -179,16 +179,17 @@ export const memberships: Membership[] = [
 export const benefits: Benefit[] = [
   {
     slug: 'coaches',
-    image: '/benefits/borenje.jpeg',
+    image: '/benefits/thundertopteam-best-coaches.jpg',
   },
   {
     slug: 'environment',
-    image: '/benefits/functional.jpeg',
+    image: '/benefits/thundertopteam-training-environment.jpg',
   },
+
   { slug: 'welness', image: '/benefits/spa.jpeg' },
   {
     slug: 'chillarea',
-    image: '/benefits/caffe.jpeg',
+    image: '/benefits/thundertopteam-chill-area.jpg',
   },
 ];
 
@@ -214,27 +215,27 @@ export const socials: Social[] = [
 export const programs: Program[] = [
   {
     slug: 'strength',
-    image: '/programs/strength.webp',
+    image: '/programs/thundertopteam-strength.jpg',
   },
   {
     slug: 'bjj',
-    image: '/programs/jiu-jitsu.jpg',
+    image: '/programs/thundertopteam-bjj.jpg',
   },
   {
     slug: 'mma',
-    image: '/programs/mma.jpg',
+    image: '/programs/thundertopteam-mma.jpg',
   },
   {
     slug: 'boxing',
-    image: '/programs/boxing.jpg',
+    image: '/programs/thundertopteam-boxing.jpg',
   },
   {
     slug: 'selfDefense',
-    image: '/programs/self-defense.jpg',
+    image: '/programs/thundertopteam-self-defense.jpg',
   },
   {
     slug: 'kids',
-    image: '/programs/kids.jpeg',
+    image: '/programs/thundertopteam-kids2.jpg',
   },
 ];
 

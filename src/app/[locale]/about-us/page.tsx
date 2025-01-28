@@ -1,4 +1,3 @@
-import Achievements from '@/components/achievements';
 import MembersSlider from '@/components/members-slider';
 import Link from '@/components/ui/link-button';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
@@ -55,6 +54,7 @@ const Page = async ({ params }: { params: Promise<{ locale: string }> }) => {
             alt={`Thunder Top Team - ${t('header.title')}`}
             priority
             fill
+            quality={100}
             style={{ objectFit: 'cover' }}
             sizes='(max-width: 680px) 100vw, (max-width: 1024px) 85vw, 60vw'
           />
@@ -88,12 +88,12 @@ const Page = async ({ params }: { params: Promise<{ locale: string }> }) => {
         </div>
       </section>
 
-      <section className='mt-20 sm:mt-[72px] lg:mt-48 px-side'>
+      {/* <section className='mt-20 sm:mt-[72px] lg:mt-48 px-side'>
         <h2 className='text-3xl sm:text-6xl font-semibold uppercase'>
           {t('achievements.title')}
         </h2>
         <Achievements className='lg:mt-20' />
-      </section>
+      </section> */}
 
       <section className='px-side lg:pr-0 pt-16 pb-[72px] sm:pt-[72px] sm:pb-24 lg:py-32'>
         <MembersSlider members={membersFull} title={title} />
