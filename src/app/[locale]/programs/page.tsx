@@ -18,7 +18,7 @@ const Page = async ({ params }: { params: Promise<{ locale: string }> }) => {
   }));
 
   return (
-    <main className='lg:h-screen flex flex-col justify-center relative px-side pb-16 lg:pb-10 mt-[-54px] sm:mt-[-64px]'>
+    <main className='lg:h-screen flex flex-col justify-center relative px-side pb-16 lg:pb-10 mt-[-54px] sm:mt-[-64px] bg-gradient-to-r from-black to-transparent'>
       <Programs programs={programsFull} />
 
       <Link
