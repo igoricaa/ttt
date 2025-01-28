@@ -36,40 +36,14 @@
     --striking-color-rgb-20: 142, 165, 175;
     --schedule-darkblue-color-rgb: 48, 44, 54;
     --schedule-darkblue-color-rgb-20: 38, 35, 43;
-    --schedule-bg-color-rgb: 146, 141, 117;
+    --schedule-bg-color-rgb: 213, 212, 191;
     --cf-text-color-rgb: var(--primary-dark-color-rgb);
-
-    /* --primary-color-rgb: #9c9c8d;
-    --primary-color-rgb-20: #7d7d71;
-    --primary-dark-color-rgb: #30321c;
-    --primary-dark-color-rgb-20: #262816;
-    --green-color-rgb: #4a4b2f;
-    --green-color-rgb-20: #3b3c26;
-    --yellow-color-rgb: #fcfc62;
-    --yellow-color-rgb-20: #e3e358;
-    --background-rgb: var(--primary-color-rgb);
-    --text-color-rgb: #ffffff;
-    --button-white-rgb: #fefeea;
-    --button-white-rgb-20: #cbccbb; */
   }
 
   [data-theme='dark'] {
-    /* #121212 */
     --primary-color-rgb: 18, 18, 18;
-    --footer-background-rgb: 48, 50, 28; /* #30321C; */
+    --footer-background-rgb: 48, 50, 28;
     --cf-text-color-rgb: 255, 255, 255;
-
-    /* --primary-color-rgb-20: 125, 125, 113;
-    --primary-dark-color-rgb: 48, 50, 28;
-    --primary-dark-color-rgb-20: 38, 40, 22;
-    --green-color-rgb: 74, 75, 47;
-    --green-color-rgb-20: 59, 60, 38;
-    --yellow-color-rgb: 252, 252, 98;
-    --yellow-color-rgb-20: 227, 227, 88;
-    --background-rgb: var(--primary-color-rgb);
-    --text-color-rgb: 255, 255, 255;
-    --button-white-rgb: 254, 255, 234;
-    --button-white-rgb-20: 203, 204, 187; */
   }
 }
 
@@ -89,19 +63,16 @@
   width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #7d7d71;
   border-radius: 5px;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #262816;
   border-radius: 5px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }

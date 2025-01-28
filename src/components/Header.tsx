@@ -81,8 +81,8 @@ const Header = () => {
       <div className='lg:hidden sm:absolute sm:left-1/2 sm:-translate-x-1/2'>
         <HeaderLogo className='h-[38px] w-[34px] sm:h-[60px] sm:w-[53.5px]' />
       </div>
-      <div className='relative hidden lg:flex items-center justify-center gap-16'>
-        <nav className='flex items-center gap-16 w-[475px] justify-end'>
+      <div className='relative hidden lg:flex items-center justify-center gap-12 3xl:gap-16'>
+        <nav className='flex items-center gap-12 3xl:gap-16 w-[475px] justify-end'>
           {routes.slice(0, 3).map((route: Route, index: number) => (
             <NavLink key={route.path} href={route.path} index={index}>
               {t(`${route.slug}`)}
@@ -92,7 +92,7 @@ const Header = () => {
 
         <HeaderLogo />
 
-        <nav className='flex items-center gap-16 w-[475px]'>
+        <nav className='flex items-center gap-12 3xl:gap-16 w-[475px]'>
           {routes.slice(-3).map((route: Route, index: number) => (
             <NavLink key={route.path} href={route.path} index={index}>
               {t(`${route.slug}`)}

@@ -1,7 +1,6 @@
-'use client';
-
 import { Card } from '@/components/ui/card';
 import React from 'react';
+import TTTLetters from './ui/logos/ttt-letters';
 
 const ClassTypes = {
   NO_GI: { type: 'NO_GI', label: 'GRAPPLING' },
@@ -407,25 +406,10 @@ const timeToMinutes = (time: string): number => {
 };
 
 export function Schedule() {
-  const hasClassesInTimeSlot = (time: string) => {
-    return schedule.some((day) =>
-      day.classes.some((event) => {
-        const eventStart = timeToMinutes(event.startTime);
-        const slotStart = timeToMinutes(time);
-        const slotEnd = slotStart + 60;
-        return eventStart >= slotStart && eventStart < slotEnd;
-      })
-    );
-  };
-
-  // Determine which time slots have classes
-  const timeSlotsWithClasses = timeSlots.map((time) =>
-    hasClassesInTimeSlot(time)
-  );
-
   return (
     <div className='col-span-full 3xl:col-span-10 3xl:col-start-2 p-4 overflow-x-auto'>
       <div className='min-w-[1400px] relative'>
+        <TTTLetters className='absolute top-44 left-0 w-5/6 h-auto' />
         {/* Fixed time sidebar */}
         <div className='absolute left-0 top-0 bottom-0 w-8 bg-classes-darkblue text-white z-10 rounded-tl-[45px] rounded-bl-[45px]'>
           <div className='h-8 flex items-center justify-center'></div>
@@ -494,7 +478,7 @@ export function Schedule() {
 
                 // Calculate width for each event based on number of concurrent events
                 const eventWidth =
-                  eventsInSlot.length > 0 ? 90 / eventsInSlot.length : 90; // 90% total width divided by number of events
+                  eventsInSlot.length > 0 ? 90 / eventsInSlot.length : 90;
 
                 return (
                   <div
@@ -504,10 +488,13 @@ export function Schedule() {
                         ? ''
                         : 'border-b-[0.5px] border-[#403155]'
                     } ${
-                      index >= 3 && index < 11 && day !== 'Saturday'
+                      index >= 3 &&
+                      index < 11 &&
+                      day !== 'Saturday' &&
+                      day !== 'Friday'
                         ? ''
                         : 'border-r-[0.5px] border-[#403155]'
-                    } ${day === 'Saturday' ? 'bg-[#726e5c]' : ''} ${
+                    } ${
                       index === 16 && day === 'Saturday'
                         ? 'rounded-br-[45px]'
                         : ''
