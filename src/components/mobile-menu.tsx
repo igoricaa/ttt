@@ -17,18 +17,15 @@ const MobileNav = () => {
   const isMobile = useMediaQuery('(max-width: 1025px)');
   const t = useTranslations('menu');
 
-  const handleClick = () => {
-    setIsOpen(!isOpen);
-  };
-
   const toggleMenu = () => {
-    document.body.classList.toggle('noscroll');
+    document.body.style.overflow = 'hidden';
+    document.body.setAttribute('data-lenis-prevent', 'true');
     setIsOpen(!isOpen);
   };
 
   return (
     <>
-      {isMobile && <Burger handleClick={handleClick} isOpen={isOpen} />}
+      {isMobile && <Burger handleClick={toggleMenu} isOpen={isOpen} />}
 
       {isMobile && (
         <div
