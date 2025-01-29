@@ -13,13 +13,26 @@ const ClassTypes = {
   KICKBOXING: { type: 'KICKBOXING', label: 'KICKBOXING' },
 } as const;
 
+const CoachesTypes = {
+  IVAN: 'Ivan',
+  ANDJELA: 'Anđela',
+  STANKO: 'Stanko',
+  DUSKO: 'Duško',
+  STRAJA: 'Straja',
+  VUKASIN: 'Vukašin',
+  SAVKE: 'Savke',
+  TTT: 'TTT',
+} as const;
+
 type ClassType = (typeof ClassTypes)[keyof typeof ClassTypes];
+type CoachType = (typeof CoachesTypes)[keyof typeof CoachesTypes];
 
 interface ClassEvent {
   name: string;
   startTime: string;
   endTime: string;
   classType: ClassType;
+  coach: CoachType[];
 }
 
 interface DaySchedule {
@@ -27,7 +40,7 @@ interface DaySchedule {
   classes: ClassEvent[];
 }
 
-const schedule: DaySchedule[] = [
+export const schedule: DaySchedule[] = [
   {
     day: 'Monday',
     classes: [
@@ -36,60 +49,70 @@ const schedule: DaySchedule[] = [
         startTime: '07:30',
         endTime: '08:30',
         classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
       },
       {
         name: 'MMA Class',
         startTime: '09:00',
         endTime: '10:00',
         classType: ClassTypes.MMA,
+        coach: [CoachesTypes.STRAJA],
       },
       {
         name: 'Kids Combat',
         startTime: '18:30',
         endTime: '19:30',
         classType: ClassTypes.KIDS,
+        coach: [CoachesTypes.IVAN, CoachesTypes.ANDJELA],
       },
       {
         name: 'Boxing',
         startTime: '18:30',
         endTime: '19:30',
         classType: ClassTypes.BOXING,
+        coach: [CoachesTypes.DUSKO, CoachesTypes.VUKASIN],
       },
       {
         name: 'No-Gi',
         startTime: '19:30',
         endTime: '20:30',
         classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
       },
       {
         name: 'Kickboxing',
         startTime: '19:30',
         endTime: '20:30',
         classType: ClassTypes.KICKBOXING,
+        coach: [CoachesTypes.SAVKE],
       },
       {
         name: 'No-Gi',
         startTime: '20:30',
         endTime: '21:30',
         classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
       },
       {
         name: 'MMA Basic',
         startTime: '20:30',
         endTime: '21:30',
         classType: ClassTypes.MMA,
+        coach: [CoachesTypes.DUSKO, CoachesTypes.VUKASIN],
       },
       {
         name: 'BJJ',
         startTime: '21:30',
         endTime: '22:30',
         classType: ClassTypes.GI,
+        coach: [CoachesTypes.IVAN],
       },
       {
         name: 'MMA Advanced',
         startTime: '21:30',
         endTime: '22:30',
         classType: ClassTypes.MMA,
+        coach: [CoachesTypes.DUSKO, CoachesTypes.VUKASIN],
       },
     ],
   },
@@ -101,42 +124,49 @@ const schedule: DaySchedule[] = [
         startTime: '07:30',
         endTime: '08:30',
         classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
       },
       {
         name: 'MMA',
         startTime: '09:00',
         endTime: '10:00',
         classType: ClassTypes.MMA,
+        coach: [CoachesTypes.STRAJA],
       },
       {
         name: 'Freestyle Wrestling',
         startTime: '18:30',
         endTime: '19:30',
         classType: ClassTypes.WRESTLING,
+        coach: [CoachesTypes.STANKO],
       },
       {
         name: 'No-Gi',
         startTime: '19:30',
         endTime: '20:30',
         classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
       },
       {
         name: 'No-Gi',
         startTime: '20:30',
         endTime: '21:30',
         classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
       },
       {
         name: 'MMA Basic',
         startTime: '20:30',
         endTime: '21:30',
         classType: ClassTypes.MMA,
+        coach: [CoachesTypes.DUSKO, CoachesTypes.VUKASIN],
       },
       {
         name: 'MMA Advanced',
         startTime: '21:30',
         endTime: '22:30',
         classType: ClassTypes.MMA,
+        coach: [CoachesTypes.DUSKO, CoachesTypes.VUKASIN],
       },
     ],
   },
@@ -148,60 +178,70 @@ const schedule: DaySchedule[] = [
         startTime: '07:30',
         endTime: '08:30',
         classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
       },
       {
         name: 'MMA Class',
         startTime: '09:00',
         endTime: '10:00',
         classType: ClassTypes.MMA,
+        coach: [CoachesTypes.STRAJA],
       },
       {
         name: 'Kids Combat',
         startTime: '18:30',
         endTime: '19:30',
         classType: ClassTypes.KIDS,
+        coach: [CoachesTypes.IVAN, CoachesTypes.ANDJELA],
       },
       {
         name: 'Boxing',
         startTime: '18:30',
         endTime: '19:30',
         classType: ClassTypes.BOXING,
+        coach: [CoachesTypes.DUSKO, CoachesTypes.VUKASIN],
       },
       {
         name: 'No-Gi',
         startTime: '19:30',
         endTime: '20:30',
         classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
       },
       {
         name: 'Kickboxing',
         startTime: '19:30',
         endTime: '20:30',
         classType: ClassTypes.KICKBOXING,
+        coach: [CoachesTypes.SAVKE],
       },
       {
         name: 'No-Gi',
         startTime: '20:30',
         endTime: '21:30',
         classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
       },
       {
         name: 'MMA Basic',
         startTime: '20:30',
         endTime: '21:30',
         classType: ClassTypes.MMA,
+        coach: [CoachesTypes.DUSKO, CoachesTypes.VUKASIN],
       },
       {
         name: 'BJJ',
         startTime: '21:30',
         endTime: '22:30',
         classType: ClassTypes.GI,
+        coach: [CoachesTypes.IVAN],
       },
       {
         name: 'MMA Advanced',
         startTime: '21:30',
         endTime: '22:30',
         classType: ClassTypes.MMA,
+        coach: [CoachesTypes.DUSKO, CoachesTypes.VUKASIN],
       },
     ],
   },
@@ -213,42 +253,49 @@ const schedule: DaySchedule[] = [
         startTime: '07:30',
         endTime: '08:30',
         classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
       },
       {
         name: 'MMA',
         startTime: '09:00',
         endTime: '10:00',
         classType: ClassTypes.MMA,
+        coach: [CoachesTypes.STRAJA],
       },
       {
         name: 'Freestyle Wrestling',
         startTime: '18:30',
         endTime: '19:30',
         classType: ClassTypes.WRESTLING,
+        coach: [CoachesTypes.STANKO],
       },
       {
         name: 'No-Gi',
         startTime: '19:30',
         endTime: '20:30',
         classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
       },
       {
         name: 'No-Gi',
         startTime: '20:30',
         endTime: '21:30',
         classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
       },
       {
         name: 'MMA Basic',
         startTime: '20:30',
         endTime: '21:30',
         classType: ClassTypes.MMA,
+        coach: [CoachesTypes.DUSKO, CoachesTypes.VUKASIN],
       },
       {
         name: 'MMA Advanced',
         startTime: '21:30',
         endTime: '22:30',
         classType: ClassTypes.MMA,
+        coach: [CoachesTypes.DUSKO, CoachesTypes.VUKASIN],
       },
     ],
   },
@@ -260,60 +307,70 @@ const schedule: DaySchedule[] = [
         startTime: '07:30',
         endTime: '08:30',
         classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
       },
       {
         name: 'MMA Class',
         startTime: '09:00',
         endTime: '10:00',
         classType: ClassTypes.MMA,
+        coach: [CoachesTypes.STRAJA],
       },
       {
         name: 'Kids Combat',
         startTime: '18:30',
         endTime: '19:30',
         classType: ClassTypes.KIDS,
+        coach: [CoachesTypes.IVAN, CoachesTypes.ANDJELA],
       },
       {
         name: 'Boxing',
         startTime: '18:30',
         endTime: '19:30',
         classType: ClassTypes.BOXING,
+        coach: [CoachesTypes.DUSKO, CoachesTypes.VUKASIN],
       },
       {
         name: 'No-Gi',
         startTime: '19:30',
         endTime: '20:30',
         classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
       },
       {
         name: 'Kickboxing',
         startTime: '19:30',
         endTime: '20:30',
         classType: ClassTypes.KICKBOXING,
+        coach: [CoachesTypes.SAVKE],
       },
       {
         name: 'No-Gi',
         startTime: '20:30',
         endTime: '21:30',
         classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
       },
       {
         name: 'MMA Basic',
         startTime: '20:30',
         endTime: '21:30',
         classType: ClassTypes.MMA,
+        coach: [CoachesTypes.DUSKO, CoachesTypes.VUKASIN],
       },
       {
         name: 'BJJ',
         startTime: '21:30',
         endTime: '22:30',
         classType: ClassTypes.GI,
+        coach: [CoachesTypes.IVAN],
       },
       {
         name: 'MMA Advanced',
         startTime: '21:30',
         endTime: '22:30',
         classType: ClassTypes.MMA,
+        coach: [CoachesTypes.DUSKO, CoachesTypes.VUKASIN],
       },
     ],
   },
@@ -325,30 +382,34 @@ const schedule: DaySchedule[] = [
         startTime: '13:00',
         endTime: '14:00',
         classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
       },
       {
         name: 'MMA Day',
         startTime: '13:00',
         endTime: '14:00',
         classType: ClassTypes.MMA,
+        coach: [CoachesTypes.DUSKO, CoachesTypes.VUKASIN],
       },
       {
         name: 'Open mat',
         startTime: '14:00',
         endTime: '15:30',
         classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.TTT],
       },
       {
         name: 'Freestyle Wrestling',
         startTime: '15:30',
         endTime: '16:30',
         classType: ClassTypes.WRESTLING,
+        coach: [CoachesTypes.STANKO],
       },
     ],
   },
 ];
 
-const getClassBackground = (classType: ClassType) => {
+export const getClassBackground = (classType: ClassType) => {
   switch (classType.type) {
     case 'NO_GI':
       return 'bg-classes-noGi-default';
@@ -371,7 +432,7 @@ const getClassBackground = (classType: ClassType) => {
   }
 };
 
-const getClassLabelBackground = (classType: ClassType) => {
+export const getClassLabelBackground = (classType: ClassType) => {
   switch (classType.type) {
     case 'NO_GI':
       return 'bg-classes-noGi-darker';
@@ -395,12 +456,12 @@ const getClassLabelBackground = (classType: ClassType) => {
 };
 
 // Generate time slots from 07:00 to 23:00
-const timeSlots = Array.from({ length: 17 }, (_, i) => {
+export const timeSlots = Array.from({ length: 17 }, (_, i) => {
   const hour = i + 7;
   return `${hour.toString().padStart(2, '0')}:00`;
 });
 
-const timeToMinutes = (time: string): number => {
+export const timeToMinutes = (time: string): number => {
   const [hours, minutes] = time.split(':').map(Number);
   return hours * 60 + minutes;
 };
@@ -409,14 +470,14 @@ export function Schedule() {
   return (
     <div className='col-span-full 3xl:col-span-10 3xl:col-start-2 p-4 overflow-x-auto'>
       <div className='min-w-[1400px] relative'>
-        <TTTLetters className='absolute top-44 left-0 w-5/6 h-auto' />
+        <TTTLetters className='absolute top-44 sm:top-[242px] left-0 w-5/6 h-auto' />
         {/* Fixed time sidebar */}
         <div className='absolute left-0 top-0 bottom-0 w-8 bg-classes-darkblue text-white z-10 rounded-tl-[45px] rounded-bl-[45px]'>
           <div className='h-8 flex items-center justify-center'></div>
           {timeSlots.map((time, index) => (
             <div
               key={time}
-              className={`h-12 flex justify-center text-xxs pt-1 ${
+              className={`h-17 flex justify-center text-xxs pt-1 ${
                 index === 16 ? 'border-b-0' : 'border-b-[0.5px] border-white'
               }`}
             >
@@ -449,7 +510,7 @@ export function Schedule() {
           {timeSlots.map((time, index) => (
             <React.Fragment key={time}>
               <div
-                className={`h-12 ${
+                className={`h-17 ${
                   index === 16
                     ? 'border-b-0'
                     : index >= 3 && index < 11
@@ -483,7 +544,7 @@ export function Schedule() {
                 return (
                   <div
                     key={`${day}-${time}`}
-                    className={`h-12 relative ${
+                    className={`h-17 relative ${
                       index >= 3 && index < 10 && day !== 'Saturday'
                         ? ''
                         : 'border-b-[0.5px] border-[#403155]'
@@ -515,27 +576,35 @@ export function Schedule() {
                       return (
                         <Card
                           key={eventIndex}
-                          className={`absolute p-2 font-semibold text-classes-darkblue rounded-lg ${getClassBackground(
+                          className={`absolute flex flex-col justify-between px-2 py-[7px] font-semibold text-classes-darkblue rounded-lg ${getClassBackground(
                             event.classType
                           )} overflow-hidden border-0 hover:shadow-classCard hover:border-l-4 border-[#20121259] transition-all duration-200 ease-out`}
                           style={{
-                            top: `${offset ? offset * 3.3 : 0.2}rem`,
-                            height: `${duration * 2.7}rem`,
+                            top: `${offset ? offset * 4.7 : 0.2}rem`,
+                            height: `${duration * 4.2}rem`,
                             left: `${leftOffset}%`,
                             width: `${eventWidth}%`,
                             zIndex: 10,
                           }}
                         >
+                          <div>
+                            <div className='text-[13px] truncate'>
+                              {event.name}
+                            </div>
+                            <div className='text-[9px]'>
+                              {event.startTime} - {event.endTime}
+                            </div>
+                          </div>
                           <div
-                            className={`absolute top-2 right-2 text-[6px] text-white uppercase font-semibold rounded-[20px] px-1 py-0.5 ${getClassLabelBackground(
+                            className={`${
+                              eventWidth === 90
+                                ? 'absolute top-2 right-2'
+                                : 'w-fit'
+                            }  text-[8px] text-white uppercase font-semibold rounded-[20px] px-1 py-0.5 ${getClassLabelBackground(
                               event.classType
                             )}`}
                           >
-                            {event.classType.label}
-                          </div>
-                          <div className='text-sm truncate'>{event.name}</div>
-                          <div className='text-xxs'>
-                            {event.startTime} - {event.endTime}
+                            {event.coach.map((coach) => coach).join(', ')}
                           </div>
                         </Card>
                       );
