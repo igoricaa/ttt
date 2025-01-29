@@ -86,7 +86,7 @@ const limiter = rateLimit({
   uniqueTokenPerInterval: 500,
 });
 
-export async function POST(req: any) {
+export async function POST(req: any): Promise<Response>   {
   try {
     limiter.check(req, 3);
 

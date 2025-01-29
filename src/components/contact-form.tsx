@@ -145,7 +145,6 @@ const ContactForm = () => {
           type='hidden'
           id='recaptcha_token'
           {...register('recaptcha_token')}
-          // value={captchaToken}
         />
 
         <button

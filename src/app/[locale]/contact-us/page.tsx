@@ -1,4 +1,4 @@
-import ContactForm from '@/components/contact-form-test';
+import ContactForm from '@/components/contact-form';
 import GoogleMap from '@/components/google-map';
 import ClockIcon from '@/components/icons/clock-icon';
 import LocationIconFilled from '@/components/icons/location-icon-filled';
