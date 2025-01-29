@@ -24,7 +24,7 @@ export type Member = {
   title?: string;
   image: string;
   bio?: string;
-  socials: Social[];
+  socials?: Social[];
 };
 
 export type Social = {

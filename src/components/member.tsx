@@ -81,19 +81,25 @@ const Member = ({
                 {member.name}
               </h4>
               <span className='mt-1'>{member.title}</span>
-              <p className='text-sm lg:text-base mt-6 lg:mt-12'>{member.bio}</p>
-              <div className={`flex gap-4 mt-8`}>
-                {member.socials.map((social, index) => (
-                  <a
-                    href={social.url}
-                    key={index}
-                    target='_blank'
-                    className='text-sm sm:text-base uppercase font-medium'
-                  >
-                    {social.name}
-                  </a>
-                ))}
-              </div>
+              {member.bio && (
+                <p className='text-sm lg:text-base mt-6 lg:mt-12'>
+                  {member.bio}
+                </p>
+              )}
+              {member.socials && member.socials.length > 0 && (
+                <div className={`flex gap-4 mt-8`}>
+                  {member.socials.map((social, index) => (
+                    <a
+                      href={social.url}
+                      key={index}
+                      target='_blank'
+                      className='text-sm sm:text-base uppercase font-medium'
+                    >
+                      {social.name}
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </div>

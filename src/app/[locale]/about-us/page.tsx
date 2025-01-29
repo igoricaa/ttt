@@ -15,7 +15,9 @@ const Page = async ({ params }: { params: Promise<{ locale: string }> }) => {
 
   const membersFull: Member[] = members.map((member) => ({
     ...member,
-    bio: t(`members.${member.slug}.bio`),
+    bio: t.has(`members.${member.slug}.bio`)
+      ? t(`members.${member.slug}.bio`)
+      : undefined,
     title: t(`members.${member.slug}.title`),
   }));
 

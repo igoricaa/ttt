@@ -104,7 +104,7 @@ export const members: Member[] = [
   {
     slug: 'dusko',
     name: 'Dusko Todorovic',
-    image: '/members/thundertopteam-dusko-todorovic.png',
+    image: '/members/thundertopteam-dusko-todorovic.jpg',
     socials: [
       {
         name: 'Instagram',
@@ -134,6 +134,16 @@ export const members: Member[] = [
       },
     ],
   },
+  {
+    slug: 'straja',
+    name: 'Strahinja Đurić',
+    image: '/members/thundertopteam-strahinja-djuric.jpg',
+  },
+  {
+    slug: 'stanko',
+    name: 'Stanko Stojanović',
+    image: '/members/thundertopteam-stanko-stojanovic.jpg',
+  },
 ];
 
 export const memberships = [
@@ -161,7 +171,7 @@ export const benefits: Benefit[] = [
     image: '/benefits/thundertopteam-training-environment.jpg',
   },
 
-  { slug: 'welness', image: '/benefits/spa.jpeg' },
+  { slug: 'welness', image: '/benefits/thundertopteam-spa-wellness.jpg' },
   {
     slug: 'chillarea',
     image: '/benefits/thundertopteam-chill-area.jpg',
