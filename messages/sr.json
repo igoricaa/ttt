@@ -11,7 +11,7 @@
     "buttonText": "Pridruži nam se"
   },
   "footer": {
-    "workingHours": "<span className='italic'>Radno vreme</span>: Ponedeljak - Petak 8.00 - 22.00 / Subota 8.00 - 22.00 / Nedelja Zatvoreno",
+    "workingHours": "<span className='italic'>Radno vreme</span>: Ponedeljak - Petak 8.00 - 23.00 / Subota 8.00 - 23.00 / Nedelja Zatvoreno",
     "ctaButton": "Zakaži besplatan trening",
     "contactUs": "Kontaktirajte nas"
   },
@@ -381,7 +381,7 @@
     },
     "mapSection": {
       "subtitle": "Naše informacije",
-      "workingHours": "Radno vreme: Pon-Pet 8.00 - 22.00 / Sub 8.00 - 22.00 / Ned Zatvoreno"
+      "workingHours": "Radno vreme: Pon-Pet 8.00 - 23.00 / Sub 8.00 - 23.00 / Ned Zatvoreno"
     }
   },
   "LocaleSwitcher": {

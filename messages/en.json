@@ -11,7 +11,7 @@
     "buttonText": "Join Us"
   },
   "footer": {
-    "workingHours": "<span className='italic'>Hours</span>:Mo-Fri <span className='italic'>8.00 - 22.00</span>/Sat <span className='italic'>8.00 - 22.00</span>/Sun <span className='italic'>Closed</span>",
+    "workingHours": "<span className='italic'>Hours</span>:Mo-Fri <span className='italic'>8.00 - 23.00</span>/Sat <span className='italic'>8.00 - 23.00</span>/Sun <span className='italic'>Closed</span>",
     "ctaButton": "Schedule a Free Session",
     "contactUs": "Contact Us"
   },
@@ -377,7 +377,7 @@
     },
     "mapSection": {
       "subtitle": "Our information",
-      "workingHours": "Working Hours: Mo-Fri 8.00 - 22.00 / Sat 8.00 - 22.00 / Sun Closed"
+      "workingHours": "Working Hours: Mo-Fri 8.00 - 23.00 / Sat 8.00 - 23.00 / Sun Closed"
     }
   },
   "LocaleSwitcher": {

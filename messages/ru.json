@@ -11,7 +11,7 @@
     "buttonText": "Присоединиться"
   },
   "footer": {
-    "workingHours": "<span className='italic'>Часы работы</span>:Пн-Пт <span className='italic'>8.00 - 22.00</span>/Сб <span className='italic'>8.00 - 22.00</span>/Вс <span className='italic'>Закрыто</span>",
+    "workingHours": "<span className='italic'>Часы работы</span>:Пн-Пт <span className='italic'>8.00 - 23.00</span>/Сб <span className='italic'>8.00 - 23.00</span>/Вс <span className='italic'>Закрыто</span>",
     "ctaButton": "Записаться на бесплатное занятие",
     "contactUs": "Связаться с нами"
   },
@@ -377,7 +377,7 @@
     },
     "mapSection": {
       "subtitle": "Наши данные",
-      "workingHours": "Часы работы: Пн-Пт 8.00 - 22.00 / Сб 8.00 - 22.00 / Вс закрыто"
+      "workingHours": "Часы работы: Пн-Пт 8.00 - 23.00 / Сб 8.00 - 23.00 / Вс закрыто"
     }
   },
   "LocaleSwitcher": {

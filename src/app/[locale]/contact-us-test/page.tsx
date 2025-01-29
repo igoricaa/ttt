@@ -67,7 +67,7 @@ const Page = async ({ params }: { params: Promise<{ locale: string }> }) => {
               ))}
             </div>
             <p className='mt-4 text-sm font-semibold'>
-              Working Hours: Mo-Fri 8.00 - 22.00 / Sat 8.00 - 22.00 / Sun Closed
+              Working Hours: Mo-Fri 8.00 - 23.00 / Sat 8.00 - 23.00 / Sun Closed
             </p>
             <a
               href='https://maps.app.goo.gl/Xq4mPuXJsZ7kgEye9'
