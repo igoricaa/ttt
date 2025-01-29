@@ -65,7 +65,7 @@
       "ptOne": "Osnovan od strane UFC borca Duška Todorovića i grupe stručnjaka za BJJ, TTT je posvećen treniranju sledeće generacije boraca koja izričito želi da dostigne svoj maksimum, i ide još dalje od toga.",
       "ptTwo": "Stvorili smo prostor koji smo želeli za sebe - sve što smo ikada zamislili na mestu posvećenom pomeranju granica fizičke i mentalne izdržljivosti. Sada smo ga otvorili za vas."
     },
-    "buttonText": "Kontaktirajte nas",
+    "buttonText": "Pridruži nam se",
     "facility": {
       "title": "TTT prostor",
       "text": {
@@ -128,7 +128,7 @@
   "memberships": {
     "title": "Članstva",
     "description": "U TTT-u, borci svih nivoa se okupljaju da pomere svoje granice, usavrše svoje veštine i izgrade mentalnu snagu.",
-    "buttonText": "Saznaj više",
+    "buttonText": "Pridruži nam se",
     "packages": {
       "standup": {
         "title": "Stand-Up paket",
@@ -346,7 +346,7 @@
     "title": "Raspored",
     "description": "Ne propusti - imaj pristup svim treningima.",
     "subtitle": "Slobodno nas kontaktirajte za sva pitanja u vezi sa našim treninzima.",
-    "buttonText": "Kontaktirajte nas",
+    "buttonText": "Pridruži nam se",
     "days": {
       "monday": "Ponedeljak",
       "tuesday": "Utorak",

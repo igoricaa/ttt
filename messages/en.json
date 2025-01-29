@@ -65,7 +65,7 @@
       "ptOne": "Founded by UFC fighter Dusko Todorovic and a group of elite Brazilian Jiu-Jitsu experts, TTT is dedicated to training the next generation of fighters with a passion for excellence and a commitment to discipline.",
       "ptTwo": "We created a space we envisioned for ourselves — everything we ever wanted in a place dedicated to pushing the boundaries of physical and mental endurance. Now, we opened it for you."
     },
-    "buttonText": "Contact Us",
+    "buttonText": "Join Us",
     "facility": {
       "title": "Our Facility",
       "text": {
@@ -128,7 +128,7 @@
   "memberships": {
     "title": "Memberships",
     "description": "At TTT, fighters of all levels come together to push their limits, refine their skills, and build the mental strength.",
-    "buttonText": "Read More",
+    "buttonText": "Join Us",
     "packages": {
       "standup": {
         "title": "Stand-Up package",
@@ -342,7 +342,7 @@
     "title": "Schedule",
     "description": "Don't miss out - grab an ALL-ACCESS pass and have access to all training sessions.",
     "subtitle": "Feel free to reach out for any questions regarding our classes.",
-    "buttonText": "Contact Us",
+    "buttonText": "Join Us",
     "days": {
       "monday": "Monday",
       "tuesday": "Tuesday",
