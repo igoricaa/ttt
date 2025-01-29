@@ -206,10 +206,14 @@ export const programs: Program[] = [
     slug: 'boxing',
     image: '/programs/thundertopteam-boxing.jpg',
   },
-  {
-    slug: 'selfDefense',
-    image: '/programs/thundertopteam-self-defense.jpg',
-  },
+  // {
+  //   slug: 'kickboxing',
+  //   image: '/programs/thundertopteam-kickboxing.jpg',
+  // },
+  // {
+  //   slug: 'wrestling',
+  //   image: '/programs/thundertopteam-wrestling.jpg',
+  // },
   {
     slug: 'kids',
     image: '/programs/thundertopteam-kids2.jpg',
