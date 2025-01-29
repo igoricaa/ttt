@@ -112,3 +112,7 @@
     @apply list-disc mt-2;
   }
 }
+
+.grecaptcha-badge {
+  display: none !important;
+}
