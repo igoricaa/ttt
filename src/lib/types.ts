@@ -46,3 +46,11 @@ export type Program = {
   description?: string;
   image: string;
 };
+
+export type FormFields = {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+  recaptcha_token: string;
+};
