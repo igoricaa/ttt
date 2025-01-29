@@ -141,8 +141,8 @@ const ContactForm = () => {
 
         <input
           type='hidden'
-          id='recaptchaResponse'
-          name='recaptchaResponse'
+          id='recaptcha_token'
+          name='recaptcha_token'
           value={captchaToken}
         />
 
