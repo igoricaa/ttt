@@ -185,15 +185,7 @@ export const socials: Social[] = [
   },
   {
     name: 'Facebook',
-    url: 'https://www.facebook.com/thundertopteam/',
-  },
-  {
-    name: 'Youtube',
-    url: 'https://www.youtube.com/channel/UC8888888888888888888',
-  },
-  {
-    name: 'Tiktok',
-    url: 'https://www.tiktok.com/@thundertopteam',
+    url: 'https://www.facebook.com/thundertopteambelgrade',
   },
 ];
 

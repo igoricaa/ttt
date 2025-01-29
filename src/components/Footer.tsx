@@ -77,29 +77,11 @@ const Footer = () => {
           </li>
           <li className='w-fit'>
             <a
-              href='https://www.facebook.com/thundertopteam/'
+              href='https://www.facebook.com/thundertopteambelgrade'
               target='_blank'
               className='font-medium uppercase'
             >
               Facebook
-            </a>
-          </li>
-          <li className='w-fit'>
-            <a
-              href='https://x.com/thundertopteam'
-              target='_blank'
-              className='font-medium uppercase'
-            >
-              X
-            </a>
-          </li>
-          <li className='w-fit'>
-            <a
-              href='https://www.tiktok.com/@thundertopteam'
-              target='_blank'
-              className='font-medium uppercase'
-            >
-              TikTok
             </a>
           </li>
         </ul>
@@ -122,29 +104,11 @@ const Footer = () => {
             </li>
             <li className='w-fit'>
               <a
-                href='https://www.facebook.com/thundertopteam/'
+                href='https://www.facebook.com/thundertopteambelgrade'
                 target='_blank'
                 className='font-medium uppercase'
               >
                 Facebook
-              </a>
-            </li>
-            <li className='w-fit'>
-              <a
-                href='https://x.com/thundertopteam'
-                target='_blank'
-                className='font-medium uppercase'
-              >
-                X
-              </a>
-            </li>
-            <li className='w-fit'>
-              <a
-                href='https://www.tiktok.com/@thundertopteam'
-                target='_blank'
-                className='font-medium uppercase'
-              >
-                TikTok
               </a>
             </li>
           </ul>

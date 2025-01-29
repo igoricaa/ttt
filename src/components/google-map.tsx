@@ -4,8 +4,8 @@ import { APIProvider, Map, Marker } from '@vis.gl/react-google-maps';
 
 const GOOGLE_MAPS_API_KEY: string = process.env.GOOGLE_MAPS_API_KEY || '';
 const position: { lat: number; lng: number } = {
-  lat: 44.80692813236718,
-  lng: 20.4649706200762,
+  lat: 44.82808586965494,
+  lng: 20.41232354232935,
 };
 const MapTypeId = {
   HYBRID: 'hybrid',

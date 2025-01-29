@@ -73,7 +73,7 @@ const Page = async ({ params }: { params: Promise<{ locale: string }> }) => {
               href='https://maps.app.goo.gl/Xq4mPuXJsZ7kgEye9'
               className='flex items-center gap-x-4 mt-4'
             >
-              Palmira Toljatija 5/17, Beograd 190430{' '}
+              Palmira Toljatija 5, Beograd{' '}
               <span className='flex items-center gap-x-2'>
                 View on map <LocationIconFilled color='#4A4B2F' />
               </span>
@@ -99,13 +99,13 @@ const Page = async ({ params }: { params: Promise<{ locale: string }> }) => {
           <div className='flex flex-col gap-y-4 mt-32'>
             <p className='flex gap-x-2 w-fit'>
               <LocationIconFilled color='#FCFC62' />
-              Palmira Toljatija 5/17, Beograd 190430
+              Palmira Toljatija 5, Beograd
             </p>
             <p className='flex gap-x-2 w-fit'>
               <ClockIcon /> {t('mapSection.workingHours')}
             </p>
-            <a href='tel:+381637717174' className='flex gap-x-2 w-fit'>
-              <PhoneIcon /> +381 63 771 71 74
+            <a href='tel:+381668117934' className='flex gap-x-2 w-fit'>
+              <PhoneIcon /> +381 66 811 79 34
             </a>
             <a
               href='mailto:info@thundertopteam.com'
