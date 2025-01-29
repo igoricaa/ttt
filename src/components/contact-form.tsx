@@ -15,17 +15,19 @@ const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
 const ContactForm = () => {
   const t = useTranslations('contactUs.contactForm');
-  const [captchaToken, setCaptchaToken] = useState('');
   const [isSuccess, setIsSuccess] = useState(false);
   const [message, setMessage] = useState('');
   const {
     register,
     handleSubmit,
     reset,
+    setValue,
     formState: { errors },
   } = useForm<FormFields>();
 
   const processForm = async (formData: FormFields) => {
+    console.log('cf: ', formData);
+
     const result = await sendEmail(formData);
 
     if (result.success) {
@@ -142,8 +144,8 @@ const ContactForm = () => {
         <input
           type='hidden'
           id='recaptcha_token'
-          name='recaptcha_token'
-          value={captchaToken}
+          {...register('recaptcha_token')}
+          // value={captchaToken}
         />
 
         <button
@@ -168,7 +170,7 @@ const ContactForm = () => {
                 action: 'contact',
               })
               .then(function (token: string) {
-                setCaptchaToken(token);
+                setValue('recaptcha_token', token);
               });
           });
         }}
