@@ -70,6 +70,7 @@ export async function sendEmail(formData: FormFields): Promise<{
     body: JSON.stringify({
       name: data.name,
       email: data.email,
+      phone: data.phone,
       message: data.message,
     }),
   })
@@ -87,6 +88,8 @@ export async function sendEmail(formData: FormFields): Promise<{
           errors: result.error,
         };
       }
+
+      console.log('resultat: ', result);
 
       return {
         success: true,
