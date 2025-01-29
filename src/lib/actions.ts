@@ -108,3 +108,80 @@ export async function sendEmail(formData: FormFields): Promise<{
     errors: null,
   };
 }
+
+
+export async function sendEmailTest(formData: FormFields): Promise<{
+  success: boolean;
+  errors: Partial<Record<keyof FormFields, string>> | null;
+}> {
+  const data: FormFields = {
+    name: formData.name,
+    email: formData.email,
+    phone: formData.phone,
+    message: formData.message,
+    recaptcha_token: formData.recaptcha_token,
+  };
+
+  const errors = validateForm(data);
+
+  if (Object.keys(errors).length > 0) {
+    return {
+      success: false,
+      errors,
+    };
+  }
+
+  const recaptchaSuccess = await verifyRecaptcha(data.recaptcha_token);
+  if (!recaptchaSuccess) {
+    return {
+      success: false,
+      errors: { recaptcha_token: 'Invalid reCAPTCHA' },
+    };
+  }
+
+  fetch(`${process.env.SITE_URL}/api/contact`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      name: data.name,
+      email: data.email,
+      phone: data.phone,
+      message: data.message,
+    }),
+  })
+    .then((res) => {
+      if (!res.ok) {
+        throw new Error(`Error: ${res.statusText}`);
+      }
+
+      return res.json();
+    })
+    .then((result) => {
+      if (!result.success) {
+        return {
+          success: false,
+          errors: result.error,
+        };
+      }
+
+      console.log('resultat: ', result);
+
+      return {
+        success: true,
+        errors: null,
+      };
+    })
+    .catch((error: any) => {
+      return {
+        success: false,
+        errors: error,
+      };
+    });
+
+  return {
+    success: true,
+    errors: null,
+  };
+}
