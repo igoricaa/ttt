@@ -8,7 +8,7 @@ export default function Arrow(props: {
   const disabled = props.disabled ? 'opacity-20 pointer-events-none' : '';
   return (
     <ArrowIcon
-      className={`w-6 h-6 sm:w-9 sm:h-9 cursor-pointer opacity-50 hover:opacity-100 transition-opacity duration-200 ${
+      className={`w-6 h-6 sm:w-7 sm:h-7 lg:w-9 lg:h-9 cursor-pointer opacity-50 hover:opacity-100 transition-opacity duration-200 ${
         props.left ? 'rotate-180' : ''
       } ${disabled}`}
       onClick={props.onClick}

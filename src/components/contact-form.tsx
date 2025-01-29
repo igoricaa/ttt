@@ -40,6 +40,8 @@ const ContactForm = () => {
 
   const inputClasses =
     'w-full bg-transparent border rounded-[32px] h-14 flex items-center px-6 outline-none text-sm uppercase font-medium text-cf-text placeholder:text-cf-text';
+    const inputWrapperClasses = 'mt-6 relative';
+
 
   return (
     <>
@@ -64,7 +66,7 @@ const ContactForm = () => {
             </p>
           )}
         </div>
-        <div className='mt-4 sm:mt-6 relative'>
+        <div className={inputWrapperClasses}>
           <input
             id='email'
             className={`${
@@ -87,7 +89,7 @@ const ContactForm = () => {
             </p>
           )}
         </div>
-        <div className='mt-4 sm:mt-6 relative'>
+        <div className={inputWrapperClasses}>
           <input
             id='phone'
             className={`${
@@ -113,7 +115,7 @@ const ContactForm = () => {
           )}
         </div>
 
-        <div className='mt-4 sm:mt-6 relative'>
+        <div className={inputWrapperClasses}>
           <textarea
             id='message'
             className={`${
@@ -148,7 +150,7 @@ const ContactForm = () => {
         <button
           className={cn(
             buttonVariants({ variant: 'dark' }),
-            'mt-4 sm:mt-6 sm:ml-auto w-full sm:w-fit flex opacity-50'
+            'mt-6 sm:ml-auto w-full sm:w-fit flex opacity-50'
           )}
           type='submit'
         >

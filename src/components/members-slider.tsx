@@ -49,25 +49,27 @@ const MembersSlider = ({
 
   return (
     <div className=''>
-      <div className='flex justify-between items-center pr-side gap-4'>
-        <h2 className='text-3xl sm:text-7xl lg:text-6xl font-semibold uppercase'>
+      <div className='flex justify-between items-end lg:pr-side gap-4'>
+        <h2 className='text-3xl sm:text-5xl text-balance max-w-[10ch] lg:max-w-full lg:text-6xl font-semibold uppercase'>
           {title}
         </h2>
-        <div className='relative flex gap-x-4 sm:gap-x-6 items-center px-4 sm:px-6 h-[40px] sm:h-[72px] bg-green-default rounded-full border border-primary-dark'>
+        <div className='relative flex gap-x-4 sm:gap-x-6 items-center mb-1 lg:mb-0 px-4 sm:px-6 h-[40px] sm:h-[3.5rem] lg:h-[4.5rem] bg-green-default rounded-full border border-primary-dark'>
           {loaded && instanceRef.current && (
             <>
               <Arrow
                 left
-                onClick={(e: any) =>
-                  e.stopPropagation() || instanceRef.current?.prev()
-                }
+                onClick={(e: any) => {
+                  e.stopPropagation() || instanceRef.current?.prev();
+                  setActiveMemberIndex(null);
+                }}
                 disabled={currentSlide === 0}
               />
 
               <Arrow
-                onClick={(e: any) =>
-                  e.stopPropagation() || instanceRef.current?.next()
-                }
+                onClick={(e: any) => {
+                  e.stopPropagation() || instanceRef.current?.next();
+                  setActiveMemberIndex(null);
+                }}
                 disabled={currentSlide === members.length - 1}
               />
             </>
@@ -76,7 +78,7 @@ const MembersSlider = ({
       </div>
       <div
         ref={sliderRef}
-        className='keen-slider mt-8 sm:mt-16 lg:mt-14 lg:pl-[calc(100%/12+1rem)]'
+        className='keen-slider mt-5 sm:mt-9 lg:mt-14 lg:pl-[calc(100%/12+1rem)]'
       >
         {members.map((member: MemberType, index: number) => (
           <Member

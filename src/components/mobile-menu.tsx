@@ -32,7 +32,7 @@ const MobileNav = () => {
 
       {isMobile && (
         <div
-          className={`flex flex-col justify-between lg:hidden absolute top-0 left-0 w-[100vw] h-[100vh] sm:h-auto pt-24 sm:pt-36 pb-8 sm:pb-10 bg-black transition-all duration-500 will-change-[transform,opacity] ${
+          className={`flex flex-col justify-between lg:hidden z-40 absolute top-0 left-0 w-[100vw] h-[100vh] sm:h-auto pt-24 sm:pt-36 pb-8 sm:pb-10 bg-black transition-all duration-500 will-change-[transform,opacity] ${
             isOpen
               ? 'translate-y-0 opacity-100 visible'
               : '-translate-y-full opacity-0 invisible'
@@ -51,7 +51,6 @@ const MobileNav = () => {
           >
             <ul className='flex flex-col gap-y-4 sm:gap-y-6'>
               {routes.slice(0, 3).map((route: Route, index: number) => {
-                // if (route.label === 'Memberships') route.label = 'Members';
                 return (
                   <li
                     key={route.path}

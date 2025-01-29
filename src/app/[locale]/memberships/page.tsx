@@ -187,10 +187,10 @@ const PackageCard = ({
               {examplesText.examples
                 .filter((example) => example)
                 .map((example, index) => (
-                  <li key={index} className='text-lg sm:text-xl'>
+                  <li key={index} className='text-lg sm:text-xl '>
                     {example.title} :{' '}
                     <span
-                      className='membershipsLists text-xl'
+                      className='membershipsLists text-xl membershipHightlightedText'
                       dangerouslySetInnerHTML={{
                         __html: example.description,
                       }}

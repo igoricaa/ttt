@@ -41,6 +41,8 @@ const ContactFormTest = () => {
   const inputClasses =
     'w-full bg-transparent border rounded-[32px] h-14 flex items-center px-6 outline-none text-sm uppercase font-medium text-cf-text placeholder:text-cf-text';
 
+  const inputWrapperClasses = 'mt-6 sm:mt-6 relative';
+
   return (
     <>
       <form onSubmit={handleSubmit(processForm)}>
@@ -64,7 +66,7 @@ const ContactFormTest = () => {
             </p>
           )}
         </div>
-        <div className='mt-4 sm:mt-6 relative'>
+        <div className={inputWrapperClasses}>
           <input
             id='email'
             className={`${
@@ -87,7 +89,7 @@ const ContactFormTest = () => {
             </p>
           )}
         </div>
-        <div className='mt-4 sm:mt-6 relative'>
+        <div className={inputWrapperClasses}>
           <input
             id='phone'
             className={`${
@@ -113,7 +115,7 @@ const ContactFormTest = () => {
           )}
         </div>
 
-        <div className='mt-4 sm:mt-6 relative'>
+        <div className={inputWrapperClasses}>
           <textarea
             id='message'
             className={`${
@@ -143,7 +145,6 @@ const ContactFormTest = () => {
           type='hidden'
           id='recaptcha_token'
           {...register('recaptcha_token')}
-          // value={captchaToken}
         />
 
         <button

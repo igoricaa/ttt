@@ -19,11 +19,12 @@ const Member = ({
       style={{
         transition: `margin 300ms ${isActive ? '0ms' : '300ms'}`,
       }}
-      className={`keen-slider__slide number-slide-${
+      className={`keen-slider__slide cursor-pointer number-slide-${
         memberIndex + 1
       } !overflow-visible ${
         isActive ? 'z-10 sm:mr-[108px] lg:mr-32' : 'z-0 mr-0'
       }}`}
+      onClick={() => setActiveMemberIndex(memberIndex)}
     >
       <div
         style={{
@@ -44,7 +45,6 @@ const Member = ({
         />
         <div className='absolute top-0 right-[-174px] sm:right-[-108px] lg:-right-32 z-10 w-[240px] sm:w-[282px] lg:w-[325px] h-full sm:max-h-[500px] lg:max-h-[550px] flex justify-start sm:justify-center'>
           <div
-            onClick={() => setActiveMemberIndex(memberIndex)}
             style={{
               transition: `width 300ms ${
                 isActive ? '0ms' : '300ms'
@@ -56,7 +56,7 @@ const Member = ({
               isActive
                 ? 'w-full h-full rounded-br-[75px]'
                 : 'w-[66px] h-[75px] rounded-br-3xl'
-            } relative bg-primary-dark cursor-pointer max-h-full sm:max-h-[500px] lg:max-h-[550px]`}
+            } relative bg-primary-dark max-h-full sm:max-h-[500px] lg:max-h-[550px]`}
           >
             <PersonIcon
               style={{

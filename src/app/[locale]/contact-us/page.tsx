@@ -42,7 +42,7 @@ const Page = async ({ params }: { params: Promise<{ locale: string }> }) => {
         </p>
       </section>
 
-      <section className='grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12 gap-x-4 gap-y-12 sm:gap-y-16 px-side mt-16 lg:mt-32 pb-4 sm:pb-16'>
+      <section className='grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12 gap-x-4 gap-y-12 sm:gap-y-16 px-side mt-16 lg:mt-32 pb-8 sm:pb-16'>
         <div className='col-span-full lg:col-span-4 lg:col-start-2 flex flex-col justify-between lg:h-[calc(100%-80px)]'>
           <div>
             <h2 className='text-3xl sm:text-6xl lg:text-7xl font-semibold uppercase'>

@@ -470,7 +470,7 @@ export function Schedule() {
   return (
     <div className='col-span-full 3xl:col-span-10 3xl:col-start-2 p-4 overflow-x-auto'>
       <div className='min-w-[1400px] relative'>
-        <TTTLetters className='absolute top-44 sm:top-[242px] left-0 w-5/6 h-auto' />
+        <TTTLetters className='absolute top-[242px] left-0 w-5/6 h-auto' />
         {/* Fixed time sidebar */}
         <div className='absolute left-0 top-0 bottom-0 w-8 bg-classes-darkblue text-white z-10 rounded-tl-[45px] rounded-bl-[45px]'>
           <div className='h-8 flex items-center justify-center'></div>
