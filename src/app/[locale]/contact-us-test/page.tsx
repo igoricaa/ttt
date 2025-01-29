@@ -1,4 +1,3 @@
-import ContactForm from '@/components/contact-form-test';
 import GoogleMap from '@/components/google-map';
 import ClockIcon from '@/components/icons/clock-icon';
 import LocationIconFilled from '@/components/icons/location-icon-filled';
@@ -7,6 +6,7 @@ import PhoneIcon from '@/components/icons/phone-icon';
 import Image from 'next/image';
 import header from '@/../public/thunder-top-team-header.jpg';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import ContactFormTest from '@/components/contact-form-test';
 
 const Page = async ({ params }: { params: Promise<{ locale: string }> }) => {
   const t = await getTranslations('contactUs');
@@ -81,7 +81,7 @@ const Page = async ({ params }: { params: Promise<{ locale: string }> }) => {
           </div> */}
         </div>
         <div className='col-span-full lg:col-span-6 lg:col-start-7'>
-          <ContactForm />
+          <ContactFormTest />
         </div>
       </section>
 

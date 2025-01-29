@@ -17,6 +17,7 @@
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
     "dotenv": "^16.4.5",
+    "google-auth-library": "^9.15.1",
     "gsap": "^3.12.5",
     "keen-slider": "^6.8.6",
     "lenis": "^1.1.16",
@@ -25,6 +26,7 @@
     "next-intl": "^3.25.0",
     "next-themes": "^0.4.3",
     "next-view-transitions": "^0.3.2",
+    "nodemailer": "^6.10.0",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-day-picker": "8.10.1",
     "react-dom": "19.0.0-rc-66855b96-20241106",
@@ -35,6 +37,7 @@
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/nodemailer": "^6.4.17",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "postcss": "^8",
