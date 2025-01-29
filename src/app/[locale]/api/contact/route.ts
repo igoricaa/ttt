@@ -1,6 +1,5 @@
 import { OAuth2Client } from 'google-auth-library';
 import nodemailer from 'nodemailer';
-import { EmailTemplate } from '@/components/email-template';
 import { rateLimit } from '@/lib/rate-limit';
 
 const EMAIL_CLIENT_ID = process.env.EMAIL_CLIENT_ID;
@@ -9,30 +8,26 @@ const EMAIL_REDIRECT_URI = process.env.EMAIL_REDIRECT_URI;
 const EMAIL_REFRESH_TOKEN = process.env.EMAIL_REFRESH_TOKEN;
 const MY_EMAIL = 'admin@thundertopteam.com';
 
-// Step 1: Set up OAuth2 client with your credentials
 const oAuth2Client = new OAuth2Client(
   EMAIL_CLIENT_ID,
   EMAIL_CLIENT_SECRET,
-  EMAIL_REDIRECT_URI // Usually something like 'http://localhost'
+  EMAIL_REDIRECT_URI
 );
 
-// Step 2: Set your refresh token (you would typically get this after the first authorization)
 oAuth2Client.setCredentials({
   refresh_token: EMAIL_REFRESH_TOKEN,
 });
 
-// Step 3: Get the access token from the refresh token
 async function getAccessToken() {
   try {
     const accessTokenResponse = await oAuth2Client.getAccessToken();
-    return accessTokenResponse.token; // Access token to use for Nodemailer
+    return accessTokenResponse.token;
   } catch (error) {
     console.error('Error fetching access token:', error);
     throw error;
   }
 }
 
-// Step 4: Set up Nodemailer with Google SMTP server and OAuth2 credentials
 async function sendEmail(
   name: string,
   email: string,
@@ -60,11 +55,10 @@ async function sendEmail(
     },
   });
 
-  // Step 5: Send the email
   const mailOptions = {
     from: 'kontakt@thundertopteam.com',
-    to: MY_EMAIL, // Recipient's email address
-    subject: 'Kontakt sa Thundertop Team',
+    to: MY_EMAIL,
+    subject: 'Kontakt sa thundertopteam.com',
     text: `
       Ime: ${name}
       Email: ${email}
@@ -75,7 +69,7 @@ async function sendEmail(
 
   try {
     const info = await transporter.sendMail(mailOptions);
-    console.log('Email sent:', info.response);
+    return info;
   } catch (error) {
     console.error('Error sending email:', error);
   }
@@ -86,7 +80,7 @@ const limiter = rateLimit({
   uniqueTokenPerInterval: 500,
 });
 
-export async function POST(req: any): Promise<Response>   {
+export async function POST(req: any): Promise<Response> {
   try {
     limiter.check(req, 3);
 
@@ -98,7 +92,12 @@ export async function POST(req: any): Promise<Response>   {
 
     const result = await sendEmail(name, email, phone, message);
 
-    console.log('result: ', result);
+    if (!result || !result.response.includes('2.0.0 OK')) {
+      return Response.json({
+        success: false,
+        result: result || 'Unknown error',
+      });
+    }
 
     return Response.json({ success: true, result });
   } catch (error: any) {

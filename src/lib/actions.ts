@@ -33,7 +33,7 @@ const verifyRecaptcha = async (token: string) => {
   return recaptchaData.success;
 };
 
-export async function sendEmail(formData: FormFields): Promise<{
+export async function sendEmailResend(formData: FormFields): Promise<{
   success: boolean;
   errors: Partial<Record<keyof FormFields, string>> | null;
 }> {
@@ -89,8 +89,6 @@ export async function sendEmail(formData: FormFields): Promise<{
       };
     }
 
-    console.log('resultat: ', result);
-
     return {
       success: result.success,
       errors: result.error || null,
@@ -103,7 +101,7 @@ export async function sendEmail(formData: FormFields): Promise<{
   }
 }
 
-export async function sendEmailTest(formData: FormFields): Promise<{
+export async function sendEmailNodemailer(formData: FormFields): Promise<{
   success: boolean;
   errors: Partial<Record<keyof FormFields, string>> | null;
 }> {
@@ -155,15 +153,13 @@ export async function sendEmailTest(formData: FormFields): Promise<{
     if (!result.success) {
       return {
         success: false,
-        errors: result.error,
+        errors: result,
       };
     }
 
-    console.log('resultat: ', result);
-
     return {
       success: result.success,
-      errors: result.error || null,
+      errors: null,
     };
   } catch (error: any) {
     return {

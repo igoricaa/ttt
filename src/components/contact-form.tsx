@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils';
 import { buttonVariants } from './ui/button';
 import ArrowIcon from './ui/icons/arrow';
 import { useTranslations } from 'next-intl';
-import { sendEmail } from '@/lib/actions';
+import { sendEmailNodemailer } from '@/lib/actions';
 import { FormFields } from '@/lib/types';
 import Script from 'next/script';
 
@@ -26,9 +26,7 @@ const ContactForm = () => {
   } = useForm<FormFields>();
 
   const processForm = async (formData: FormFields) => {
-    console.log('cf: ', formData);
-
-    const result = await sendEmail(formData);
+    const result = await sendEmailNodemailer(formData);
 
     if (result.success) {
       setIsSuccess(true);
