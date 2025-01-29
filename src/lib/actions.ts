@@ -54,59 +54,53 @@ export async function sendEmail(formData: FormFields): Promise<{
     };
   }
 
-  // const recaptchaSuccess = await verifyRecaptcha(data.recaptcha_token);
-  // if (!recaptchaSuccess) {
-  //   return {
-  //     success: false,
-  //     errors: { recaptcha_token: 'Invalid reCAPTCHA' },
-  //   };
-  // }
+  const recaptchaSuccess = await verifyRecaptcha(data.recaptcha_token);
+  if (!recaptchaSuccess) {
+    return {
+      success: false,
+      errors: { recaptcha_token: 'Invalid reCAPTCHA' },
+    };
+  }
 
-  fetch(`http://localhost:3000/api/send`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      name: data.name,
-      email: data.email,
-      phone: data.phone,
-      message: data.message,
-    }),
-  })
-    .then((res) => {
-      if (!res.ok) {
-        throw new Error(`Error: ${res.statusText}`);
-      }
-
-      return res.json();
-    })
-    .then((result) => {
-      if (!result.success) {
-        return {
-          success: false,
-          errors: result.error,
-        };
-      }
-
-      console.log('resultat: ', result);
-
-      return {
-        success: true,
-        errors: null,
-      };
-    })
-    .catch((error: any) => {
-      return {
-        success: false,
-        errors: error,
-      };
+  try {
+    const response = await fetch(`${process.env.SITE_URL}/api/send`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: data.name,
+        email: data.email,
+        phone: data.phone,
+        message: data.message,
+      }),
     });
 
-  return {
-    success: true,
-    errors: null,
-  };
+    if (!response.ok) {
+      throw new Error(`Error: ${response.statusText}`);
+    }
+
+    const result = await response.json();
+
+    if (!result.success) {
+      return {
+        success: false,
+        errors: result.error,
+      };
+    }
+
+    console.log('resultat: ', result);
+
+    return {
+      success: result.success,
+      errors: result.error || null,
+    };
+  } catch (error: any) {
+    return {
+      success: false,
+      errors: error,
+    };
+  }
 }
 
 export async function sendEmailTest(formData: FormFields): Promise<{
@@ -130,17 +124,16 @@ export async function sendEmailTest(formData: FormFields): Promise<{
     };
   }
 
-  // const recaptchaSuccess = await verifyRecaptcha(data.recaptcha_token);
-  // if (!recaptchaSuccess) {
-  //   return {
-  //     success: false,
-  //     errors: { recaptcha_token: 'Invalid reCAPTCHA' },
-  //   };
-  // }
+  const recaptchaSuccess = await verifyRecaptcha(data.recaptcha_token);
+  if (!recaptchaSuccess) {
+    return {
+      success: false,
+      errors: { recaptcha_token: 'Invalid reCAPTCHA' },
+    };
+  }
 
-  const SITE_URL = process.env.SITE_URL;
   try {
-    const response = await fetch(`http://localhost:3000/api/contact`, {
+    const response = await fetch(`${process.env.SITE_URL}/api/contact`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
