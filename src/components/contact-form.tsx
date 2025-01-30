@@ -22,7 +22,7 @@ const ContactForm = () => {
     handleSubmit,
     reset,
     setValue,
-    formState: { errors },
+    formState: { isSubmitting, errors },
   } = useForm<FormFields>();
 
   const processForm = async (formData: FormFields) => {
@@ -148,6 +148,7 @@ const ContactForm = () => {
         />
 
         <button
+          disabled={isSubmitting}
           className={cn(
             buttonVariants({ variant: 'dark' }),
             'mt-6 sm:ml-auto w-full sm:w-fit flex opacity-50'

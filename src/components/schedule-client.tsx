@@ -115,8 +115,6 @@ export function Schedule() {
                           eventIndex * eventWidth +
                           (100 - eventWidth * eventsInSlot.length) / 2;
   
-                        console.log('sirina:', eventWidth);
-  
                         const topOffset = isMobile ? 3.3 : 4.7;
                         const heightCoef = isMobile ? 3.5 : 4.2;
   

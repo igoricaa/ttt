@@ -10,7 +10,6 @@ const pageColors: Record<string, { light: string; dark: string }> = {
   '/': { light: '#fff', dark: '#fff' },
   '/about-us': { light: '#4A4B2F', dark: '#9EC93A' },
   '/contact-us': { light: '#4A4B2F', dark: '#9EC93A' },
-  '/contact-us-test': { light: '#4A4B2F', dark: '#9EC93A' },
   '/memberships': { light: '#4A4B2F', dark: '#9EC93A' },
   '/schedule': { light: '#4A4B2F', dark: '#9EC93A' },
   '/programs': { light: '#FFFFFF', dark: '#FFFFFF' },

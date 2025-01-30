@@ -89,9 +89,6 @@ export async function sendEmailResend(formData: FormFields): Promise<{
 
     const result = await response.json();
 
-    console.log('result action: ', result);
-    console.log('errortest: ', result.error);
-
     return {
       success: result.success,
       errors: result.error || null,
