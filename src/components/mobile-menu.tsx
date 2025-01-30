@@ -18,8 +18,13 @@ const MobileNav = () => {
   const t = useTranslations('menu');
 
   const toggleMenu = () => {
-    document.body.style.overflow = 'hidden';
-    document.body.setAttribute('data-lenis-prevent', 'true');
+    if (isOpen) {
+      document.body.style.overflow = 'auto';
+      document.body.setAttribute('data-lenis-prevent', 'false');
+    } else {
+      document.body.style.overflow = 'hidden';
+      document.body.setAttribute('data-lenis-prevent', 'true');
+    }
     setIsOpen(!isOpen);
   };
 
