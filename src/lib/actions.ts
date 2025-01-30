@@ -77,17 +77,20 @@ export async function sendEmailResend(formData: FormFields): Promise<{
     });
 
     if (!response.ok) {
-      throw new Error(`Error: ${response.statusText}`);
+      response
+        .json()
+        .then((error) => {
+          throw new Error(`Server Error: ${error.message}`, { cause: status });
+        })
+        .catch(() => {
+          throw new Error(`Error: ${response.statusText}`);
+        });
     }
 
     const result = await response.json();
 
-    if (!result.success) {
-      return {
-        success: false,
-        errors: result.error,
-      };
-    }
+    console.log('result action: ', result);
+    console.log('errortest: ', result.error);
 
     return {
       success: result.success,
