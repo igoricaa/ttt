@@ -18,14 +18,13 @@ const Page = async ({ params }: { params: Promise<{ locale: string }> }) => {
   }));
 
   return (
-    <main className='lg:h-screen flex flex-col justify-center relative px-side pb-16 lg:pb-10 mt-[-54px] sm:mt-[-64px] bg-gradient-to-r from-black to-transparent'>
+    <main className='lg:min-h-screen flex flex-col gap-12 justify-center relative px-side pb-16 lg:pb-10 mt-[-54px] sm:mt-[-64px] bg-gradient-to-r from-black to-transparent overflow-x-hidden'>
       <Programs programs={programsFull} />
 
       <Link
         href='/contact-us'
         variant='transparentWhite'
         className='mt-8 sm:mt-12 lg:mt-auto w-full'
-        //mt-8 sm:mt-12 lg:mt-20
       >
         {t('buttonText')}
       </Link>

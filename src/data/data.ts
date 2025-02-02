@@ -192,19 +192,34 @@ export const socials: Social[] = [
 export const programs: Program[] = [
   {
     slug: 'strength',
-    image: '/programs/thundertopteam-strength.jpg',
+    images: {
+      alt: 'Thunder Top Team Strength and Conditioning',
+      desktop: '/programs/thunder-top-team-strength-and-conditioning.jpg',
+    },
   },
   {
     slug: 'bjj',
-    image: '/programs/thundertopteam-bjj.jpg',
+    images: {
+      alt: 'Thunder Top Team BJJ',
+      desktop: '/programs/thunder-top-team-bjj.png',
+      mobile: '/programs/thunder-top-team-bjj-mobile.png',
+    },
   },
   {
     slug: 'mma',
-    image: '/programs/thundertopteam-mma.jpg',
+    images: {
+      alt: 'Thunder Top Team MMA',
+      desktop: '/programs/thunder-top-team-mma.png',
+      mobile: '/programs/thunder-top-team-mma-mobile.png',
+    },
   },
   {
     slug: 'boxing',
-    image: '/programs/thundertopteam-boxing.jpg',
+    images: {
+      alt: 'Thunder Top Team Boxing',
+      desktop: '/programs/thunder-top-team-boxing.png',
+      mobile: '/programs/thunder-top-team-boxing-mobile.png',
+    },
   },
   // {
   //   slug: 'kickboxing',
@@ -216,7 +231,11 @@ export const programs: Program[] = [
   // },
   {
     slug: 'kids',
-    image: '/programs/thundertopteam-kids2.jpg',
+    images: {
+      alt: 'Thunder Top Team Kids Combat Sports',
+      desktop: '/programs/thunder-top-team-kids-combat.png',
+      mobile: '/programs/thunder-top-team-kids-combat-mobile.png',
+    },
   },
 ];
 

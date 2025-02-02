@@ -44,7 +44,11 @@ export type Program = {
   slug: string;
   title?: string;
   description?: string;
-  image: string;
+  images: {
+    alt: string;
+    desktop: string;
+    mobile?: string;
+  };
 };
 
 export type FormFields = {
