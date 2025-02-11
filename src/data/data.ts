@@ -265,3 +265,381 @@ export const gallery = [
     image: '/gallery/gallery-8.jpg',
   },
 ];
+
+// SCHEDULE
+
+const ClassTypes = {
+  NO_GI: { type: 'NO_GI', label: 'GRAPPLING' },
+  GI: { type: 'GI', label: 'BJJ' },
+  MMA: { type: 'MMA', label: 'MMA' },
+  WRESTLING: { type: 'WRESTLING', label: 'WRESTLING' },
+  KIDS: { type: 'KIDS', label: 'BJJ' },
+  OPEN_MAT: { type: 'OPEN_MAT', label: 'BJJ' },
+  BOXING: { type: 'BOXING', label: 'BOXING' },
+  KICKBOXING: { type: 'KICKBOXING', label: 'KICKBOXING' },
+} as const;
+
+const CoachesTypes = {
+  IVAN: 'Ivan',
+  ANDJELA: 'Anđela',
+  STANKO: 'Stanko',
+  DUSKO: 'Duško',
+  STRAJA: 'Straja',
+  VUKASIN: 'Vukašin',
+  SAVKE: 'Savke',
+  TTT: 'TTT',
+} as const;
+
+export type ClassType = (typeof ClassTypes)[keyof typeof ClassTypes];
+export type CoachType = (typeof CoachesTypes)[keyof typeof CoachesTypes];
+
+interface ClassEvent {
+  name: string;
+  startTime: string;
+  endTime: string;
+  classType: ClassType;
+  coach: CoachType[];
+  position: string;
+}
+
+interface DaySchedule {
+  day: string;
+  classes: ClassEvent[];
+}
+
+export const schedule: DaySchedule[] = [
+  {
+    day: 'Monday',
+    classes: [
+      {
+        name: 'No-Gi',
+        startTime: '07:30',
+        endTime: '09:00',
+        classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
+        position: 'left',
+      },
+      {
+        name: 'MMA Class',
+        startTime: '09:00',
+        endTime: '10:30',
+        classType: ClassTypes.MMA,
+        coach: [CoachesTypes.STRAJA],
+        position: 'left',
+      },
+      {
+        name: 'Kids Combat',
+        startTime: '18:30',
+        endTime: '19:30',
+        classType: ClassTypes.KIDS,
+        coach: [CoachesTypes.IVAN, CoachesTypes.ANDJELA],
+        position: 'left',
+      },
+      {
+        name: 'Boxing',
+        startTime: '18:30',
+        endTime: '19:30',
+        classType: ClassTypes.BOXING,
+        coach: [CoachesTypes.DUSKO, CoachesTypes.VUKASIN],
+        position: 'right',
+      },
+      {
+        name: 'No-Gi',
+        startTime: '19:30',
+        endTime: '21:00',
+        classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
+        position: 'left',
+      },
+      {
+        name: 'Kickboxing',
+        startTime: '19:30',
+        endTime: '20:30',
+        classType: ClassTypes.KICKBOXING,
+        coach: [CoachesTypes.SAVKE],
+        position: 'right',
+      },
+      {
+        name: 'MMA',
+        startTime: '20:30',
+        endTime: '22:00',
+        classType: ClassTypes.MMA,
+        coach: [CoachesTypes.DUSKO, CoachesTypes.VUKASIN],
+        position: 'right',
+      },
+      {
+        name: 'BJJ',
+        startTime: '21:00',
+        endTime: '22:00',
+        classType: ClassTypes.GI,
+        coach: [CoachesTypes.IVAN],
+        position: 'left',
+      },
+    ],
+  },
+  {
+    day: 'Tuesday',
+    classes: [
+      {
+        name: 'No-Gi',
+        startTime: '07:30',
+        endTime: '09:00',
+        classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
+        position: 'left',
+      },
+      {
+        name: 'MMA',
+        startTime: '09:00',
+        endTime: '10:30',
+        classType: ClassTypes.MMA,
+        coach: [CoachesTypes.STRAJA],
+        position: 'left',
+      },
+      {
+        name: 'Freestyle Wrestling',
+        startTime: '18:00',
+        endTime: '19:30',
+        classType: ClassTypes.WRESTLING,
+        coach: [CoachesTypes.STANKO],
+        position: 'left',
+      },
+      {
+        name: 'No-Gi',
+        startTime: '19:30',
+        endTime: '21:00',
+        classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
+        position: 'left',
+      },
+      {
+        name: 'MMA',
+        startTime: '20:30',
+        endTime: '22:00',
+        classType: ClassTypes.MMA,
+        coach: [CoachesTypes.DUSKO, CoachesTypes.VUKASIN],
+        position: 'right',
+      },
+    ],
+  },
+  {
+    day: 'Wednesday',
+    classes: [
+      {
+        name: 'No-Gi',
+        startTime: '07:30',
+        endTime: '09:00',
+        classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
+        position: 'left',
+      },
+      {
+        name: 'MMA Class',
+        startTime: '09:00',
+        endTime: '10:30',
+        classType: ClassTypes.MMA,
+        coach: [CoachesTypes.STRAJA],
+        position: 'left',
+      },
+      {
+        name: 'Kids Combat',
+        startTime: '18:30',
+        endTime: '19:30',
+        classType: ClassTypes.KIDS,
+        coach: [CoachesTypes.IVAN, CoachesTypes.ANDJELA],
+        position: 'left',
+      },
+      {
+        name: 'Boxing',
+        startTime: '18:30',
+        endTime: '19:30',
+        classType: ClassTypes.BOXING,
+        coach: [CoachesTypes.DUSKO, CoachesTypes.VUKASIN],
+        position: 'right',
+      },
+      {
+        name: 'No-Gi',
+        startTime: '19:30',
+        endTime: '21:00',
+        classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
+        position: 'left',
+      },
+      {
+        name: 'Kickboxing',
+        startTime: '19:30',
+        endTime: '20:30',
+        classType: ClassTypes.KICKBOXING,
+        coach: [CoachesTypes.SAVKE],
+        position: 'right',
+      },
+      {
+        name: 'MMA',
+        startTime: '20:30',
+        endTime: '22:00',
+        classType: ClassTypes.MMA,
+        coach: [CoachesTypes.DUSKO, CoachesTypes.VUKASIN],
+        position: 'right',
+      },
+      {
+        name: 'BJJ',
+        startTime: '21:00',
+        endTime: '22:00',
+        classType: ClassTypes.GI,
+        coach: [CoachesTypes.IVAN],
+        position: 'left',
+      },
+    ],
+  },
+  {
+    day: 'Thursday',
+    classes: [
+      {
+        name: 'No-Gi',
+        startTime: '07:30',
+        endTime: '09:00',
+        classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
+        position: 'left',
+      },
+      {
+        name: 'MMA',
+        startTime: '09:00',
+        endTime: '10:30',
+        classType: ClassTypes.MMA,
+        coach: [CoachesTypes.STRAJA],
+        position: 'left',
+      },
+      {
+        name: 'Freestyle Wrestling',
+        startTime: '18:00',
+        endTime: '19:30',
+        classType: ClassTypes.WRESTLING,
+        coach: [CoachesTypes.STANKO],
+        position: 'left',
+      },
+      {
+        name: 'No-Gi',
+        startTime: '19:30',
+        endTime: '21:00',
+        classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
+        position: 'left',
+      },
+      {
+        name: 'MMA',
+        startTime: '20:30',
+        endTime: '22:00',
+        classType: ClassTypes.MMA,
+        coach: [CoachesTypes.DUSKO, CoachesTypes.VUKASIN],
+        position: 'right',
+      },
+    ],
+  },
+  {
+    day: 'Friday',
+    classes: [
+      {
+        name: 'No-Gi',
+        startTime: '07:30',
+        endTime: '09:00',
+        classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
+        position: 'left',
+      },
+      {
+        name: 'MMA Class',
+        startTime: '09:00',
+        endTime: '10:30',
+        classType: ClassTypes.MMA,
+        coach: [CoachesTypes.STRAJA],
+        position: 'left',
+      },
+      {
+        name: 'Kids Combat',
+        startTime: '18:30',
+        endTime: '19:30',
+        classType: ClassTypes.KIDS,
+        coach: [CoachesTypes.IVAN, CoachesTypes.ANDJELA],
+        position: 'left',
+      },
+      {
+        name: 'Boxing',
+        startTime: '18:30',
+        endTime: '19:30',
+        classType: ClassTypes.BOXING,
+        coach: [CoachesTypes.DUSKO, CoachesTypes.VUKASIN],
+        position: 'right',
+      },
+      {
+        name: 'No-Gi',
+        startTime: '19:30',
+        endTime: '21:00',
+        classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
+        position: 'left',
+      },
+      {
+        name: 'Kickboxing',
+        startTime: '19:30',
+        endTime: '20:30',
+        classType: ClassTypes.KICKBOXING,
+        coach: [CoachesTypes.SAVKE],
+        position: 'right',
+      },
+      {
+        name: 'MMA',
+        startTime: '20:30',
+        endTime: '22:00',
+        classType: ClassTypes.MMA,
+        coach: [CoachesTypes.DUSKO, CoachesTypes.VUKASIN],
+        position: 'right',
+      },
+      {
+        name: 'BJJ',
+        startTime: '21:00',
+        endTime: '22:00',
+        classType: ClassTypes.GI,
+        coach: [CoachesTypes.IVAN],
+        position: 'left',
+      },
+    ],
+  },
+  {
+    day: 'Saturday',
+    classes: [
+      {
+        name: 'Striking Day',
+        startTime: '13:00',
+        endTime: '14:00',
+        classType: ClassTypes.MMA,
+        coach: [CoachesTypes.DUSKO, CoachesTypes.VUKASIN],
+        position: 'left',
+      },
+      {
+        name: 'Grappling Day',
+        startTime: '13:00',
+        endTime: '14:00',
+        classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.IVAN],
+        position: 'right',
+      },
+      {
+        name: 'Open mat',
+        startTime: '14:00',
+        endTime: '15:30',
+        classType: ClassTypes.NO_GI,
+        coach: [CoachesTypes.TTT],
+        position: 'left',
+      },
+      {
+        name: 'Freestyle Wrestling',
+        startTime: '15:30',
+        endTime: '17:00',
+        classType: ClassTypes.WRESTLING,
+        coach: [CoachesTypes.STANKO],
+        position: 'left',
+      },
+    ],
+  },
+];
