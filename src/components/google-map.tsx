@@ -2,7 +2,8 @@
 
 import { APIProvider, Map, Marker } from '@vis.gl/react-google-maps';
 
-const GOOGLE_MAPS_API_KEY: string = process.env.GOOGLE_MAPS_API_KEY || '';
+const GOOGLE_MAPS_API_KEY: string =
+  process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || '';
 const position: { lat: number; lng: number } = {
   lat: 44.82808586965494,
   lng: 20.41232354232935,
