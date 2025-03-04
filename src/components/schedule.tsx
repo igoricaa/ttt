@@ -141,8 +141,15 @@ export function Schedule() {
                     }) || [];
 
                 // Calculate width for each event based on number of concurrent events
-                const eventWidth =
-                  eventsInSlot.length > 0 ? 90 / eventsInSlot.length : 90;
+                const isNotSolo = eventsInSlot.some(
+                  (event) => event.isSolo === false
+                );
+
+                const eventWidth = isNotSolo
+                  ? 40
+                  : eventsInSlot.length > 0
+                  ? 90 / eventsInSlot.length
+                  : 90;
 
                 return (
                   <div
@@ -181,8 +188,17 @@ export function Schedule() {
 
                       // Calculate left offset for each card
                       const leftOffset =
-                        currIndex * eventWidth +
-                        (100 - eventWidth * eventsInSlot.length) / 2;
+                        event.isSolo ||
+                        (event.isSolo === false && event.position === 'left')
+                          ? 5
+                          : currIndex * eventWidth +
+                            (100 - eventWidth * eventsInSlot.length) / 2;
+
+                      const eventWidthCurr = event.isSolo
+                        ? 90
+                        : event.isSolo === false
+                        ? 40
+                        : null;
 
                       return (
                         <Card
@@ -194,7 +210,7 @@ export function Schedule() {
                             top: `${offset ? offset * 4.7 : 0.2}rem`,
                             height: `${(duration / 60) * 4.2}rem`,
                             left: `${leftOffset}%`,
-                            width: `${eventWidth}%`,
+                            width: `${eventWidthCurr ? eventWidthCurr : eventWidth}%`,
                             zIndex: 10,
                           }}
                         >

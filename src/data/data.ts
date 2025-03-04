@@ -300,6 +300,7 @@ interface ClassEvent {
   classType: ClassType;
   coach: CoachType[];
   position: string;
+  isSolo?: boolean;
 }
 
 interface DaySchedule {
@@ -610,11 +611,12 @@ export const schedule: DaySchedule[] = [
     classes: [
       {
         name: 'Striking Day',
-        startTime: '13:00',
+        startTime: '12:00',
         endTime: '14:00',
         classType: ClassTypes.MMA,
         coach: [CoachesTypes.DUSKO, CoachesTypes.VUKASIN],
         position: 'left',
+        isSolo: false,
       },
       {
         name: 'Grappling Day',
@@ -639,6 +641,7 @@ export const schedule: DaySchedule[] = [
         classType: ClassTypes.WRESTLING,
         coach: [CoachesTypes.STANKO],
         position: 'left',
+        isSolo: true,
       },
     ],
   },
