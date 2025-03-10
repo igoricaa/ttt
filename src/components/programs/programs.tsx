@@ -1,8 +1,13 @@
+'use client';
+
 import { Program } from '@/lib/types';
 import { cn } from '@/lib/utils';
 import Image, { getImageProps } from 'next/image';
+import { useState } from 'react';
 
 const Programs = ({ programs }: { programs: Program[] }) => {
+  const [activeProgram, setActiveProgram] = useState<Program | null>(null);
+
   return (
     <section>
       <div className={cn('absolute inset-0 transition-all duration-300')}>
@@ -38,10 +43,11 @@ const Programs = ({ programs }: { programs: Program[] }) => {
           });
 
           return (
-            <div key={program.title}>
+            <div key={program.title} onClick={() => setActiveProgram(program)}>
               <div
                 className={cn(
-                  'opacity-50 transition-opacity duration-300 w-fit peer focus:opacity-100 hover:opacity-100 relative'
+                  'opacity-50 transition-opacity duration-300 w-fit peer focus:opacity-100 hover:opacity-100 relative',
+                  activeProgram === program && 'opacity-100'
                 )}
               >
                 <h2 className='text-3xl sm:text-6xl lg:text-7xl font-semibold uppercase'>
@@ -52,7 +58,8 @@ const Programs = ({ programs }: { programs: Program[] }) => {
               <div
                 className={cn(
                   'absolute inset-0 -z-10 transition-all duration-300 opacity-0 invisible',
-                  'peer-hover:opacity-100 peer-hover:visible peer-focus:opacity-100 peer-focus:visible'
+                  'peer-hover:opacity-100 peer-hover:visible peer-focus:opacity-100 peer-focus:visible',
+                  activeProgram === program && 'opacity-100 visible'
                 )}
               >
                 <picture>
