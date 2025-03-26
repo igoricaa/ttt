@@ -62,7 +62,7 @@ export const timeToMinutes = (time: string): number => {
 
 export function Schedule() {
   return (
-    <div className='col-span-full 3xl:col-span-10 3xl:col-start-2 p-4 overflow-x-auto'>
+    <div className='col-span-full 4xl:col-span-10 4xl:col-start-2 p-4 overflow-x-auto'>
       <div className='min-w-[1400px] relative'>
         <TTTLetters className='absolute top-[242px] left-0 w-5/6 h-auto' />
         {/* Fixed time sidebar */}

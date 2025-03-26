@@ -315,19 +315,19 @@
     "buttonText": "Book a free session",
     "strength": {
       "title": "Strength & Conditioning",
-      "description": "Highest level of coaching in the baklans. From the UFC & KSW veterans"
+      "description": "Improve strength, endurance, and agility with expert-led training designed for all fitness levels, from beginners to professional athletes."
     },
     "bjj": {
       "title": "Brazilian Jiu-Jitsu",
-      "description": "Sessions held Every Day. Highest level of coaching in the baklans. From the UFC & KSW veterans"
+      "description": "Learn self-defense, discipline, and competition techniques under experienced black belt instructors in a structured and supportive training environment."
     },
     "mma": {
       "title": "MMA",
-      "description": "Sessions held Every Day. Highest level of coaching in the baklans. From the UFC & KSW veterans"
+      "description": "Develop striking, grappling, and fight strategy with UFC fighter Duško Todorović, combining multiple martial arts disciplines for well-rounded combat skills."
     },
     "boxing": {
       "title": "Boxing",
-      "description": "Sessions held Every Day. Highest level of coaching in the baklans. From the UFC & KSW veterans"
+      "description": "Enhance speed, power, and precision through structured boxing training, focusing on footwork, combinations, and defensive techniques."
     },
     "selfDefense": {
       "title": "Self-Defense for Women",
@@ -335,7 +335,7 @@
     },
     "kids": {
       "title": "Kids classes",
-      "description": "Sessions held Every Day. Highest level of coaching in the baklans. From the UFC & KSW veterans"
+      "description": "Fun and engaging Brazilian Jiu-Jitsu classes that teach discipline, confidence, and self-defense while improving coordination and physical fitness."
     }
   },
   "schedule": {

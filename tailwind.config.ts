@@ -12,8 +12,9 @@ export default {
       screens: {
         lg: '1025px',
         '2xl': '1440px',
-        '3xl': '1750px',
-        '4xl': '2200px',
+        '3xl': '1500px',
+        '4xl': '1750px',
+        '5xl': '2200px',
       },
       maxWidth: {
         '8xl': '1440px',

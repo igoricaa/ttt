@@ -21,7 +21,7 @@ const Programs = ({ programs }: { programs: Program[] }) => {
         />
       </div>
 
-      <div className='flex flex-col gap-y-8 lg:gap-y-4 pt-20 sm:pt-36 lg:pt-44 3xl:pt-56'>
+      <div className='flex flex-col gap-y-8 lg:gap-y-4 pt-20 sm:pt-36 lg:pt-44 4xl:pt-56'>
         {programs.map((program: Program, index: number) => {
           const common = {
             alt: program.images.alt,

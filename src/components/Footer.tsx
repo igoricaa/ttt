@@ -44,7 +44,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <div className='order-1 sm:order-2 col-span-full sm:col-start-3 lg:col-start-9 2xl:col-span-4 2xl:col-start-9 3xl:col-span-3 3xl:col-start-10 sm:pl-4 lg:pl-0 flex flex-col items-end '>
+        <div className='order-1 sm:order-2 col-span-full sm:col-start-3 lg:col-start-9 2xl:col-span-4 2xl:col-start-9 4xl:col-span-3 4xl:col-start-10 sm:pl-4 lg:pl-0 flex flex-col items-end '>
           <LinkButton
             href='/contact-us'
             variant='yellow'
@@ -91,7 +91,7 @@ const Footer = () => {
         >
           <LogoTypography />
         </Link>
-        <div className='col-span-full lg:col-span-4 2xl:col-span-4 2xl:col-start-9 3xl:col-span-3 3xl:col-start-10 flex lg:flex-col gap-x-3 gap-y-4 justify-between lg:justify-end items-end'>
+        <div className='col-span-full lg:col-span-4 2xl:col-span-4 2xl:col-start-9 4xl:col-span-3 4xl:col-start-10 flex lg:flex-col gap-x-3 gap-y-4 justify-between lg:justify-end items-end'>
           <ul className='hidden sm:flex gap-x-4'>
             <li className='w-fit'>
               <a

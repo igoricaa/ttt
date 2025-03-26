@@ -319,19 +319,19 @@
     "buttonText": "Zakaži besplatan trening",
     "strength": {
       "title": "Snaga i kondicija",
-      "description": "Najviši nivo treniranja u Balkanima. Od UFC i KSW veterana"
+      "description": "Poboljšajte snagu, izdržljivost i agilnost uz stručni trening prilagođen svim nivoima, od početnika do profesionalnih sportista."
     },
     "bjj": {
       "title": "Brazilska džiu džica",
-      "description": "Treningi svakog dana. Najviši nivo treniranja u Balkanima. Od UFC i KSW veterana"
+      "description": "Naučite samoodbranu, disciplinu i takmičarske tehnike uz iskusne instruktore crnog pojasa u dobrom okruženju."
     },
     "mma": {
       "title": "MMA",
-      "description": "Treningi svakog dana. Najviši nivo treniranja u Balkanima. Od UFC i KSW veterana"
+      "description": "Razvijajte udaranje, rvanje i strategiju borbe uz UFC borca Duška Todorovića, kombinujući različite borilačke veštine."
     },
     "boxing": {
       "title": "Boks",
-      "description": "Treningi svakog dana. Najviši nivo treniranja u Balkanima. Od UFC i KSW veterana"
+      "description": "Unapredite brzinu, snagu i preciznost kroz strukturiran trening boksa, fokusirajući se na kretanje, kombinacije i defanzivne tehnike."
     },
     "selfDefense": {
       "title": "Samoobrana za žene",
@@ -339,7 +339,7 @@
     },
     "kids": {
       "title": "Treninzi za decu",
-      "description": "Treninzi svakog dana. Najviši nivo treniranja u Balkanima. Od UFC i KSW veterana"
+      "description": "Zabavni i edukativni časovi brazilske džiu-džice za decu, koji podstiču disciplinu, samopouzdanje i fizičku spremnost."
     }
   },
   "schedule": {
